@@ -30,7 +30,7 @@
         font-weight: 500;
         letter-spacing: 0.1em;
         color: $brand-color;
-        margin-bottom: 65px;
+        margin-bottom: 80px;
     }
 
     &__wrapper {
@@ -49,9 +49,10 @@
     &__tags-row {
         height: fit-content;
         margin-top: 37px;
-        width: 565px;
+        width: 575px;
         display: flex;
-        gap: 10px;
+        column-gap: 15px;
+        row-gap: 10px;
         flex-wrap: wrap;
         justify-content: flex-end;
 
@@ -88,6 +89,10 @@
         a {
             color: $brand-color;
             font-weight: 500;
+            
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -100,7 +105,7 @@
     &__subtitle {
         font-size: 35px;
         letter-spacing: 0.05em;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
 
     &__input-wrapper {
@@ -117,7 +122,7 @@
     }
 
     &__textarea {
-        width: 510px;
+        width: 515px;
         padding-top: 10px;
         padding-left: 10px;
         font-size: 20px;
