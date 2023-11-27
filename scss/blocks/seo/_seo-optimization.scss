@@ -1,0 +1,59 @@
+.seo-optimization {
+    position: relative;
+
+    &__header {
+        position: relative;
+        background-image: url("./../img/seo/back-img.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        z-index: -1;
+
+        h1 {
+            top: 280px;
+            left: 120px;
+            position: absolute;
+        }
+    }
+
+    &__list {
+        width: 480px;
+
+        li {
+            margin-bottom: 13px;
+            width: fit-content;
+            padding-bottom: 13px;
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 38px;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid #D0CACA;
+            
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    &__body {
+        margin-top: -65px;
+        width: 1230px;
+        margin-left: 90px;
+        background-color: $white-color;
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 70px 0px 30px;
+
+        p {
+            margin-top: 60px;
+            width: 529px;
+            font-size: 25px;
+            line-height: 38px;
+            letter-spacing: 0.05em;
+        }
+    }
+}

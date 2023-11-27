@@ -1,0 +1,21 @@
+h1 {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 85px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $white-color;
+    
+    span {
+        background-color: $white-color;
+        color: $brand-color;
+    }
+}
+
+h2 { 
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 62px;
+    letter-spacing: 0.05em;
+    color: $brand-color;
+}

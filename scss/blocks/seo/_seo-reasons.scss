@@ -1,0 +1,69 @@
+.seo-reasons {
+    margin-bottom: 85px;
+    & > * {
+        padding: 20px 120px 45px;
+        background-color: $seo-background-color;
+        display: flex;
+    }
+
+    &__title {
+        position: relative;
+        border-right: 1px solid #D0CACA;
+
+        p {
+            padding-top: 30px;
+            width: 410px;
+            color: $brand-color;
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 62px;
+            letter-spacing: 0.05em;
+        }
+
+        & .square-big {
+            position: absolute;
+            top: 300px;
+            left: 55px;
+            transform: rotate(30deg);
+        }
+    }
+
+    &__text {
+        position: relative;
+        width: 765px;
+        padding-top: 25px;
+        padding-left: 75px;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 38px;
+        letter-spacing: 0.05em;
+
+        li {
+            margin-left: 46px;
+            list-style: disc;
+        }
+
+        ul {
+            
+            margin-bottom: 25px;
+        }
+
+        p:last-child {
+            font-weight: 400;
+        }
+
+        & .square-middle {  
+            position: absolute;
+            right: -90px;
+            top: 220px;
+            transform: rotate(116deg);
+        }
+
+        & .square-small {
+            position: absolute;
+            left: 695px;
+            bottom: -6px;
+            transform: rotate(30deg);
+        }
+    }
+}

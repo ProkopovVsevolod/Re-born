@@ -1,0 +1,128 @@
+
+.footer {
+    display: flex;
+    background-color: $black-color;
+
+    &__contacts {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        padding: 45px 0px 45px 60px; 
+        color: $white-color;
+
+    }
+
+    &__info {
+        p {
+            margin-bottom: 25px;
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: 0.1em;
+        };
+    }
+
+    &__list-item {
+        position: relative;
+        margin-bottom: 18px;
+        
+        a {
+            display: flex;
+            color: $white-color;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+
+            &::before {
+                display: block;
+                margin-top: -3px;
+                content: "";
+                margin-right: 13px;
+                width: 30px;
+                height: 30px;
+                background-color: $white-color;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__copy-wrapper {
+        display: flex;
+        align-items: flex-end;
+        margin-right: 40px;
+    }
+
+    &__copyright {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+    }
+
+    &__subscribe {
+        display: flex;
+        flex-direction: column;
+        padding: 45px 120px 82px 30px;
+        width: 50%;
+        background-color: $white-color;
+
+        & > p:first-child {
+            font-size: 25px;
+            line-height: 29px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+    }
+
+    form .input {
+        margin-right: 30px;
+    }
+
+    &__email {
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        display: flex;
+        gap: 10px;
+        width: 500px;
+        font-size: 16px;
+    } 
+
+    &__text {
+        width: 560px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        position: relative;
+    }
+
+    &__telegram, &__phone, &__whatsapp, &__dog {
+        position: absolute;  
+    }
+
+    &__telegram {
+        left: 3px;
+        top: 3px;
+    }
+
+    &__phone {
+        top: 1px;
+        left: 8px;
+    }
+
+    &__whatsapp {
+        top: 1px;
+        left: 5px;
+    }
+
+    &__dog {
+        top: 1px;
+        left: 4px;
+    }
+}
+
+

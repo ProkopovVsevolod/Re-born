@@ -1,0 +1,26 @@
+
+
+html {
+    height: 100%; /* sticky footer */
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;;
+    height: 100%;  /* sticky footer */
+    display: flex; /* sticky footer */
+    flex-direction: column; /* sticky footer */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $black-color;
+}
+
+body > * {
+    flex-shrink: 0; /* sticky footer */
+}
+
+.container {
+    width: 1440px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}

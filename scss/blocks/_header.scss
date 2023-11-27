@@ -1,0 +1,74 @@
+.header {
+    padding: 39px;
+    border-bottom: 1px solid $black-color;
+
+    &__logo {
+        margin-right: 150px;
+    }
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__navigation {
+        margin-right: 106px;
+    }
+
+    &__list {
+        display: flex;
+
+        li:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        li a {
+            position: relative;
+            font-size: 25px;
+            color: $black-color;
+            align-content: center;
+            font-weight: 300;
+
+            &:hover {
+                color: $brand-color;
+                font-size: 25px;
+                font-weight: 300;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                display: block;
+                content: "";
+                height: 2px;
+                bottom: -4px;
+                width: 0%;
+                background-color: $brand-color;
+                transition: width 0.4s ease-in-out;
+            }
+        }
+    }
+
+    &__other-nav {
+        display: flex;
+        align-items: center;
+
+        &>*:not(:last-child) {
+            margin-right: 58px;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &__lang {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+    }
+}

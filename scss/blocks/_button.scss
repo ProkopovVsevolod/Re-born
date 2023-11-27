@@ -1,0 +1,32 @@
+.button {
+    background-color: $brand-color;
+    color: #FEFEFE;
+    padding: 22px 27px;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+
+    &:hover {
+        background: linear-gradient(0deg, 
+        rgba(0, 0, 0, 0.05), 
+        rgba(0, 0, 0, 0.05)),
+        linear-gradient(0deg, #71BEAB, #71BEAB);
+    }
+    &:active {
+        font-weight: 500;
+        padding: 22px 24px;
+    }
+
+    &--middle {
+        padding: 10px 0;
+    }
+
+    &--small {
+        padding: 5px 38px 6px;
+
+        &:active {
+            padding: 5px 37px 6px;
+        }
+    }
+}
