@@ -1,7 +1,7 @@
 .seo-reasons {
     margin-bottom: 85px;
     & > * {
-        padding: 20px 120px 45px;
+        padding: 20px 100px 45px 120px;
         background-color: $seo-background-color;
         display: flex;
     }
@@ -12,10 +12,10 @@
 
         p {
             padding-top: 30px;
-            width: 410px;
+            width: 428px;
             color: $brand-color;
             font-size: 50px;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 62px;
             letter-spacing: 0.05em;
         }
@@ -33,7 +33,6 @@
         width: 765px;
         padding-top: 25px;
         padding-left: 75px;
-        font-size: 25px;
         font-weight: 300;
         line-height: 38px;
         letter-spacing: 0.05em;
@@ -43,13 +42,14 @@
             list-style: disc;
         }
 
-        ul {
-            
+        ul {      
             margin-bottom: 25px;
         }
 
-        p:last-child {
-            font-weight: 400;
+        p {
+            &:nth-child(3) {
+                font-weight: 400;
+            }
         }
 
         & .square-middle {  

@@ -12,6 +12,22 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: $black-color;
+    font-size: 25px;
+
+    @media (max-width: 1919px) {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    @media (max-width: 1179px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
 body > * {
@@ -23,4 +39,22 @@ body > * {
     // padding-left: 15px;
     // padding-right: 15px;
     margin: auto;
+
+    @media (max-width: 1919px) {
+        width: 880px;
+    }
+
+    @media (max-width: 1179px) {
+        width: 644px;
+    }
+
+    @media (max-width: 767px) {
+        width: 310px;
+    }
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    z-index: -1;
 }
