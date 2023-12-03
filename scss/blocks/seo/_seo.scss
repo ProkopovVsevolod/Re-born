@@ -36,7 +36,7 @@
         border-right: 1px solid #d0caca73;
 
         @media (max-width: 1919px) {
-            width: 40%;
+            width: 30%;
             padding-top: 15px;
         }
 
@@ -52,14 +52,10 @@
             transform: rotate(142deg);
 
             @media (max-width: 1919px) {
-                top: 550px;
-                left: 20px;
+                top: 70%;
+                left: 10%;
             }
-        
-        //     @media (max-width: 767px) {
-    
-        //     }
-        // }
+        }
 
         & .square-middle {  
             position: absolute;
@@ -68,8 +64,8 @@
             transform: rotate(108deg);
 
             @media (max-width: 1919px) {
-                top: 470px;
-                left: 125px;
+                top: 50%;
+                left: 35%;
             }
         }
 
@@ -81,10 +77,12 @@
             right: 44px;
             transform: rotate(143deg);
 
-            // @media (max-width: 1919px) {
-            //     width: 37px;
-            //     height: 37px;
-            // }
+            @media (max-width: 1919px) {
+                width: 37px;
+                height: 37px;
+                top: 35%;
+                left: 45%;
+            }
     
             // @media (max-width: 1179px) {
             //     width: 19px;
@@ -98,7 +96,6 @@
             // }
         }
 
-        }
     }
 
     &__text {
@@ -112,7 +109,7 @@
         @media (max-width: 1919px) {
             padding-top: 60px;
             margin-left: 5%;
-            width: 55%;
+            width: 70%;
         }
 
         // @media (max-width: 1179px) {
@@ -307,7 +304,7 @@
             border-right: 1px solid #d0caca73;
 
             @media (max-width: 1919px) {
-                width: 40%;
+                width: 30%;
                 padding-right: 0;
                 font-size: 26px;
                 line-height: 36px;
@@ -338,14 +335,23 @@
     }
 
     &__services-text {
-        // padding-left: 75px;
         width: 755px;
         line-height: 38px;
         letter-spacing: 0.05em;
 
         @media (max-width: 1919px) {
+            width: 70%;
+            margin-left: 5%;
+        }
+
+        @media (max-width: 1179px) {
             
         }
+
+        @media (max-width: 767px) {
+            
+        }
+
 
         & > p {
             margin-bottom: 25px;
@@ -365,19 +371,6 @@
             @media (max-width: 767px) {
                 
             }
-        }
-
-        @media (max-width: 1919px) {
-            width: 55%;
-            margin-left: 5%;
-        }
-
-        @media (max-width: 1179px) {
-            
-        }
-
-        @media (max-width: 767px) {
-            
         }
     }
 
@@ -700,7 +693,7 @@
             border-bottom: 1px solid #D0CACA;
             
             @media (max-width: 1919px) {
-                width: auto;
+                width: 92%;
                 margin-right: 0;
             } 
 

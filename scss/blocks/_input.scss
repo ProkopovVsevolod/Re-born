@@ -58,4 +58,9 @@
     border-right: 2px solid $brand-color;
     border-bottom: 2px solid $brand-color;
     border-radius: 1px;
+
+    @media (max-width: 1919px) {
+      top: 40%;
+      left: 1%;
+  }
   }

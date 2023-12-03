@@ -1,14 +1,23 @@
 .seo-reasons {
     margin-bottom: 85px;
+    
     & > * {
         padding: 20px 100px 45px 120px;
         background-color: $seo-background-color;
         display: flex;
+
+        @media (max-width: 1919px) {
+            padding: 20px 97px 45px 97px;
+        }
     }
 
     &__title {
         position: relative;
         border-right: 1px solid #D0CACA;
+
+        @media (max-width: 1919px) {
+            width: 30%;
+        }
 
         p {
             padding-top: 30px;
@@ -32,10 +41,15 @@
         position: relative;
         width: 765px;
         padding-top: 25px;
-        padding-left: 75px;
+        margin-left: 75px;
         font-weight: 300;
         line-height: 38px;
         letter-spacing: 0.05em;
+        z-index: 3;
+
+        @media (max-width: 1919px) {
+            width: 70%;
+        }
 
         li {
             margin-left: 46px;
@@ -57,6 +71,11 @@
             right: -90px;
             top: 220px;
             transform: rotate(116deg);
+            z-index: 2;
+
+            @media (max-width: 1919px) {
+                right: -2%;
+            }
         }
 
         & .square-small {

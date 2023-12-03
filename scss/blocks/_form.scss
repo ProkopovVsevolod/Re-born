@@ -2,12 +2,17 @@
     position: relative;
     background-image: url("./../img/seo/about-you-back.png");
     background-repeat: no-repeat;
-    width: 1410px;
+    background-size: cover;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    padding: 65px 90px;
+    padding: 65px 0;
     margin-bottom: 80px;
     
+
+    @media (max-width: 1919px) {
+        width: 95%;
+    }
 
     &::before {
         position: absolute;
@@ -26,6 +31,7 @@
         text-transform: uppercase;
         white-space: pre-line;
         width: 705px;
+        line-height: 85px;
         font-size: 65px;
         font-weight: 500;
         letter-spacing: 0.1em;
@@ -39,6 +45,12 @@
         padding: 45px 30px;
         width: 1230px;
         background-color: $white-color;
+
+        @media (max-width: 1919px) {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__content {
@@ -56,6 +68,9 @@
         flex-wrap: wrap;
         justify-content: flex-end;
 
+        @media (max-width: 1919px) {
+            width: auto;
+        }
     }
 
     &__tag {
@@ -89,6 +104,7 @@
     }
 
     &__politics {
+        
         margin-left: -40px;
         width: 466px;
         margin-top: 48px;
@@ -96,6 +112,12 @@
         font-weight: 300;
         line-height: 19px;
         letter-spacing: 0.05em;
+
+        @media (max-width: 1919px) {
+            position: absolute;
+            bottom: 0;
+            margin-left: 30px;
+        }
 
         a {
             color: $brand-color;
@@ -106,12 +128,24 @@
             }
         }
     }
+
+    &__buttons {
+        position: relative;
+        @media (max-width: 1919px) {
+            width: 49%;
+        }
+    }
 }
 
 .form {
     width: 517px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1919px) {
+        margin-right: 20px;
+        width: 50%;
+    }
 
     &__subtitle {
         font-size: 35px;
@@ -125,9 +159,16 @@
         input {
             width: 240px;
             
+            @media (max-width: 1919px) {
+                width: 47%;
+            }
 
             &:not(:last-child) {
                 margin-right: 30px;
+
+                @media (max-width: 1919px) {
+                    margin-right: 5%;
+                }
             }
         }
     }
@@ -141,6 +182,10 @@
         margin-bottom: 25px;
         border: 1px solid #CCCCCD;
         overflow: auto;
+
+        @media (max-width: 1919px) {
+            width: auto;
+        }
 
         &:active, &:focus {
             outline: none !important;
