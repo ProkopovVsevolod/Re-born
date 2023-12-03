@@ -35,18 +35,23 @@ h2 {
     color: $brand-color;
 
     @media (max-width: 1919px) {
-        font-size: 35px;
-        line-height: 44px;
-        letter-spacing: 0.03em;
+        font-size: 40px;
+        line-height: 50px;
     }
 
-    @media (max-width: 1179px) {
-        line-height: 30px;
-        line-height: 36px;
-    }
+    // @media (max-width: 1439px) {
+    //     font-size: 35px;
+    //     line-height: 44px;
+    //     letter-spacing: 0.03em;
+    // }
 
-    @media (max-width: 767px) {
-        font-size: 25px;
-        line-height: 32px;
-    }
+    // @media (max-width: 1179px) {
+    //     line-height: 30px;
+    //     line-height: 36px;
+    // }
+
+    // @media (max-width: 767px) {
+    //     font-size: 25px;
+    //     line-height: 32px;
+    // }
 }
