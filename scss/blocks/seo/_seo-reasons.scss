@@ -1,22 +1,41 @@
 .seo-reasons {
     margin-bottom: 85px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+    }
     
     & > * {
-        padding: 20px 100px 45px 120px;
+        padding: 20px 100px 45px 124px;
         background-color: $seo-background-color;
         display: flex;
 
-        @media (max-width: 1919px) {
-            padding: 20px 97px 45px 97px;
+        @media (max-width: 1920px) {
+            padding: 20px 97px 45px;
+        }
+
+        @media (max-width: 1180px) {
+            flex-direction: column;
+            padding: 30px 66px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 25px 20px;
         }
     }
 
     &__title {
+        width: 680px;
         position: relative;
         border-right: 1px solid #D0CACA;
 
-        @media (max-width: 1919px) {
-            width: 30%;
+        @media (max-width: 1920px) {
+            width: 36%;
+        }
+
+        @media (max-width: 1180px) {
+            width: 267px;
+            border-right: none;
         }
 
         p {
@@ -27,19 +46,61 @@
             font-weight: 500;
             line-height: 62px;
             letter-spacing: 0.05em;
+
+            @media (max-width: 1920px) {
+                width: 100%;    
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            @media (max-width: 1440px) {
+                font-size: 35px;
+                line-height: 44px;
+                letter-spacing: 0.03em;
+            }
+
+            @media (max-width: 1180px) {
+                font-size: 30px;
+                line-height: 36px;
+                padding-top: 0;
+            }
+
+            @media (max-width: 768px) {
+                padding-top: 0;
+                font-size: 25px;
+                line-height: 32px;
+            }
+
         }
 
         & .square-big {
+            width: 150px;
+            height: 150px;
             position: absolute;
-            top: 300px;
-            left: 55px;
-            transform: rotate(30deg);
+            top: 323px;
+            left: 68px;
+            transform: rotate(24deg);
+
+            @media (max-width: 1920px) {
+                top: 243px;
+                left: 68px;
+            }
+
+            @media (max-width: 1440px) {
+                width: 114px;
+                height: 114px;
+            }
+
+            @media (max-width: 1180px) {
+                display: none;
+            }
+            
         }
     }
 
     &__text {
         position: relative;
-        width: 765px;
+        width: 839px;
         padding-top: 25px;
         margin-left: 75px;
         font-weight: 300;
@@ -47,8 +108,23 @@
         letter-spacing: 0.05em;
         z-index: 3;
 
-        @media (max-width: 1919px) {
+        
+
+        @media (max-width: 1920px) {
             width: 70%;
+        }
+
+        @media (max-width: 1180px) {
+            padding-top: 20px;
+            margin-left: 19%;
+            line-height: 24px;
+            width: 80%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-left: 0;
+            line-height: 22px;
         }
 
         li {
@@ -68,21 +144,56 @@
 
         & .square-middle {  
             position: absolute;
-            right: -90px;
-            top: 220px;
-            transform: rotate(116deg);
-            z-index: 2;
+            width: 73px;
+            height: 73px;
+            right: -36px;
+            top: 216px;
+            transform: rotate(108deg);
+            z-index: -1;
 
-            @media (max-width: 1919px) {
-                right: -2%;
+            @media (max-width: 1920px) {
+                right: -8%;
+                top: 125px;
+            }
+
+            @media (max-width: 1440px) {
+                width: 40px;
+                height: 40px;
+            }
+
+            @media (max-width: 1180px) {
+                width: 29px;
+                height: 29px;
+                right: 1%;
+                top: -25%;
             }
         }
 
         & .square-small {
             position: absolute;
-            left: 695px;
-            bottom: -6px;
-            transform: rotate(30deg);
+            width: 35px;
+            height: 35px;
+            left: 771px;
+            bottom: 0px;
+            transform: rotate(54deg);
+            z-index: -1;
+
+            @media (max-width: 1920px) {
+                left: auto;
+                right: 5%;
+            }
+
+            @media (max-width: 1440px) {
+                width: 28px;
+                height: 28px;
+            }
+
+            @media (max-width: 1180px) {
+                width: 19px;
+                height: 19px;
+                bottom: 50%;
+                left: -10%;
+            }
         }
     }
 }

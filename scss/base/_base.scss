@@ -15,23 +15,23 @@ body {
     font-size: 25px;
     line-height: 38px;
 
-    @media (max-width: 1919px) {
+    @media (max-width: 1920px) {
         font-size: 20px;   
         line-height: 30px;
         letter-spacing: 0.03em;       
     }
 
-    @media (max-width: 1439px) {
+    @media (max-width: 1440px) {
         font-size: 19px;
         line-height: 30px;
     }
 
-    @media (max-width: 1179px) {
+    @media (max-width: 1180px) {
         font-size: 16px;
         line-height: 24px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         font-size: 14px;
         line-height: 22px;
     }
@@ -42,13 +42,13 @@ body > * {
 }
 
 .container {
-    width: 1440px;
+    width: 1860px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
 
-    @media (max-width: 1929px) {
+    @media (max-width: 1920px) {
         width: 95%;
         padding-left: 0;
         padding-right: 0;

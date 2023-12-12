@@ -11,17 +11,17 @@ h1 {
         color: $brand-color;
     }
 
-    @media (max-width: 1919px) {
+    @media (max-width: 1920px) {
         font-size: 53px;
         letter-spacing: 0.05em;
         line-height: 65px;
     }
 
-    @media (max-width: 1179px) {
+    @media (max-width: 1180px) {
         font-size: 50px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         font-size: 30px;
         line-height: 40px;
     }
@@ -34,24 +34,25 @@ h2 {
     letter-spacing: 0.05em;
     color: $brand-color;
 
-    @media (max-width: 1919px) {
+    @media (max-width: 1920px) {
         font-size: 40px;
         line-height: 50px;
     }
 
-    // @media (max-width: 1439px) {
-    //     font-size: 35px;
-    //     line-height: 44px;
-    //     letter-spacing: 0.03em;
-    // }
+    @media (max-width: 1440px) {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0.03em;
+    }
 
-    // @media (max-width: 1179px) {
-    //     line-height: 30px;
-    //     line-height: 36px;
-    // }
+    @media (max-width: 1180px) {
+        font-size: 30px;
+        line-height: 36px;
+    }
 
-    // @media (max-width: 767px) {
-    //     font-size: 25px;
-    //     line-height: 32px;
-    // }
+    @media (max-width: 767px) {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+    }
 }

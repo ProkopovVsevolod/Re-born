@@ -3,20 +3,52 @@
 
     &__list {
         display: flex;
-        padding: 20px 110px;
+        justify-content: space-between;
+        padding: 15px 124px;
         background-color: $gray-color;
 
         li {
-            color: rgba($black-color, 0.6);
+            font-size: 30px;
             font-weight: 500;
             line-height: 38px;
             letter-spacing: 0.05em;
             cursor: pointer;
 
-            &:not(:last-child) {
-                margin-right: 90px;
+            @media (max-width: 1920px) {
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.03em;
+            }
+    
+            @media (max-width: 1440px) {
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 0.05em;
+            }
+    
+            @media (max-width: 1180px) {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+            }
+
+            a {
+                color: rgba($black-color, 0.6);
             }
         }
+
+        @media (max-width: 1920px) {
+            padding: 10px 100px;
+        }
+
+        @media (max-width: 1440px) {
+            padding: 10px 96px;
+        }
+
+        @media (max-width: 1180px) {
+            padding: 8px 66px;
+        }
+
     }
 
     .active {

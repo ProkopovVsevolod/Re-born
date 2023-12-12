@@ -1,9 +1,9 @@
 .button {
     background-color: $brand-color;
     color: #FEFEFE;
-    padding: 22px 27px;
+    padding: 37px 42px;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 38px;
     letter-spacing: 0.05em;
 
@@ -16,7 +16,7 @@
 
     &:active {
         font-weight: 500;
-        padding: 22px 24px;
+        padding: 37px 38px;
     }
 
     &--middle {
@@ -34,25 +34,25 @@
             padding: 5px 37px 6px;
         }
 
-        @media (max-width: 1919px) {
-            padding: 3px 40px;
+        @media (max-width: 1920px) {
+            padding: 3px 40px !important;
         }
     }
 
-    @media (max-width: 1919px) {
+    @media (max-width: 1920px) {
         font-size: 18px;
         line-height: 30px;
         padding: 15px 16px;
         letter-spacing: 0.03em;
     }
 
-    @media (max-width: 1179px) {
+    @media (max-width: 1180px) {
         font-size: 14px;
         line-height: 28px;
         padding: 12px 9px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         font-size: 10px;
         padding: 14px 6px;
         line-height: 15px;
