@@ -6,36 +6,36 @@
     background-color: $white-color;
     border-bottom: 1px solid $black-color;
 
-    @media (max-width: 1920px) {
+    @media (max-width: 1919px) {
         padding: 15px 0;
     }
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1439px) {
         padding: 25px 0;
     }
 
-    @media (max-width: 1180px) {
+    @media (max-width: 1179px) {
         padding: 10px 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: 17px 0;
     }
 
     &__logo {
-        @media (max-width: 1920px) {
+        @media (max-width: 1919px) {
             width: 179px;
         }
 
-        @media (max-width: 1440px) {
+        @media (max-width: 1439px) {
             width: 152px;
         }
     
-        @media (max-width: 1180px) {
+        @media (max-width: 1179px) {
             width: 128px;
         }
     
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             width: 94px;
         }
     }
@@ -49,18 +49,14 @@
     &__list {
         display: flex;
 
-        @media (max-width: 1180px) {
+        @media (max-width: 1179px) {
             display: none;
         }
 
         li:not(:last-child) {
             margin-right: 45px;
-            
-            @media (max-width: 1920px) {
-                margin-right: 35px;
-            }
 
-            @media (max-width: 1440px) {
+            @media (max-width: 1439px) {
                 margin-right: 20px;
             }
         }
@@ -92,7 +88,7 @@
                 transition: width 0.4s ease-in-out;
             }
 
-            @media (max-width: 1920px) {
+            @media (max-width: 1919px) {
                 font-size: 20px;
                 letter-spacing: 0.03em;
                 line-height: 30px;
@@ -107,11 +103,11 @@
         &>*:not(:last-child) {
             margin-right: 77px;
 
-            @media (max-width: 1440px) {
+            @media (max-width: 1439px) {
                 margin-right: 25px;
             }
 
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 margin-right: 33px;
             }
         }
@@ -119,16 +115,22 @@
         img {
             cursor: pointer;
 
-            @media (max-width: 1920px) {
+            @media (max-width: 1919px) {
                 width: 40px;
             }
             
-            @media (max-width: 1440px) {
+            @media (max-width: 1439px) {
                 width: 36px;
             }
 
-            @media (max-width: 1180px) {
+            @media (max-width: 1179px) {
                 width: 30px;  
+            }
+        }
+
+        button {
+            @media (max-width: 767px) {
+                white-space: pre-line;
             }
         }
     }
@@ -140,17 +142,17 @@
         line-height: 30px;
         letter-spacing: 0.05em;
 
-        @media (max-width: 1920px) {
+        @media (max-width: 1919px) {
             font-size: 18px;
             letter-spacing: 0.03em;
         }
     
-        @media (max-width: 1180px) {
+        @media (max-width: 1179px) {
             font-size: 14px;
             line-height: 28px;          
         }
     
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             font-size: 11px;
             letter-spacing: 0.01em; 
         }

@@ -1,7 +1,7 @@
 .seo-reasons {
     margin-bottom: 85px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         margin-bottom: 40px;
     }
     
@@ -10,16 +10,16 @@
         background-color: $seo-background-color;
         display: flex;
 
-        @media (max-width: 1920px) {
+        @media (max-width: 1919px) {
             padding: 20px 97px 45px;
         }
 
-        @media (max-width: 1180px) {
+        @media (max-width: 1179px) {
             flex-direction: column;
             padding: 30px 66px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             padding: 25px 20px;
         }
     }
@@ -29,11 +29,11 @@
         position: relative;
         border-right: 1px solid #D0CACA;
 
-        @media (max-width: 1920px) {
+        @media (max-width: 1919px) {
             width: 36%;
         }
 
-        @media (max-width: 1180px) {
+        @media (max-width: 1179px) {
             width: 267px;
             border-right: none;
         }
@@ -47,25 +47,25 @@
             line-height: 62px;
             letter-spacing: 0.05em;
 
-            @media (max-width: 1920px) {
-                width: 100%;    
+            @media (max-width: 1919px) {
+                width: 85%;    
                 font-size: 40px;
                 line-height: 50px;
             }
 
-            @media (max-width: 1440px) {
+            @media (max-width: 1439px) {
                 font-size: 35px;
                 line-height: 44px;
                 letter-spacing: 0.03em;
             }
 
-            @media (max-width: 1180px) {
+            @media (max-width: 1179px) {
                 font-size: 30px;
                 line-height: 36px;
                 padding-top: 0;
             }
 
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 padding-top: 0;
                 font-size: 25px;
                 line-height: 32px;
@@ -81,17 +81,17 @@
             left: 68px;
             transform: rotate(24deg);
 
-            @media (max-width: 1920px) {
+            @media (max-width: 1919px) {
                 top: 243px;
                 left: 68px;
             }
 
-            @media (max-width: 1440px) {
+            @media (max-width: 1439px) {
                 width: 114px;
                 height: 114px;
             }
 
-            @media (max-width: 1180px) {
+            @media (max-width: 1179px) {
                 display: none;
             }
             
@@ -110,18 +110,18 @@
 
         
 
-        @media (max-width: 1920px) {
+        @media (max-width: 1919px) {
             width: 70%;
         }
 
-        @media (max-width: 1180px) {
+        @media (max-width: 1179px) {
             padding-top: 20px;
             margin-left: 19%;
             line-height: 24px;
             width: 80%;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             width: 100%;
             margin-left: 0;
             line-height: 22px;
@@ -151,17 +151,17 @@
             transform: rotate(108deg);
             z-index: -1;
 
-            @media (max-width: 1920px) {
+            @media (max-width: 1919px) {
                 right: -8%;
                 top: 125px;
             }
 
-            @media (max-width: 1440px) {
+            @media (max-width: 1439px) {
                 width: 40px;
                 height: 40px;
             }
 
-            @media (max-width: 1180px) {
+            @media (max-width: 1179px) {
                 width: 29px;
                 height: 29px;
                 right: 1%;
@@ -178,17 +178,17 @@
             transform: rotate(54deg);
             z-index: -1;
 
-            @media (max-width: 1920px) {
+            @media (max-width: 1919px) {
                 left: auto;
                 right: 5%;
             }
 
-            @media (max-width: 1440px) {
+            @media (max-width: 1439px) {
                 width: 28px;
                 height: 28px;
             }
 
-            @media (max-width: 1180px) {
+            @media (max-width: 1179px) {
                 width: 19px;
                 height: 19px;
                 bottom: 50%;

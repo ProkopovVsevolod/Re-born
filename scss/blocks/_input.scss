@@ -8,7 +8,7 @@
     border-bottom: 2px solid #CCCCCD;
 
     
-    @media (max-width: 1180px) {
+    @media (max-width: 1179px) {
       padding: 8px 0px;
       font-size: 13px;
       width: 100%;    
@@ -58,7 +58,7 @@
       margin-top: -30px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       margin-top: 0;
     }
 
@@ -92,11 +92,11 @@
     border-bottom: 2px solid $brand-color;
     border-radius: 1px;
 
-    @media (max-width: 1920px) {
+    @media (max-width: 1919px) {
       top: 3px;
     }
 
-    @media (max-width: 1180px) {
+    @media (max-width: 1179px) {
       width: 7px;
       height: 11px;
       top: 2px;

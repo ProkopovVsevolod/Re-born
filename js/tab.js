@@ -1,5 +1,5 @@
 const accordion = document.querySelectorAll("#accordion");
-const tabButton = document.querySelectorAll("#tabButton");
+const anchors = document.querySelectorAll("#anchorButton");
 
 
 accordion.forEach(accordionTitle => {
@@ -9,8 +9,11 @@ accordion.forEach(accordionTitle => {
     })
 })
 
-// tabButton.forEach(tab => {
-//     tab.addEventListener("click", () => {
-//         tab.classList.toggle('active');
-//     })
-// })
+anchors.forEach(anchor => {
+    anchor.addEventListener("click", () => {
+        anchors.forEach(anchor => {
+            anchor.classList.remove("active")
+        })
+        anchor.classList.add('active');
+    })
+})
