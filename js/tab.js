@@ -1,5 +1,5 @@
-const accordion = document.querySelectorAll("#accordion");
-const anchors = document.querySelectorAll("#anchorButton");
+const accordion = document.querySelectorAll("[data-accordion]");
+const anchors = document.querySelectorAll("[anchorButton]");
 
 
 accordion.forEach(accordionTitle => {

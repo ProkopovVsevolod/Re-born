@@ -77,20 +77,23 @@
         <!-- Навигация по 3м блоками -->
         <div class="seo-nav">
             <div class="container">
-                <ul class="seo-nav__list">
-                    <li>
-                        <a href="#section1" id="anchorButton" class="active">Что такое SEO-продвижение?</a>
-                    </li>
-
-                    <li>
-                        <a href="#section2" id="anchorButton" >Кому подойдет SEO?</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#section3" id="anchorButton" >Какие работы проводятся?</a>
-                    </li>
-                    
-                </ul>
+                <div class="seo-nav__wrapper">
+                    <div class="seo-nav__limiter">
+                        <ul class="seo-nav__list">
+                            <li>
+                                <a href="#section1" data-id="anchorButton" class="active">Что такое SEO-продвижение?</a>
+                            </li>
+        
+                            <li>
+                                <a href="#section2" data-id="anchorButton" >Кому подойдет SEO?</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#section3" data-id="anchorButton" >Какие работы проводятся?</a>
+                            </li>                       
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>  
 
@@ -130,8 +133,8 @@
                     <p class="seo__body-title">Работа SEO-специалиста оценивается по одному из двух критериев:</p>
 
                     <div class="seo__services">
-                        <p>Продвижение по
-                            трафику</p>
+                        <h3>Продвижение по
+                            трафику</h3>
 
                         <div class="seo__services-text">
                             <p>
@@ -148,8 +151,8 @@
                     </div>
 
                     <div class="seo__services seo__services--inner-background">
-                        <p>Продвижение по
-                            позициям</p>
+                        <h3>Продвижение по
+                            позициям</h3>
 
                         <div class="seo__services-text">
                             <p>
@@ -294,9 +297,11 @@
                 </div>
 
                 <div class="seo__content">
-                    <p class="seo__accent-text">Охотно поделимся с вами основными
+                    <p class="seo__accent-text">
+                        Охотно поделимся с вами основными
                         этапами нашей работы и логикой построения
-                        стратегии продвижения. </span>
+                        стратегии продвижения.
+                    </p>
 
                     <div class="seo__stages">
                         <div class="seo__stage">
@@ -368,12 +373,12 @@
                             </p>
     
                             <ul>
-                                <li id="accordion">
+                                <li data-accordion>
                                     <p>Анализ существующего контента и его сравнение с конкурентами в выдаче</p>
                                     
                                     <p class="hidden">Цель – сделать лучше, чем у них.</p>
                                 </li>
-                                <li id="accordion">
+                                <li data-accordion>
                                     <p>Аудит целевой аудитории и ее особенностей</p>
                                     
                                     <p class="hidden"> 
@@ -382,7 +387,7 @@
                                         вашем ресурсе.
                                     </p>
                                 </li>
-                                <li id="accordion">
+                                <li data-accordion>
                                     <p>Проработка юзабилити</p>
                                     
                                     <p class="hidden">
@@ -391,7 +396,7 @@
                                         рекомендации по улучшению функционала, дизайна или других компонентов.
                                     </p>
                                 </li>
-                                <li id="accordion">
+                                <li data-accordion>
                                     <p>Улучшение кода сайта</p>
             
                                     <p class="hidden">
@@ -403,7 +408,7 @@
                                         использовался только там, где действительно нужен, а не при любом удобном случае.
                                     </p>
                                 </li>
-                                <li id="accordion">
+                                <li data-accordion>
                                     <p>Оптимизация перекрестных ссылок</p>
                                     
                                     <p class="hidden">
@@ -412,7 +417,7 @@
                                         дополнительно делаем сайт более привлекательным для поисковиков
                                     </p>
                                 </li>
-                                <li id="accordion"> 
+                                <li data-accordion> 
                                     <p>Проработка мета-тегов</p>
                                     
                                     <p class="hidden">
@@ -437,7 +442,7 @@
                             </p>
 
                             <ul>
-                                <li id="accordion">
+                                <li data-accordion>
                                     <p>Наращивание ссылочной массы</p>
                                     
                                     <p class="hidden">
@@ -446,7 +451,7 @@
                                         все подводные камни, чтобы избежать ограничений от поисковых систем.
                                     </p>
                                 </li>
-                                <li id="accordion">
+                                <li data-accordion>
                                     <p>Размещение пресс-релизов</p>
                                     
                                     <p class="hidden">
@@ -474,7 +479,7 @@
             <div class="container">
                 <div class="audit__wrapper">
                     <div class="audit__order">
-                        <p class="audit__title">Бесплатный аудит</p>
+                        <h2>Бесплатный аудит</h2>
                         <button class="button">Заказать</button>
                     </div>
         
@@ -483,7 +488,7 @@
                             Самые актуальные, трендовые и свежие новости
                             в сфере digital - маркетинга 
                         </p>
-                        <form action="" class="audit__form">
+                        <form class="audit__form">
                             <input type="email" class="input" placeholder="Введите свой email">
                             <button>Подписаться</button>
                         </form>
@@ -495,9 +500,7 @@
         <div class="seo-reasons">
             <div class="container">
                 <div class="seo-reasons__title">
-                    <p>
-                        Почему стоит заказать SEO-продвижение?
-                    </p>
+                    <h2>Почему стоит заказать SEO-продвижение?</h2>
 
                     <div class="square-big"></div>
                 </div>
@@ -535,19 +538,25 @@
                         о вашем проекте
                     </p>
                     
-                    <form class="form" action="">
+                    <form class="form">
                         <p class="form__subtitle">Контактная информация</p>
 
                         <div class="form__data-wrapper">
                             <div class="form__data">
                                 <div class="form__input-wrapper">
-                                    <input class="input" type="text" placeholder="Ваше имя" >
-                                    <input class="input" type="email" placeholder="Email" >
+                                    <input class="input" id="name" type="text" placeholder="Ваше имя *" required>
+                                    <!-- <label for="name">Ваше имя</label> -->
+                                    
+                                    <input class="input required-input-email" id="email" type="email" placeholder="Email *" required>
+                                    <!-- <label for="email">Email</label> -->
                                 </div>
                                 
                                 <div class="form__input-wrapper">
-                                    <input class="input" type="telsf" placeholder="Номер телефона" >
-                                    <input class="input" type="text" placeholder="Компания">
+                                    <input class="input required-input-phone" id="phone" type="tel" placeholder="Номер телефона *" required>
+                                    <!-- <label class="label-phone" for="phone">Номер телефона</label> -->
+                                    
+                                    <input class="input " id="company"  placeholder="Компания" type="text">
+                                    <!-- <label class="input-company" for="company">Компания</label> -->
                                 </div>
                             </div>
                             
@@ -570,7 +579,7 @@
                         <div class="form__textarea-wrapper">
                             <p class="form__subtitle">Опишите вашу задачу</p>
         
-                            <textarea class="form__textarea" name="" id="" cols="30" rows="5" placeholder="несколько слов о вашей задаче"></textarea>
+                            <textarea class="form__textarea" cols="30" rows="5" placeholder="несколько слов о вашей задаче"></textarea>
                             <button class="button button--middle">Отправить</button>
 
                             <p class="form__politics">
@@ -588,8 +597,7 @@
 
     <footer class="footer">
         <div class="footer__contacts">
-            <div class="footer__info">
-                <p>Связаться с нами</p>
+            <p>Связаться с нами</p>
                 <ul class="footer__list">
                     <li class="footer__list-item">
                         <img class="footer__telegram" src="./img/footer/telegram.svg" alt="Телеграмм">
@@ -608,21 +616,15 @@
 
                     <li class="footer__list-item"> 
                         <img class="footer__phone" src="./img/footer/phone.svg" alt="Телефон">
-                        <a href="#">+7 (903) 795-75-52</a>
+                        <a href="#">+7 (495) 795-75-52</a>
                     </li>
                 </ul>
-            </div>
-        
-            <div class="footer__copy-wrapper">
-                <p class="footer__copyright">@2022-2023 Все права защищены</p>  
-            </div>
-            
         </div>
 
         <div class="footer__subscribe">
             <p>Подпишитесь</p>
             <p class="footer__text">Самые актуальные, трендовые и свежие новости в сфере digital-маркетинга</p>
-            <form action="">
+            <form>
                 <div class="footer__email">
                     <input  class="input" type="email" placeholder="Введите свой email"> 
                     <button class="button button--small">Отправить</button>

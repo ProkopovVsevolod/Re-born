@@ -83,7 +83,6 @@
             width: fit-content;
             padding-bottom: 17px;
             font-weight: 300;
-            line-height: 38px;
             letter-spacing: 0.05em;
             border-bottom: 1px solid #D0CACA;
             
@@ -94,20 +93,12 @@
             }
 
             @media (max-width: 1919px) {
-                line-height: 30px;
                 letter-spacing: 0.03em;
                 margin-bottom: 10px;
                 padding-bottom: 10px;
             }
         
-            @media (max-width: 1179px) {
-                font-size: 16px;
-                line-height: 24px;
-            }
-        
             @media (max-width: 767px) {
-                font-size: 14px;
-                line-height: 22px;
                 margin-bottom: 8px;
                 padding-bottom: 8px;
             }
@@ -167,7 +158,6 @@
         p {
             margin-top: 85px;
             width: 780px;
-            line-height: 38px;
             letter-spacing: 0.05em;
 
             @media (max-width: 1919px) {
@@ -182,15 +172,12 @@
                 margin-top: 0;
                 margin-left: 30%;
                 font-size: 16px;
-                line-height: 24px;
             }
         
             @media (max-width: 767px) {
                 width: 100%;
                 margin-top: 0;
                 margin-left: 0;
-                font-size: 14px;
-                line-height: 22px;
             }
         }
     }
@@ -249,7 +236,7 @@
             }
 
             @media (max-width: 767px) {
-                gap: 10;
+                gap: 10px;
                 row-gap: 10px;
             }
         }
