@@ -289,24 +289,6 @@ body > * {
     margin-right: 33px;
   }
 }
-.header__other-nav img {
-  cursor: pointer;
-}
-@media (max-width: 1919px) {
-  .header__other-nav img {
-    width: 40px;
-  }
-}
-@media (max-width: 1439px) {
-  .header__other-nav img {
-    width: 36px;
-  }
-}
-@media (max-width: 1179px) {
-  .header__other-nav img {
-    width: 30px;
-  }
-}
 @media (max-width: 767px) {
   .header__other-nav button {
     white-space: pre-line;
@@ -336,6 +318,80 @@ body > * {
     font-size: 11px;
     letter-spacing: 0.01em;
   }
+}
+.header__burger {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-left: -8px;
+  background-color: #1C1C1B;
+}
+@media (max-width: 1439px) {
+  .header__burger {
+    width: 25px;
+  }
+}
+@media (max-width: 1179px) {
+  .header__burger {
+    width: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .header__burger {
+    width: 12px;
+  }
+}
+.header__burger::after, .header__burger::before {
+  content: "";
+  background-color: #1C1C1B;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+}
+@media (max-width: 1439px) {
+  .header__burger::after, .header__burger::before {
+    width: 36px;
+  }
+}
+@media (max-width: 1179px) {
+  .header__burger::after, .header__burger::before {
+    width: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .header__burger::after, .header__burger::before {
+    width: 20px;
+  }
+}
+.header__burger::after {
+  top: -10px;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+.header__burger::before {
+  top: 10px;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+.header__burger.active {
+  background-color: transparent;
+}
+.header__burger.active::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+.header__burger.active::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+.header__burger-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 23px;
+  cursor: pointer;
 }
 
 .footer {
@@ -1454,8 +1510,8 @@ h3 {
     background-color: #F2F2F2;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 8px;
-    margin-bottom: -17px;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
     cursor: grab;
   }
 }
