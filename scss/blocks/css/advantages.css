@@ -1,0 +1,38 @@
+.advantages h2 {
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 1919px) {
+  .advantages h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 1439px) {
+  .advantages h2 {
+    font-size: 35px;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1179px) {
+  .advantages h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages h2 {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+}
+.advantages__text {
+  margin-bottom: 15px;
+}/*# sourceMappingURL=advantages.css.map */

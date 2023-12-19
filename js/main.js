@@ -1,23 +1,32 @@
 const accordion = document.querySelectorAll("[data-accordion]");
-const anchors = document.querySelectorAll("[anchorButton]");
-const burger = document.querySelector(".header__burger-wrapper");
+const anchors = document.querySelectorAll("[data-id='anchorButton']");
+
+
 
 accordion.forEach(accordionTitle => {
     accordionTitle.addEventListener("click", () => {
         accordionTitle.classList.toggle('active');
-        accordionTitle.lastElementChild.classList.toggle("hidden")
+        accordionTitle.children[0].classList.toggle("active");
+        accordionTitle.lastElementChild.classList.toggle("hidden");
     })
 })
+
 
 anchors.forEach(anchor => {
     anchor.addEventListener("click", () => {
         anchors.forEach(anchor => {
-            anchor.classList.remove("active")
+            anchor.classList.remove("active");
         })
         anchor.classList.add('active');
     })
 })
 
-burger.addEventListener("click", () => {
-    document.querySelector('.header__burger').classList.toggle("active");
-})
+
+
+// const flag = document.querySelector("#flag");
+// const submitBtn = document.querySelector("#submitButton");
+
+
+// if (flag.checked) {
+//     submitBtn.disabled = false;
+// } else { submitBtn.disabled = true;}

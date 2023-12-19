@@ -1,0 +1,60 @@
+.hero {
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: $brand-color;
+        padding: 40px 85px 40px 20px;
+    }
+
+    &__logo {
+        margin-right: 242px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        color: $white-color;
+
+        p {
+            white-space: pre-line;
+            font-size: 35px;
+            line-height: 44px;
+            letter-spacing: 0.03em;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        span {
+            font-weight: 300;
+        }
+
+        a {
+            display: flex;
+            // position: relative;
+            position: absolute;
+            right: 140px;
+            bottom: 50px;
+
+            color: $white-color;
+
+            &::after {
+                // position: absolute;
+                display: block;
+                background-image: url("./../img/main/arrow.svg");
+                background-repeat: no-repeat;
+                content: "";
+                width: 21px;
+                height: 20px;
+                margin-left: 11px;
+                margin-top: 13px;
+            }
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
+    }
+
+}

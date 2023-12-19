@@ -55,10 +55,6 @@
 
         li:not(:last-child) {
             margin-right: 45px;
-
-            @media (max-width: 1439px) {
-                margin-right: 20px;
-            }
         }
 
         li a {

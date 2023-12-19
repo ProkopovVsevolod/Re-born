@@ -150,7 +150,7 @@
         }
     
         @media (max-width: 767px) {
-            padding-top: 20px;
+            padding-top: 35px;
             margin-left: 0px;
             width: 100%;
         }
@@ -242,6 +242,7 @@
         }
 
         &--inner {
+            padding-top: 20px;
             p {
                 &:first-child {
                     font-weight: 300;

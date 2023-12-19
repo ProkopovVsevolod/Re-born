@@ -64,6 +64,26 @@ body > * {
 
 }
 
+main {
+    margin-top: 165px;
+
+    @media (max-width: 1919px) {
+        margin-top: 98px;
+    }
+
+    @media (max-width: 1439px) {
+        margin-top: 108px;
+    }
+
+    @media (max-width: 1179px) {
+        margin-top: 70px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 76px;
+    }
+}
+
 .hidden {
     display: none;
     opacity: 0;
