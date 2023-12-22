@@ -1,0 +1,40 @@
+.main-block {
+    margin-bottom: 85px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        width: 628px;
+        margin-top: 150px;
+
+        h1 {
+            color: $black-color;
+            margin-bottom: 10px;
+
+            span {
+                color: $white-color;
+                background-color: $brand-color;
+            }
+        };
+    }
+
+    &__accent-text {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 35px;
+        letter-spacing: 0.1em;
+        margin-bottom: 25px;
+    }
+
+    &__description {
+        font-weight: 300;
+        width: 554px;
+    }
+
+    &__img-wrapper {
+
+    }
+}

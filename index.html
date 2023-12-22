@@ -39,27 +39,33 @@
 
     <main>
 
-        <!-- <div class="">
+        <div class="main-block">
             <div class="container">
-                <div>
-                    <p>
-                        Интернет-маркетинг генерирующий
-                        <span>
-                            прибыль для бизнеса,
-                        </span>
-                    </p>
-
-                    <p>
-                        Разрабатываем и реализуем эффективные стратегии
-                        продвижения для привлечения клиентов по всему миру
-                    </p>
+                <div class="main-block__wrapper">
+                    <div class="main-block__text">
+                        <h1>
+                            Интернет-маркетинг генерирующий
+                            <span>
+                                прибыль для бизнеса,
+                            </span>
+                        </h1>
+                        <p class="main-block__accent-text">
+                            а не показатели "метрик"
+                        </p>
+    
+                        <p class="main-block__description">
+                            Разрабатываем и реализуем эффективные стратегии
+                            продвижения для привлечения клиентов по всему миру
+                        </p>
+                    </div>
+    
+                    <div class="main-block__img-wrapper">
+                        <img src="./img/main/main-img.png" alt="Прибыль для бизнеса">
+                    </div>
                 </div>
-
-                <div>
-                    <img src="./img/main/main-img.png" alt="Прибыль для бизнеса">
-                </div>
+                
             </div>
-        </div> -->
+        </div>
 
         <div class="principles">
             <div class="container">
@@ -114,24 +120,6 @@
             </div>
         </div>
 
-        <div class="projects">
-            <div class="container">
-                <h1>ПРОЕКТЫ</h1>
-
-                <div class="projects__row">
-                    <div class="projects__card">
-                        <a href="#">Узнать подробнее</a>
-                        <p class="projects__title">Строительные и отделочные работы</p>
-                        <img src="./img/main/our-projects/building.png" alt="Строительные и отделочные работы">
-                    </div>
-
-                    <div class="projects__card">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="advantages">
             <div class="container">
                 <section class="advantages__section">
@@ -181,6 +169,121 @@
                     </div>
                     
                 </section>
+            </div>
+        </div>
+
+        
+
+        <div class="feedback">
+            <div class="container">
+                <div class="feedback__wrapper">
+                    <p class="feedback__title">Оставте заявку</p>
+                    <div class="feedback__content">
+                    
+                        <div class="feedback__square-wrapper">
+                            <div class="feedback__square-first"></div>
+                            <div class="feedback__square-second"></div>
+                            <div class="feedback__square-third"></div>
+                        </div>
+                        
+                        <form class="form">
+                            <p class="feedback__subtitle">и мы свяжемся с вами</p>
+                            <p class="form__subtitle">Контактная информация</p>
+    
+                            <div class="form__column">
+                                <div class="form__data">
+                                    <div class="form__input-wrapper">
+                                        <input class="input" id="name" type="text" placeholder="Ваше имя *" required>
+                                        <input class="input required-input-email" id="email" type="email" placeholder="Email *" required>
+                                    </div>
+                                    
+                                    <div class="form__input-wrapper">
+                                        <input class="input required-input-phone" id="phone" type="tel" placeholder="Номер телефона *" required>
+                                        <input class="input " id="company"  placeholder="Компания" type="text">
+                                    </div>
+                                </div>
+    
+                                <div class="form__content">
+                                    <p class="form__subtitle">Опишите вашу задачу</p>
+                
+                                    <textarea class="form__textarea" cols="30" rows="5" placeholder="несколько слов о вашей задаче"></textarea>
+                                    <button class="button button--middle">Отправить</button>
+        
+                                    <p class="form__politics">
+                                        Нажимая на кнопку, вы даете согласие на обработку 
+                                        <a href="#">персональных данных</a> и соглашаетесь
+                                        с <a href="#">политикой конфиденциальности.</a>
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </form> 
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="we-can">
+            <div class="container">
+                <div class="we-can__content">
+                    <h3>что мы умеем?</h3>
+                    <a href="#">Перейти</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="container">
+                <h1>ПРОЕКТЫ</h1>
+
+                <div class="projects__row">
+                    <div class="projects__card">
+                        <div class="projects__title">
+                            <a href="#">Узнать подробнее</a>
+                            <p>Строительные и отделочные работы</p>
+                        </div>
+                        <img src="./img/main/our-projects/building.png" alt="Строительные и отделочные работы">
+                    </div>
+
+                    <div class="projects__card projects__card--small">
+                        <div class="projects__title">
+                            <a class="projects__link"href="#">Узнать подробнее</a>
+                            <p>Чай, кофе и аксессуары</p>
+                        </div>
+                        
+                        <img src="./img/main/our-projects/tea-coffee-accessories.png" alt="Чай, кофе и аксессуары">
+                    </div>
+                </div>
+
+                <div class="projects__row">
+                    <div class="projects__card">
+                        <div class="projects__title">
+                            <a href="#">Узнать подробнее</a>
+                            <p>Медицина и здоровье</p>
+                        </div>
+                        <img src="./img/main/our-projects/medicine.png" alt="Строительные и отделочные работы">
+                    </div>
+
+                    <div class="projects__card projects__card--small">
+                        <div class="projects__title">
+                            <a class="projects__link"href="#">Узнать подробнее</a>
+                            <p>Напольные покрытия</p>
+                        </div>
+                        
+                        <img src="./img/main/our-projects/floor-coverings.png" alt="Чай, кофе и аксессуары">
+                    </div>
+                </div>
+
+                <div class="projects__hero">
+                    <p class="projects__description">
+                        Мы не раскрываем для широкой публики 
+                        конфиденциальную информацию о наших клиентах без их разрешения.
+                    </p>
+
+                    <a class="button" href="#">Прочитать</a>
+                </div>
             </div>
         </div>
 
@@ -269,6 +372,17 @@
         <div class="footer__contacts">
             <p>Связаться с нами</p>
                 <ul class="footer__list">
+
+                    <li class="footer__list-item"> 
+                        <img class="footer__phone" src="./img/footer/phone.svg" alt="Телефон">
+                        <a href="#">+7 (495) 795-75-52</a>
+                    </li>
+
+                    <li class="footer__list-item"> 
+                        <img class="footer__dog" src="./img/footer/dog.svg" alt="Почта">
+                        <a href="#">hello@re-born.agency</a>
+                    </li>
+
                     <li class="footer__list-item">
                         <img class="footer__telegram" src="./img/footer/telegram.svg" alt="Телеграмм">
                         <a href="#">@agency_reborn</a>
@@ -277,17 +391,7 @@
                     <li class="footer__list-item">
                         <img class="footer__whatsapp" src="./img/footer/whatsapp.svg" alt="whatsapp">
                         <a href="#">+7 (903) 795-75-52</a>
-                    </li>
-
-                    <li class="footer__list-item"> 
-                        <img class="footer__dog" src="./img/footer/dog.svg" alt="Почта">
-                        <a href="#">hello@re-born.agency</a>
-                    </li>
-
-                    <li class="footer__list-item"> 
-                        <img class="footer__phone" src="./img/footer/phone.svg" alt="Телефон">
-                        <a href="#">+7 (495) 795-75-52</a>
-                    </li>
+                    </li>             
                 </ul>
         </div>
 

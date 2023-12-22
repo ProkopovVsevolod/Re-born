@@ -377,6 +377,17 @@
         }
     }
 
+    &__content {
+        width: 667px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 

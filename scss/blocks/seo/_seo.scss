@@ -230,12 +230,14 @@
 
                     @media (max-width: 1179px) {
                         bottom: -15px;
+                        right: -15px;
                     }
 
                     @media (max-width: 767px) {
                         width: 15px;
                         height: 15px;
                         bottom: 0px;
+                        
                     }
                 }
             }          
@@ -885,7 +887,7 @@
     }
 
     &__stage-desc {
-        width: 570px;
+        width: 630px;
         font-weight: 300;
         letter-spacing: 0.05em;
         margin-right: 30px;
@@ -900,7 +902,7 @@
         }
 
         &:nth-child(1) {
-            margin-left: 140%;
+            margin-left: 130%;
 
             @media (max-width: 1919px) {
                 margin-left: 55%;
@@ -923,6 +925,7 @@
             }
 
             p:first-child {
+                margin-right: 15px;
                 &::after {
                     top: 35px;
                     left: 7px;
@@ -944,14 +947,20 @@
     
                     }
                 }
+            }
+            
 
-                
+
+            h3 {
+                &::before {
+                    margin-left: 0;
+                }
             }
         }
 
         &:nth-child(3) {
             margin-top: -75px;
-            margin-left: 140%;
+            margin-left: 130%;
 
             @media (max-width: 1919px) {
                 margin-left: 55%;
@@ -991,84 +1000,9 @@
                     }
                 }
             }
-        }
 
-        & > p:first-child {
-            position: relative;
-            font-size: 45px;
-            font-weight: 400;
-            line-height: 60px;
-            width: 80%;
-            margin-bottom: 30px;
-            white-space: pre-line;
-            z-index: 2;
-
-            @media (max-width: 1919px) {
-                font-size: 40px;
-                line-height: 50px;
-            }
-
-            @media (max-width: 1439px) {
-                font-size: 30px;
-                line-height: 42px;
-            }
-
-            @media (max-width: 1179px) {
+            h3 {
                 
-                font-size: 24px;
-                line-height: 30px;
-            }
-
-            @media (max-width: 767px) {
-                width: 38%;
-                font-size: 22px;
-                letter-spacing: 0.05em;
-            }
-
-            &::after {
-                position: absolute;
-                display: block;
-                content: "";
-                width: 30px;
-                height: 15px;
-                top: 34px;
-                left: 38px;
-                background-color: $brand-color;
-                z-index: -1;
-
-                @media (max-width: 1919px) {
-                    top: 29px;
-                    left: 34px;
-                }
-    
-                @media (max-width: 1439px) {
-                    top: 23px;
-                    left: 29px;
-                    width: 18px;
-                    height: 12px;
-                }
-    
-                @media (max-width: 1179px) {
-                    top: 16px;
-                    left: 24px;
-                    width: 16px;
-                    height: 10px;
-                }
-    
-                @media (max-width: 767px) {
-                    width: 12px;
-                    height: 8px;
-                }
-            }
-
-            &::before {
-                bottom: -15px;
-                position: absolute;
-                display: block;
-                content: "";
-                width: 120px;
-                height: 1px;
-                background-color: $black-color;
             }
         }
 
@@ -1149,6 +1083,119 @@
                 border-bottom: 1px solid $brand-color !important;
                 border-right: 1px solid $brand-color !important;
                 transition: all 1s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+            }
+        }
+    }
+
+    &__stage-title {
+        margin-bottom: 30px;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 57px;
+
+        @media (max-width: 1919px) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        @media (max-width: 1439px) {
+            font-size: 30px;
+            line-height: 42px;
+        }
+
+        @media (max-width: 1179px) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        @media (max-width: 767px) {
+            width: 38%;
+            font-size: 22px;
+            letter-spacing: 0.05em;
+        }
+
+        p {
+            position: relative;
+            width: fit-content;
+            float: left;
+            margin-right: 7px;
+            z-index: 2;
+
+            @media (max-width: 1919px) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            @media (max-width: 1439px) {
+                font-size: 30px;
+                line-height: 42px;
+            }
+
+            @media (max-width: 1179px) {
+                
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            @media (max-width: 767px) {
+                width: 38%;
+                font-size: 22px;
+                letter-spacing: 0.05em;
+            }
+
+            &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                width: 30px;
+                height: 15px;
+                top: 34px;
+                left: 38px;
+                background-color: $brand-color;
+                z-index: -1;
+
+                @media (max-width: 1919px) {
+                    top: 29px;
+                    left: 34px;
+                }
+    
+                @media (max-width: 1439px) {
+                    top: 23px;
+                    left: 29px;
+                    width: 18px;
+                    height: 12px;
+                }
+    
+                @media (max-width: 1179px) {
+                    top: 16px;
+                    left: 24px;
+                    width: 16px;
+                    height: 10px;
+                }
+    
+                @media (max-width: 767px) {
+                    width: 12px;
+                    height: 8px;
+                }
+            }
+
+            
+        }
+
+        h3 {
+            position: relative;
+            white-space: pre-line;
+            font-size: 42px !important;
+            line-height: 57px;
+
+            &::before {
+                position: absolute;
+                bottom: -15px;
+                left: 0px;
+                content: "";
+                width: 120px;
+                height: 1px;
+                background-color: $black-color;
             }
         }
     }

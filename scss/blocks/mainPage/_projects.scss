@@ -1,3 +1,89 @@
 .projects {
-    
+    margin-bottom: 85px;
+
+    h1 {
+        text-align: center;
+        color: $brand-color;
+        margin-bottom: 45px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 65px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        width: 49%;
+        border-top: 1px solid $black-color;
+        padding-top: 25px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        a {
+            display: flex;
+            color: $brand-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &::after {
+                content: "";
+                background-image: url("./../img/main/arrow-projects.svg");
+                background-repeat: no-repeat;
+                display: block;
+                height: 20px;
+                width: 22px;
+                margin-left: 15px;
+                margin-top: 13px;
+            }
+        }
+        
+        p {
+            text-align: end;
+            width: 469px;
+            font-size: 42px;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    &__hero {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        a {
+            padding: 80px 33px;
+
+        }
+    }
+
+    &__description {
+        position: relative;
+        width: 40%;
+        font-size: 35px;
+        line-height: 50px;
+        letter-spacing: 0.05px;
+        margin-right: 230px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 320px;
+            height: 20px;
+            background-image: url("./../img/main/arrow-projects-long.png");
+            background-repeat: no-repeat;
+            right: -115px;
+            bottom: 20px;
+        }
+    }
 }
