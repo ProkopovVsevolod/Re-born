@@ -1,16 +1,60 @@
 .hero {
-    margin-bottom: 85px;    
+    margin-bottom: 85px;
+    
+    @media (max-width: 1919px) {
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 1439px) {
+        margin-bottom: 50px;
+    }
 
     &__wrapper {
         position: relative;
         display: flex;
         align-items: center;
         background-color: $brand-color;
-        padding: 40px 85px 40px 20px;
+        padding: 45px 85px 45px 32px;
+
+        @media (max-width: 1919px) {
+            padding: 40px 60px 40px 30px;
+        }
+    
+        @media (max-width: 1439px) {
+            padding: 40px 60px 40px 20px;
+        }
+    
+        @media (max-width: 1179px) {
+            padding: 30px 40px 30px 20px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 20px 35px 30px 35px;
+            flex-direction: column;
+            align-items: normal;
+        }
     }
 
     &__logo {
         margin-right: 242px;
+
+        @media (max-width: 1919px) {
+            width: 460px;
+        }
+    
+        @media (max-width: 1439px) {
+            margin-right: 140px;
+            width: 356px;
+        }
+    
+        @media (max-width: 1179px) {
+            width: 275px;
+        }
+    
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+            width: 152px;
+        }
     }
 
     &__content {
@@ -20,11 +64,32 @@
 
         p {
             white-space: pre-line;
-            font-size: 35px;
-            line-height: 44px;
+            font-size: 50px;
+            line-height: 62px;
             letter-spacing: 0.03em;
             font-weight: 500;
             margin-bottom: 5px;
+
+            @media (max-width: 1919px) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+        
+            @media (max-width: 1439px) {
+                font-size: 35px;
+                line-height: 44px;
+            }
+        
+            @media (max-width: 1179px) {
+                font-size: 30px;
+                line-height: 36px;
+                margin-bottom: 10px;
+            }
+        
+            @media (max-width: 767px) {
+                font-size: 25px;
+                line-height: 32px;
+            }
         }
 
         span {
@@ -33,12 +98,26 @@
 
         a {
             display: flex;
-            // position: relative;
             position: absolute;
             right: 140px;
             bottom: 50px;
-
             color: $white-color;
+
+            @media (max-width: 1919px) {
+                bottom: 45px;
+            }
+        
+            @media (max-width: 1439px) {
+                bottom: 30px;
+            }
+        
+            @media (max-width: 1179px) {
+                bottom: 7px;
+            }
+        
+            @media (max-width: 767px) {
+
+            }
 
             &::after {
                 // position: absolute;
@@ -50,6 +129,18 @@
                 height: 20px;
                 margin-left: 11px;
                 margin-top: 13px;
+
+                @media (max-width: 1919px) {
+                    margin-top: 8px;
+                }
+
+                @media (max-width: 1179px) {
+                    margin-top: 4px;
+                }
+
+                @media (max-width: 767px) {
+                    
+                }
             }
 
             &:hover {

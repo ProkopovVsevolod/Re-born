@@ -9,7 +9,8 @@
 
     &__row {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        
         margin-bottom: 65px;
     }
 
@@ -17,9 +18,17 @@
         display: flex;
         flex-direction: column;
         justify-content:space-between;
-        width: 49%;
+        width: 962px;
         border-top: 1px solid $black-color;
         padding-top: 25px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__card--small {
+        width: 838px;
     }
 
     &__title {
@@ -73,7 +82,7 @@
         font-size: 35px;
         line-height: 50px;
         letter-spacing: 0.05px;
-        margin-right: 230px;
+        margin-right: 160px;
 
         &::after {
             content: "";
