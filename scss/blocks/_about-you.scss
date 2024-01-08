@@ -334,7 +334,8 @@
         font-weight: 300;
         margin-bottom: 25px;
         border: 1px solid #CCCCCD;
-        overflow: auto;
+        // overflow: auto;
+        width: 100%;
         
         @media (max-width: 1179px) {
             font-size: 14px;
@@ -381,6 +382,10 @@
         width: 667px;
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 1919px) {
+            width: 100%;
+        }
     }
     
     &__column {

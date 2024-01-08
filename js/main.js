@@ -7,6 +7,7 @@ accordion.forEach(accordionTitle => {
     accordionTitle.addEventListener("click", () => {
         accordionTitle.classList.toggle('active');
         accordionTitle.children[0].classList.toggle("active");
+        accordionTitle.children[1].classList.toggle("active");
         accordionTitle.lastElementChild.classList.toggle("hidden");
     })
 })

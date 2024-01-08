@@ -38,7 +38,8 @@
             line-height: 47px; 
         }
     
-        @media (max-width: 1439px) {
+        @media (max-width: 1439px) { 
+            width: 618px;  
             font-size: 30px;
             line-height: 44px;
         }
@@ -49,7 +50,9 @@
         }
     
         @media (max-width: 767px) {
-            width: 400px;
+            font-size: 20px;
+            line-height: 30px;
+            width: 310px;
         }
 
         &.active {
@@ -57,7 +60,7 @@
             width: 666px;
 
             @media (max-width: 1439px) {
-                width: 50%;        
+                width: 45%;        
             }
 
             @media (max-width: 767px) {
@@ -114,13 +117,11 @@
                     line-height: 40px;
                     font-weight: 300;
                     letter-spacing: 0.05em;
-                    margin-top: 40px;
-                    margin-left: 11%;
+                    margin-top: 80px;
                     width: 45%;
                     color: black;
 
                     @media (max-width: 1919px) {
-                        margin-left: 4%;
                         font-size: 20px;
                         line-height: 30px;
                         letter-spacing: 0.03em;
@@ -245,6 +246,16 @@
                 background-color: $brand-color;
                 transform: rotate(0deg);
                 transition: transform ease 0.2s;
+            }
+
+            @media (max-width: 1179px) {
+                
+                border: 2px solid $brand-color;
+            }
+        
+            @media (max-width: 767px) {
+            
+                border: 1px solid $brand-color;
             }
         }
     }
