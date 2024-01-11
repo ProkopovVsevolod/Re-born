@@ -32,6 +32,7 @@
         line-height: 57px;
         letter-spacing: 0.05em;
         width: 855px;
+        // width: 50%;
 
         @media (max-width: 1919px) {
             font-size: 35px;
@@ -57,11 +58,8 @@
 
         &.active {
             color: $brand-color;
-            width: 666px;
-
-            @media (max-width: 1439px) {
-                width: 45%;        
-            }
+            // width: 666px;
+            width: 50%;
 
             @media (max-width: 767px) {
                 width: 65%;
@@ -118,7 +116,7 @@
                     font-weight: 300;
                     letter-spacing: 0.05em;
                     margin-top: 80px;
-                    width: 45%;
+                    width: 50%;
                     color: black;
 
                     @media (max-width: 1919px) {

@@ -14,14 +14,14 @@
         display: flex;
         align-items: center;
         background-color: $brand-color;
-        padding: 45px 85px 45px 32px;
+        padding: 45px 40px 45px 32px;
 
         @media (max-width: 1919px) {
-            padding: 40px 60px 40px 30px;
+            padding: 40px 40px 40px 30px;
         }
     
         @media (max-width: 1439px) {
-            padding: 40px 60px 40px 20px;
+            padding: 40px 40px 40px 20px;
         }
     
         @media (max-width: 1179px) {
@@ -35,8 +35,15 @@
         }
     }
 
+    &__img-wrapper {
+        width: 50%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
     &__logo {
-        margin-right: 242px;
 
         @media (max-width: 1919px) {
             width: 460px;
@@ -61,7 +68,11 @@
         display: flex;
         flex-direction: column;
         color: $white-color;
+        width: 50%;
 
+        @media (max-width: 767px) {
+            width: 100%;
+        }
         p {
             white-space: pre-line;
             font-size: 50px;
@@ -87,6 +98,7 @@
             }
         
             @media (max-width: 767px) {
+                margin-bottom: 5px;
                 font-size: 25px;
                 line-height: 32px;
             }
@@ -94,6 +106,10 @@
 
         span {
             font-weight: 300;
+
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
         }
 
         a {
@@ -116,7 +132,7 @@
             }
         
             @media (max-width: 767px) {
-
+                right: 100px;
             }
 
             &::after {
@@ -139,7 +155,9 @@
                 }
 
                 @media (max-width: 767px) {
-                    
+                    background-image: url("./../img/main/arrow-small.png");
+                    margin-top: 7px;
+                    margin-left: 5px;
                 }
             }
 

@@ -73,9 +73,9 @@
     }
 
     @media (max-width: 767px) {
-        font-size: 10px;
-        padding: 6px 21px;;
-        line-height: 15px;
+        padding: 8px 21px;;
+        // line-height: normal;
+        line-height: 22px;
         letter-spacing: 0.01em;
     }
 }

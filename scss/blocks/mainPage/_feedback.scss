@@ -13,7 +13,7 @@
 
     &__wrapper {
         background-color: $black-color;
-        padding: 60px 250px 80px 125px;
+        padding: 60px 0px 80px 0px;
         color: $white-color;
 
         @media (max-width: 1919px) {
@@ -29,24 +29,23 @@
         }
 
         @media (max-width: 767px) {
-            padding: 20px 20px 20px 20px;
+            padding: 20px 20px 20px 0px;
         }
     }
+
 
     &__content {
         display: flex;
+        justify-content: space-between;
           
-        @media (max-width: 1439px) {
-            justify-content: space-between;     
-        }
-
     }
 
     &__form {
-        width: 670px; 
-        margin-left: 47%;
+        width: 50%; 
+        // margin-left: 47%;
         
         @media (max-width: 767px) {
+            width: 100%;
             margin-left: 5%;
         }
     }
@@ -59,15 +58,10 @@
             width: 100%;
         }
 
-        @media (max-width: 767px) {
-            margin-bottom: 20px;
-        }
-
     }
 
     &__title, &__subtitle {
         
-        margin-left: 34%;
         color: $white-color;
         font-size: 50px;
         line-height: 51px;
@@ -96,54 +90,47 @@
     }
 
     &__title {
-
-        @media (max-width: 1919px) {
-            
-        }
- 
-        @media (max-width: 1439px) {
-            
-        }
- 
-        @media (max-width: 1179px) {
-            
-        }
+        margin-left: 36%;
 
         @media (max-width: 767px) {
             margin-bottom: 0;
             margin-left: 5%;
+        }
+
+        
+    }
+    
+    &__border {
+        border-top: 1px solid $white-color;
+        padding-top: 20px;
+        width: 73%;
+
+        @media (max-width: 1919px) {
+            width: 100%;
         }
     }
 
     &__subtitle {
         margin-left: 0;
         margin-bottom: 35px;
-        padding-bottom: 25px;
-        border-bottom: 1px solid $white-color;
+       
         width: fit-content;
 
-        @media (max-width: 1919px) {
-            
-        }
- 
         @media (max-width: 1439px) {
-            padding-bottom: 20px;
             margin-bottom: 15px;
         }
- 
-        @media (max-width: 1179px) {
-            
-        }
-
         @media (max-width: 767px) {
-            // margin-left: 5%;
             padding-left: 5%;
         }
     }
 
     &__square-wrapper {
-        // width: 51%;
+        width: 50%;
         position: relative;
+
+        @media (max-width: 767px) {
+            width: 0%;
+        }
     }
 
     &__square-first {
