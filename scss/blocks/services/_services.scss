@@ -176,6 +176,14 @@
                     border: 1px solid $white-color;
                     z-index: 2;
 
+                    &:hover {
+                        background-color: rgba($white-color, 0.3);
+                    }
+            
+                    &:active {
+                        background-color: rgba($white-color, 0.6);
+                    }
+
                     transition:
                         color 1.5s ease-out
                         border 1.5s ease-out;
@@ -329,13 +337,13 @@
         margin-bottom: 12px;
         height: fit-content;
         
-        // &:first-child {
-        //     margin-bottom: 0;
-        // }
+        &:hover {
+            background-color: rgba($white-color, 0.3);
+        }
 
-        // &:not(:last-child) {
-        //     margin-bottom: 12px;
-        // }
+        &:active {
+            background-color: rgba($white-color, 0.6);
+        }
     }
 
     &__button {
@@ -364,6 +372,30 @@
         @media (max-width: 767px) {
             font-size: 14px;
             padding: 8px 68px;
+        }
+
+        &:hover {
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.05), 
+            rgba(0, 0, 0, 0.05)),
+            linear-gradient(0deg, #71BEAB, #71BEAB);
+        }
+    
+        &:active {
+            font-weight: 400;
+            padding: 13px 53px;
+    
+            @media (max-width: 1919px) {
+                padding: 10px 52px 10px 53px;
+            }
+
+            @media (max-width: 1439px) {
+                padding: 8px 53px;
+            }
+    
+            @media (max-width: 767px) {
+                padding: 8px 67px;
+            }
         }
     }
 }

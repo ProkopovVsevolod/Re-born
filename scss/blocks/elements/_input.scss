@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<<< HEAD:scss/blocks/elements/_input.scss
+
 .input {
     font-size: 20px;
     font-weight: 300;
@@ -9,7 +8,6 @@
     width: 330px;
     border-bottom: 2px solid #CCCCCD;
 
-    
     @media (max-width: 1179px) {
       padding: 8px 0px;
       font-size: 13px;
@@ -25,7 +23,6 @@
       border-bottom: 2px solid $brand-color;
     }
 }
-
 
 .checkbox {
     position: absolute;
@@ -116,9 +113,7 @@
     //   top: 40%;
     // }
   }
-========
-=======
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
+  
 .input {
     font-size: 20px;
     font-weight: 300;
@@ -136,15 +131,9 @@
     }
 
 
-<<<<<<< HEAD
     &:invalid {
       border-bottom: 2px solid red;
     }
-=======
-    // &:invalid {
-    //   border-bottom: 2px solid red;
-    // }
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
 
     &:active, &:focus {
       border-bottom: 2px solid $brand-color;
@@ -211,10 +200,7 @@
     top: 2px;
     left: 5px;
     transform: rotate(40deg);
-<<<<<<< HEAD
     display: block;
-=======
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
     content: "";
     width: 10px;
     height: 15px;
@@ -245,7 +231,3 @@
     //   top: 40%;
     // }
   }
-<<<<<<< HEAD
->>>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be:scss/blocks/_input.scss
-=======
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be

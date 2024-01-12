@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<<< HEAD:scss/blocks/elements/_titles.scss
+
 h1 {
     font-size: 65px;
     font-weight: 500;
@@ -79,90 +78,4 @@ h3 {
         font-size: 20px;
         line-height: 30px;
     }
-========
-=======
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
-h1 {
-    font-size: 65px;
-    font-weight: 500;
-    line-height: 85px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: $white-color;
-    
-    span {
-        background-color: $white-color;
-        color: $brand-color;
-    }
-
-    @media (max-width: 1919px) {
-        font-size: 53px;
-        letter-spacing: 0.05em;
-        line-height: 65px;
-    }
-
-    @media (max-width: 1179px) {
-        font-size: 50px;
-    }
-
-    @media (max-width: 767px) {
-        font-size: 30px;
-        line-height: 40px;
-    }
-}
-
-h2 { 
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 62px;
-    letter-spacing: 0.05em;
-    color: $brand-color;
-
-    @media (max-width: 1919px) {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    @media (max-width: 1439px) {
-        font-size: 35px;
-        line-height: 44px;
-        letter-spacing: 0.03em;
-    }
-
-    @media (max-width: 1179px) {
-        font-size: 30px;
-        line-height: 36px;
-    }
-
-    @media (max-width: 767px) {
-        font-size: 25px;
-        line-height: 32px;
-        letter-spacing: 0.05em;
-    }
-<<<<<<< HEAD
->>>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be:scss/blocks/_titles.scss
-=======
-}
-
-h3 {
-    font-size: 33px;
-    line-height: 47px;
-    letter-spacing: 0.05em;
-    font-weight: 400;
-
-    @media (max-width: 1919px) {
-        font-size: 26px;
-        line-height: 36px;
-    }
-    
-     @media (max-width: 1179px) {
-        font-size: 24px;
-        line-height: 30px;
-    }
-    
-    @media (max-width: 767px) {
-        font-size: 20px;
-        line-height: 30px;
-    }
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
 }
