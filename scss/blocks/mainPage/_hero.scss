@@ -1,3 +1,173 @@
+<<<<<<< HEAD
+.hero {
+    margin-bottom: 85px;
+    
+    @media (max-width: 1919px) {
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 1439px) {
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: $brand-color;
+        padding: 45px 40px 45px 32px;
+
+        @media (max-width: 1919px) {
+            padding: 40px 40px 40px 30px;
+        }
+    
+        @media (max-width: 1439px) {
+            padding: 40px 40px 40px 20px;
+        }
+    
+        @media (max-width: 1179px) {
+            padding: 30px 40px 80px 20px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 20px 35px 50px 35px;
+            flex-direction: column;
+            align-items: normal;
+        }
+    }
+
+    &__img-wrapper {
+        width: 50%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__logo {
+
+        @media (max-width: 1919px) {
+            width: 460px;
+        }
+    
+        @media (max-width: 1439px) {
+            margin-right: 140px;
+            width: 356px;
+        }
+    
+        @media (max-width: 1179px) {
+            width: 275px;
+        }
+    
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+            width: 152px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        color: $white-color;
+        width: 50%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        p {
+            white-space: pre-line;
+            font-size: 50px;
+            line-height: 62px;
+            letter-spacing: 0.03em;
+            font-weight: 500;
+            margin-bottom: 5px;
+
+            @media (max-width: 1919px) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+        
+            @media (max-width: 1439px) {
+                font-size: 35px;
+                line-height: 44px;
+            }
+        
+            @media (max-width: 1179px) {
+                font-size: 30px;
+                line-height: 36px;
+                margin-bottom: 10px;
+            }
+        
+            @media (max-width: 767px) {
+                margin-bottom: 5px;
+                font-size: 25px;
+                line-height: 32px;
+            }
+        }
+
+        span {
+            font-weight: 300;
+        }
+
+        a {
+            display: flex;
+            position: absolute;
+            right: 140px;
+            bottom: 50px;
+            color: $white-color;
+
+            @media (max-width: 1919px) {
+                bottom: 45px;
+            }
+        
+            @media (max-width: 1439px) {
+                bottom: 30px;
+            }
+        
+            @media (max-width: 1179px) {
+                right: 40px;
+                bottom: 25px;
+            }
+        
+            @media (max-width: 767px) {
+                bottom: 10px;
+                right: 70px;
+            }
+
+            &::after {
+                // position: absolute;
+                display: block;
+                background-image: url("./../img/main/arrow.svg");
+                background-repeat: no-repeat;
+                content: "";
+                width: 21px;
+                height: 20px;
+                margin-left: 11px;
+                margin-top: 13px;
+
+                @media (max-width: 1919px) {
+                    margin-top: 8px;
+                }
+
+                @media (max-width: 1179px) {
+                    margin-top: 4px;
+                }
+
+                @media (max-width: 767px) {
+                    background-image: url("./../img/main/arrow-small.png");
+                    margin-top: 7px;
+                    margin-left: 5px;
+                }
+            }
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+=======
 .hero {
     margin-bottom: 85px;
     
@@ -168,3 +338,4 @@
     }
 
 }
+>>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be

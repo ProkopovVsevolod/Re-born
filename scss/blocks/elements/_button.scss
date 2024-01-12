@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<<< HEAD:scss/blocks/elements/_button.scss
 .button {
     background-color: $brand-color;
     color: #FEFEFE;
@@ -79,3 +81,97 @@
         letter-spacing: 0.01em;
     }
 }
+========
+=======
+>>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
+.button {
+    background-color: $brand-color;
+    color: #FEFEFE;
+    padding: 37px 42px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+
+    &:hover {
+        background: linear-gradient(0deg, 
+        rgba(0, 0, 0, 0.05), 
+        rgba(0, 0, 0, 0.05)),
+        linear-gradient(0deg, #71BEAB, #71BEAB);
+    }
+
+    &:active {
+        font-weight: 500;
+        padding: 37px 38px;
+
+        @media (max-width: 1919px) {
+            padding: 15px 14px;
+        }
+
+        @media (max-width: 1179px) {
+            padding: 12px 7px 12px 8px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 6px 20px 6px 21px;
+        }
+    }
+
+    &--middle {
+        padding: 10px 0;
+
+        &:active {
+            padding: 15px 24px;
+
+            @media (max-width: 1179px) {
+                padding: 12px 24px;
+            }
+
+            @media (max-width: 767px) {
+                padding: 14px 24px;
+            }
+        }
+    }
+
+    &--small {
+        padding: 5px 38px 6px;
+
+        &:active {
+            padding: 5px 37px 6px;
+        }
+
+        @media (max-width: 1919px) {
+            padding: 3px 40px !important;
+        }
+    }
+
+    @media (max-width: 1919px) {
+        font-size: 18px;
+        line-height: 30px;
+        padding: 15px 16px;
+        letter-spacing: 0.03em;
+    }
+
+    @media (max-width: 1179px) {
+        font-size: 14px;
+        line-height: 28px;
+        padding: 12px 9px;
+    }
+
+    @media (max-width: 767px) {
+<<<<<<< HEAD
+        font-size: 10px;
+        padding: 6px 21px;;
+        line-height: 15px;
+        letter-spacing: 0.01em;
+    }
+}
+>>>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be:scss/blocks/_button.scss
+=======
+        padding: 8px 21px;;
+        // line-height: normal;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+    }
+}
+>>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
