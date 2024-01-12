@@ -1268,14 +1268,11 @@ h3 {
     width: 47%;
   }
 }
-<<<<<<< HEAD
 @media (max-width: 1179px) {
   .form__input-wrapper input {
     width: 46%;
   }
 }
-=======
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
 @media (max-width: 767px) {
   .form__input-wrapper input {
     width: 85%;
@@ -3958,20 +3955,12 @@ h3 {
 }
 @media (max-width: 1179px) {
   .hero__wrapper {
-<<<<<<< HEAD
     padding: 30px 40px 80px 20px;
-=======
-    padding: 30px 40px 30px 20px;
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
   }
 }
 @media (max-width: 767px) {
   .hero__wrapper {
-<<<<<<< HEAD
     padding: 20px 35px 50px 35px;
-=======
-    padding: 20px 35px 30px 35px;
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
     flex-direction: column;
     align-items: normal;
   }
@@ -4054,14 +4043,6 @@ h3 {
 .hero__content span {
   font-weight: 300;
 }
-<<<<<<< HEAD
-=======
-@media (max-width: 767px) {
-  .hero__content span {
-    margin-bottom: 15px;
-  }
-}
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
 .hero__content a {
   display: flex;
   position: absolute;
@@ -4081,22 +4062,14 @@ h3 {
 }
 @media (max-width: 1179px) {
   .hero__content a {
-<<<<<<< HEAD
     right: 40px;
     bottom: 25px;
-=======
-    bottom: 7px;
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
   }
 }
 @media (max-width: 767px) {
   .hero__content a {
-<<<<<<< HEAD
     bottom: 10px;
     right: 70px;
-=======
-    right: 100px;
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
   }
 }
 .hero__content a::after {
@@ -4461,10 +4434,7 @@ h3 {
 }
 @media (max-width: 1919px) {
   .projects__description::after {
-<<<<<<< HEAD
     bottom: 5px;
-=======
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
     width: 280px;
     background-image: url("./../img/main/arrow/arrow-1440.png");
   }
@@ -4472,11 +4442,7 @@ h3 {
 @media (max-width: 1439px) {
   .projects__description::after {
     right: -164px;
-<<<<<<< HEAD
     bottom: 3px;
-=======
-    bottom: 0px;
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
     width: 206px;
     background-image: url("./../img/main/arrow/arrow-1180.png");
   }
@@ -4513,7 +4479,6 @@ h3 {
   background-color: #71BEAB;
   text-align: center;
 }
-<<<<<<< HEAD
 @media (max-width: 1179px) {
   .we-can__content {
     padding: 30px 0;
@@ -4524,8 +4489,6 @@ h3 {
     padding: 14px 20px 14px 5%;
   }
 }
-=======
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
 .we-can h3 {
   font-size: 65px;
   line-height: 85px;
@@ -4572,25 +4535,16 @@ h3 {
 }
 .we-can a {
   display: block;
-<<<<<<< HEAD
   width: 37%;
   padding: 10px 0;
   background-color: #FEFEFE;
   color: #71BEAB;
   margin-left: 50%;
-=======
-  width: 40%;
-  padding: 10px 0;
-  background-color: #FEFEFE;
-  color: #71BEAB;
-  margin-left: 47%;
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
   font-weight: 300;
 }
 .we-can a:hover {
   background-color: rgb(245, 245, 245);
 }
-<<<<<<< HEAD
 @media (max-width: 1919px) {
   .we-can a {
     width: 48%;
@@ -4599,11 +4553,6 @@ h3 {
 @media (max-width: 767px) {
   .we-can a {
     width: 100%;
-=======
-@media (max-width: 767px) {
-  .we-can a {
-    width: 70%;
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
     margin-left: auto;
     margin-right: auto;
     padding: 8px 0;
@@ -5018,11 +4967,7 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-<<<<<<< HEAD
   background: url("./../img/services/bg-1.png") no-repeat;
-=======
-  background: url("./../../../img/services/bg-1.png") no-repeat;
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
   background-position: 100% 100%;
   background-size: cover;
   opacity: 0;
