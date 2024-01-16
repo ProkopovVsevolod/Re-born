@@ -169,30 +169,21 @@
 
             &:hover {
                 color: $white-color;
-                transition: color 1.5s ease-out;
+                transition: color 1.3s ease-out;
 
                 .services__hashtag {
                     color: $white-color;
                     border: 1px solid $white-color;
                     z-index: 2;
 
-                    &:hover {
-                        background-color: rgba($white-color, 0.3);
-                    }
-            
-                    &:active {
-                        background-color: rgba($white-color, 0.6);
-                    }
-
-                    transition:
-                        color 1.5s ease-out
-                        border 1.5s ease-out;
+                    transition: color 1.3s ease-out, border 1.3s ease-out;
+                    //     border 1.5s ease-out;
                 }
 
                 .services__title {
                     &::before {
                         background-color: $white-color;
-                        transition: background-color 1.5s ease-out;
+                        transition: background-color 1.3s ease-out;
                     }
                 }
             }
@@ -227,12 +218,12 @@
         }
 
         &--right {
-            transition: right 0.7s linear;
+            transition: right 1s linear;
             right: 0;   
         }
 
         &--left {
-            transition: left 0.7s linear;
+            transition: left 1s linear;
             left: 0;
         }
     }
@@ -344,6 +335,10 @@
         &:active {
             background-color: rgba($white-color, 0.6);
         }
+
+        transition: 
+            color 1.5s ease-out
+            border 1.5s ease-out;
     }
 
     &__button {

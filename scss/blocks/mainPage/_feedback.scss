@@ -1,4 +1,6 @@
 .feedback {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     margin-bottom: 85px;

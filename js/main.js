@@ -1,6 +1,22 @@
-<<<<<<< HEAD
 const accordion = document.querySelectorAll("[data-accordion]");
 const anchors = document.querySelectorAll("[data-id='anchorButton']");
+const dropbtn = document.querySelectorAll(".header__dropbtn");
+const dropdownContent = document.querySelector(".header__dropdown-content");
+
+
+console.log(dropbtn)
+dropbtn.forEach(button => {
+    button.addEventListener("mouseenter", (e) => {
+        console.log(e.target)
+        // dropdownContent.classList.add("active");
+        console.log(e.target.children[1].classList.add("active"))
+    })
+});
+
+dropdownContent.addEventListener("mouseleave", (e) => {
+    e.stopPropagation();
+    dropdownContent.classList.remove("active");   
+})
 
 
 
@@ -25,45 +41,4 @@ anchors.forEach(anchor => {
 
 
 
-// const flag = document.querySelector("#flag");
-// const submitBtn = document.querySelector("#submitButton");
 
-
-// if (flag.checked) {
-//     submitBtn.disabled = false;
-// } else { submitBtn.disabled = true;}
-=======
-const accordion = document.querySelectorAll("[data-accordion]");
-const anchors = document.querySelectorAll("[data-id='anchorButton']");
-
-
-
-accordion.forEach(accordionTitle => {
-    accordionTitle.addEventListener("click", () => {
-        accordionTitle.classList.toggle('active');
-        accordionTitle.children[0].classList.toggle("active");
-        accordionTitle.children[1].classList.toggle("active");
-        accordionTitle.lastElementChild.classList.toggle("hidden");
-    })
-})
-
-
-anchors.forEach(anchor => {
-    anchor.addEventListener("click", () => {
-        anchors.forEach(anchor => {
-            anchor.classList.remove("active");
-        })
-        anchor.classList.add('active');
-    })
-})
-
-
-
-// const flag = document.querySelector("#flag");
-// const submitBtn = document.querySelector("#submitButton");
-
-
-// if (flag.checked) {
-//     submitBtn.disabled = false;
-// } else { submitBtn.disabled = true;}
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be

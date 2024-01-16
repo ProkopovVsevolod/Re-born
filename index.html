@@ -13,17 +13,46 @@
                 <img class="header__logo" src="./img/header/logo.svg" alt="Логотип">
                 <nav>
                     <ul class="header__list">
-                        <li class="header__list-item"><a href="index.html">Главная</a></li>
-                        <li class="header__list-item"><a href="services.html">Услуги</a></li>
-                        <li class="header__list-item"><a href="about.html">О нас</a></li>
-                        <li class="header__list-item"><a href="contacts.html">Контакты</a></li>
+                        <li class="header__list-item"><a class="header__links" href="index.html">Главная</a></li>
+                        <li class="header__list-item header__dropbtn"><a class="header__links" href="services.html">Услуги</a>
+                            <div class="header__dropdown-content">
+                                <ul>
+                                    <li class="header__dropbtn-submenu"><a href="#">SEO-продвижение</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">SRM</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">SMM</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">PPC-реклама</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Реклама Google Adwords</a></li>
+                                                <li><a href="#">Реклама Яндекс Директ</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Perfomance-маркетинг</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Brand-маркетинг</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Web-дизайн</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Графический дизайн</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">SMM-дизайн</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Контент-маркетинг</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Promoution</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Аналитика</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Автоматизация бизнеса</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Консалтинг</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="header__list-item"><a class="header__links" href="about.html">О нас</a></li>
+                        <li class="header__list-item"><a class="header__links" href="contacts.html">Контакты</a></li>
                     </ul>
+
+                    
                 </nav>
 
                 <div class="header__other-nav">
                     <button class="button">Обсудить
                         проект</button>
-            
                     <span class="header__lang">RU</span>
 
                     
@@ -106,21 +135,18 @@
             </div>
         </div>
 
-        <div class="hero">
+        <div  class="hero">
             <div class="container">
                 <div class="hero__wrapper">
-                    <div class="hero__img-wrapper">
-                        <img src="./img/main/logo.svg" class="hero__logo" alt="Логотип">
+                    <div data-animation="start" class="hero__img">
+                        <!-- <img src="./img/main/logo.svg" class="hero__logo" alt="Логотип"> -->
+
                     </div>
                 
                     <div class="hero__content">
                         <p>Давайте обсудим
                             ваш проект?</p>
-<<<<<<< HEAD
                         <span>Это абсолютно бесплатно!</span>
-=======
-                        <span>Это абсолютно бессплатно!</span>
->>>>>>> ea19f0a9f0440b69cc6b413c9a19fc7b8dba21be
                         <a href="contacts.html">Наши контакты</a>
                     </div>
                 </div>
@@ -181,7 +207,7 @@
 
         
 
-        <div class="feedback">
+        <div data-animation="end" class="feedback">
             <div class="container">
                 <div class="feedback__wrapper">
                     <p class="feedback__title">Оставьте заявку</p>
@@ -424,5 +450,6 @@
 
     <script src="./js/burger.js"></script>
     <script src="./js/main.js"></script>
+    <!-- <script src="./js/servicesHover.js"></script> -->
 </body>
 </html>
