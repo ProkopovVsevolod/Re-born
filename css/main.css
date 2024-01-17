@@ -5067,6 +5067,10 @@ h3 {
     z-index: 2;
     transition: color 1.3s ease-out, border 1.3s ease-out;
   }
+  .services__card:nth-child(n):hover .services__title {
+    color: #FEFEFE;
+    transition: color 1.3s ease-out;
+  }
   .services__card:nth-child(n):hover .services__title::before {
     background-color: #FEFEFE;
     transition: background-color 1.3s ease-out;
@@ -5117,6 +5121,7 @@ h3 {
   line-height: 57px;
   letter-spacing: 0.05em;
   margin-bottom: 33px;
+  color: #1C1C1B;
 }
 @media (max-width: 1919px) {
   .services__title {

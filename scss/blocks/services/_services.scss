@@ -176,8 +176,11 @@
                     }
     
                     .services__title {
+                        color: $white-color;
+                        transition: color 1.3s ease-out;
                         &::before {
-                            background-color: $white-color;
+                            
+                            background-color: $white-color ;
                             transition: background-color 1.3s ease-out;
                         }
                     }
@@ -233,6 +236,7 @@
         line-height: 57px;
         letter-spacing: 0.05em;
         margin-bottom: 33px;
+        color: $black-color;
         
         @media (max-width: 1919px) {
             font-size: 35px;
