@@ -66,10 +66,6 @@
             padding: 40px 2% 40px 2%; 
         }
     
-        @media (max-width: 1439px) {
-            
-        }
-    
         @media (max-width: 1179px) {
             padding: 30px 2% 30px 2%;
         }
@@ -166,27 +162,28 @@
 
         &:nth-child(n) {
             position: relative;
-
-            &:hover {
-                color: $white-color;
-                transition: color 1.3s ease-out;
-
-                .services__hashtag {
+            @media(hover: hover) {
+                &:hover {
                     color: $white-color;
-                    border: 1px solid $white-color;
-                    z-index: 2;
-
-                    transition: color 1.3s ease-out, border 1.3s ease-out;
-                    //     border 1.5s ease-out;
-                }
-
-                .services__title {
-                    &::before {
-                        background-color: $white-color;
-                        transition: background-color 1.3s ease-out;
+                    transition: color 1.3s ease-out;
+    
+                    .services__hashtag {
+                        color: $white-color;
+                        border: 1px solid $white-color;
+                        z-index: 2;
+    
+                        transition: color 1.3s ease-out, border 1.3s ease-out;
+                    }
+    
+                    .services__title {
+                        &::before {
+                            background-color: $white-color;
+                            transition: background-color 1.3s ease-out;
+                        }
                     }
                 }
             }
+            
 
             &::after {
                 content: "";
@@ -199,10 +196,12 @@
                 transition: opacity 1s ease; 
                 z-index: -1;
             }
-
-            &:hover::after {                               
-                opacity: 1;
-            }    
+            @media(hover: hover) {
+                &:hover::after {                               
+                    opacity: 1;
+                } 
+            }
+               
         }   
     }
 
@@ -218,12 +217,12 @@
         }
 
         &--right {
-            transition: right 1s linear;
+            transition: right .8s linear;
             right: 0;   
         }
 
         &--left {
-            transition: left 1s linear;
+            transition: left .8s linear;
             left: 0;
         }
     }

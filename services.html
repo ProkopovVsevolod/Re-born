@@ -13,17 +13,46 @@
                 <img class="header__logo" src="./img/header/logo.svg" alt="Логотип">
                 <nav>
                     <ul class="header__list">
-                        <li class="header__list-item"><a href="index.html">Главная</a></li>
-                        <li class="header__list-item"><a href="services.html">Услуги</a></li>
-                        <li class="header__list-item"><a href="about.html">О нас</a></li>
-                        <li class="header__list-item"><a href="contacts.html">Контакты</a></li>
+                        <li class="header__list-item"><a class="header__links" href="index.html">Главная</a></li>
+                        <li class="header__list-item header__dropbtn"><a class="header__links" href="services.html">Услуги</a>
+                            <div class="header__dropdown-content">
+                                <ul>
+                                    <li class="header__dropbtn-submenu"><a href="#">SEO-продвижение</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">SRM</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">SMM</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">PPC-реклама</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Реклама Google Adwords</a></li>
+                                                <li><a href="#">Реклама Яндекс Директ</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Perfomance-маркетинг</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Brand-маркетинг</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Web-дизайн</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Графический дизайн</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">SMM-дизайн</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Контент-маркетинг</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Promoution</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Аналитика</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Автоматизация бизнеса</a></li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Консалтинг</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="header__list-item"><a class="header__links" href="about.html">О нас</a></li>
+                        <li class="header__list-item"><a class="header__links" href="contacts.html">Контакты</a></li>
                     </ul>
+
+                    
                 </nav>
 
                 <div class="header__other-nav">
                     <button class="button">Обсудить
                         проект</button>
-            
                     <span class="header__lang">RU</span>
 
                     
@@ -41,7 +70,7 @@
 
         <section class="services">
             <div class="services__card">
-                <p class="services__title">SEO-продвижение</p>
+                <h2 class="services__title">SEO-продвижение</h2>
                 <p class="services__text">
                     Привлечем клиентов из поисковых систем, увеличим трафик на сайт, 
                     поможем расширить целевую аудиторию и получать постоянный поток заявок 
@@ -67,7 +96,7 @@
         <section class="services">           
             <div class="services__card-wrapper">
                 <div class="services__card services__card--left">
-                    <p class="services__title">SERM</p>
+                    <h2 class="services__title">SERM</h2>
                     <p class="services__text">
                         Отследим упоминания бренда, популяризируем положительные отзывы,
                         удалим негатив из ТОПа поисковых систем. Поможем восстановить репутацию.
@@ -84,7 +113,7 @@
                 </div>
     
                 <div class="services__card services__card--right">
-                    <p class="services__title">SMM</p>
+                    <h2 class="services__title">SMM</h2>
                     <p class="services__text">
                         Привлечем и удержим клиентов, увеличим продажи в социальных сетях 
                         с помощью разных инструментов: таргетированная реклама, постинг, 
@@ -110,7 +139,7 @@
         
         <section class="services ">
             <div class="services__card services__card--right services__card--long">
-                <p class="services__title">РРС-реклама</p>
+                <h2 class="services__title">РРС-реклама</h2>
                 <p class="services__text services__text--inner">
                     Разработаем и запустим рекламную кампанию, 
                     оптимизируем ставки, сократим расходы на привлечение клиентов, 
@@ -131,7 +160,7 @@
         <section class="services">
             <div class="services__card-wrapper">
                 <div class="services__card services__card--left">
-                    <p class="services__title">Performance Marketing</p>
+                    <h2 class="services__title">Performance Marketing</h2>
                     <p class="services__text">
                         Выстроим эффективную систему из всех доступных каналов 
                         маркетинга для достижения измеримых финансовых показателей 
@@ -149,7 +178,7 @@
                 </div>
         
                 <div class="services__card services__card--right">
-                        <p class="services__title">Brand Marketing</p>
+                        <h2 class="services__title">Brand Marketing</h2>
                         <p class="services__text">
                             Сформируем позиционирование, укрепим положительный образ бренда 
                             через создание ассоциаций и донесение ценности компании до потенциальных клиентов.
@@ -167,7 +196,7 @@
 
         <section class="services">
             <div class="services__card">
-                <p class="services__title">Web-дизайн</p>
+                <h2 class="services__title">Web-дизайн</h2>
                 <p class="services__text">
                     Разработаем персонализированную бренд-систему,  
                     создадим UI любой сложности и оптимизируем UX для 
@@ -191,7 +220,7 @@
         <section class="services">
             <div class="services__card-wrapper">
                 <div class="services__card services__card--left">
-                    <p class="services__title">Графический дизайн</p>
+                    <h2 class="services__title">Графический дизайн</h2>
                     <p class="services__text">
                         Создадим визуальную оболочку компании, устанавливающую 
                         связь с клиентами через визуализацию ценностей и смыслов бренда
@@ -209,25 +238,25 @@
                 </div>
         
                 <div class="services__card services__card--right">
-                        <p class="services__title">SMM-дизайн</p>
-                        <p class="services__text">
-                            Сформируем позиционирование в социальных сетях через раскрытие 
-                            смыслов компании в коммуникационном дизайне.
-                        </p>
+                    <h2 class="services__title">SMM-дизайн</h2>
+                    <p class="services__text">
+                        Сформируем позиционирование в социальных сетях через раскрытие 
+                        смыслов компании в коммуникационном дизайне.
+                    </p>
             
-                        <div class="services__hashtags-wrapper">
-                            <a href="#" class="services__hashtag"># Оформление социальных сетей</a>
-                            <a href="#" class="services__hashtag"># Рекламные креативы</a>
-                        </div>
+                    <div class="services__hashtags-wrapper">
+                        <a href="#" class="services__hashtag"># Оформление социальных сетей</a>
+                        <a href="#" class="services__hashtag"># Рекламные креативы</a>
+                    </div>
             
-                        <a class="services__button" href="#">Подробнее</a>
+                    <a class="services__button" href="#">Подробнее</a>
                 </div>
             </div>        
         </section>
 
         <section class="services">
             <div class="services__card services__card--right services__card--long">
-                <p class="services__title">Контент-маркетинг</p>
+                <h2 class="services__title">Контент-маркетинг</h2>
                 <p class="services__text">
                     Разработаем контент-план и создадим уникальные и 
                     качественные тексты, которые привлекут и заинтересуют 
@@ -248,7 +277,7 @@
 
         <section class="services">
             <div class="services__card">
-                <p class="services__title">Promoution</p>
+                <h2 class="services__title">Promoution</h2>
                 <p class="services__text">
                     Увеличим ваши продажи и количество клиентов за счет 
                     эффективных и уникальных рекламных мероприятий, которые 
@@ -269,7 +298,7 @@
         <section class="services">
             <div class="services__card-wrapper">
                 <div class="services__card services__card--left">
-                    <p class="services__title">Аналитика</p>
+                    <h2 class="services__title">Аналитика</h2>
                     <p class="services__text">
                         Внедрим систему сквозной аналитики, сэкономим деньги на 
                         неэффективных рекламных каналах, поможем понять полный путь 
@@ -286,28 +315,28 @@
                 </div>
         
                 <div class="services__card services__card--right">
-                        <p class="services__title">Автоматизация бизнеса</p>
-                        <p class="services__text">
-                            Внедрим необходимые отраслевые CRM и ERP-системы, 
-                            настроим сервисы бизнес-аналитики, поможем автоматизировать 
-                            цикличные бизнес-процессы.
-                        </p>
+                    <h2 class="services__title">Автоматизация бизнеса</h2>
+                    <p class="services__text">
+                        Внедрим необходимые отраслевые CRM и ERP-системы, 
+                        настроим сервисы бизнес-аналитики, поможем автоматизировать 
+                        цикличные бизнес-процессы.
+                    </p>
             
-                        <div class="services__hashtags-wrapper">
-                            <a href="#" class="services__hashtag"># Внедрение ERP</a>
-                            <a href="#" class="services__hashtag"># Внедрение CRM</a>
-                            <a href="#" class="services__hashtag"># Автоматизация бизнес-процессов</a>
-                            <a href="#" class="services__hashtag"># Внедрение Битрикс24</a>
-                        </div>
+                    <div class="services__hashtags-wrapper">
+                        <a href="#" class="services__hashtag"># Внедрение ERP</a>
+                        <a href="#" class="services__hashtag"># Внедрение CRM</a>
+                        <a href="#" class="services__hashtag"># Автоматизация бизнес-процессов</a>
+                        <a href="#" class="services__hashtag"># Внедрение Битрикс24</a>
+                    </div>
             
-                        <a class="services__button" href="#">Подробнее</a>
+                    <a class="services__button" href="#">Подробнее</a>
                 </div>
             </div>       
         </section>
 
         <section class="services">
             <div class="services__card">
-                <p class="services__title">Консалтинг</p>
+                <h2 class="services__title">Консалтинг</h2>
                 <p class="services__text">
                     Поделимся опытом и экспертизой, накопленными за все время 
                     существования нашей компании, по всем направлениям предоставляемых нами услуг.

@@ -63,12 +63,12 @@
 
 
     &__img {
-        background: url("./../img/main/logo.svg") no-repeat;
-        background-size: cover;
+        // background: url("./../img/main/logo.svg") no-repeat;
+        // background-size: cover;
         width: 50%;
-        width: 595px;
-        height: 232px;
-        margin-right: 291px;
+        // width: 595px;
+        // height: 232px;
+        // margin-right: 291px;
 
         @media (max-width: 767px) {
             width: 100%;
