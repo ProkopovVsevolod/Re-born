@@ -4,19 +4,19 @@ const dropbtn = document.querySelectorAll(".header__dropbtn");
 const dropdownContent = document.querySelector(".header__dropdown-content");
 
 
-console.log(dropbtn)
-dropbtn.forEach(button => {
-    button.addEventListener("mouseenter", (e) => {
-        console.log(e.target)
-        // dropdownContent.classList.add("active");
-        console.log(e.target.children[1].classList.add("active"))
-    })
-});
+// console.log(dropbtn)
+// dropbtn.forEach(button => {
+//     button.addEventListener("mouseenter", (e) => {
+//         console.log(e.target)
+//         // dropdownContent.classList.add("active");
+//         console.log(e.target.children[1].classList.add("active"))
+//     })
+// });
 
-dropdownContent.addEventListener("mouseleave", (e) => {
-    e.stopPropagation();
-    dropdownContent.classList.remove("active");   
-})
+// dropdownContent.addEventListener("mouseleave", (e) => {
+//     e.stopPropagation();
+//     dropdownContent.classList.remove("active");   
+// })
 
 
 

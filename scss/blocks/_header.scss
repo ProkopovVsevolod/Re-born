@@ -25,24 +25,38 @@
     &__dropbtn {  
         font-family: inherit; /* Важно для вертикального выравнивания на мобильных телефонах */
         margin: 0; /* Важно для вертикального выравнивания на мобильных телефонах */
+
+        &:hover {
+            .header__dropdown-content {
+                display: block;
+                transform: rotateX(0deg);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
     }
 
     &__dropdown-submenu {
-        display: none;
         position: absolute;
+        left: 100%;
         top: 0%;
-        right: -80%;
         background-color: #F4F7F7;
-        // min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        width: 400px;
+
         z-index: 1;
 
+        visibility: hidden;
+        opacity: 0; 
+        transform-origin: 0% 0%;
+        transform: rotateX(-90deg);
+        transition: .3s linear;  
+
         @media (max-width: 1919px) {
-            right: -83%;
+            right: -303px;
         }
 
         @media (max-width: 1439px) {
-            
+            right: -302px;
         }
 
         a {
@@ -67,9 +81,11 @@
                 color: $brand-color;
             }
             
-            
             .header__dropdown-submenu {
                 display: block;
+                transform: rotateX(0deg);
+                visibility: visible;
+                opacity: 1;
             }
 
             &::after {
@@ -89,14 +105,19 @@
     }
 
     &__dropdown-content {
-        display: none;
         position: absolute;
 
         margin-top: 62px;
         background-color: $brand-color;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
+        
+        z-index: 3;
+
+        visibility: hidden;
+        opacity: 0; 
+        transform-origin: 0% 0%;
+        transform: rotateX(-90deg);
+        transition: .3s linear;  
 
         @media (max-width: 1919px) {
             margin-top: 35px;
@@ -110,26 +131,21 @@
         a {
             transition: .3s linear;
             color: #fff;
-            font-size: 22px ;
+            font-size: 22px;
             line-height: 34px;
             float: none;
             padding: 8px 16px;
             display: block;
             text-align: left;
+
+            @media (max-width: 1919px) {
+                font-size: 20px;
+            }
         }
 
         li {
             margin-right: 0 !important;
         }
-
-        &.active {
-            display: block;
-            transform: rotateX(0deg);
-            // visibility: visible;
-            opacity: 1;
-            transition: display .3s linear;
-        }
-
     }
 
     
@@ -173,36 +189,42 @@
 
     &__links {
         position: relative;
-            font-size: 30px;
-            letter-spacing: 0.05em;
-            color: $black-color;
-            align-content: center;
+        font-size: 30px;
+        letter-spacing: 0.05em;
+        color: $black-color;
+        align-content: center;
+        font-weight: 300;
+        padding: 66px 0;
+
+        &:hover {
+            color: $brand-color;
             font-weight: 300;
 
-            &:hover {
-                color: $brand-color;
-                font-weight: 300;
-
-                &::after {
-                    width: 100%;
-                }
-            }
-
             &::after {
-                display: block;
-                content: "";
-                height: 2px;
-                bottom: -4px;
-                width: 0%;
-                background-color: $brand-color;
-                transition: width 0.4s ease-in-out;
+                width: 100%;
             }
+        }
 
-            @media (max-width: 1919px) {
-                font-size: 20px;
-                letter-spacing: 0.03em;
-                line-height: 30px;
-            }
+        &::after {
+            display: block;
+            content: "";
+            height: 2px;
+            bottom: -4px;
+            width: 0%;
+            background-color: $brand-color;
+            transition: width 0.4s ease-in-out;
+        }
+
+        @media (max-width: 1919px) {
+            padding: 40px 0;
+            font-size: 20px;
+            letter-spacing: 0.03em;
+            line-height: 30px;
+        }
+
+        @media (max-width: 1439px) {
+            padding: 44px 0;
+        }
     }
 
     &__other-nav {
