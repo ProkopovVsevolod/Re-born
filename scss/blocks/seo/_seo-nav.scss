@@ -1,7 +1,7 @@
 .seo-nav {
     position: sticky;
     position: -webkit-sticky;
-    z-index: 10;
+    z-index: 5;
     top: 167px;
     margin-bottom: 35px;
 
@@ -80,18 +80,7 @@
             a {
                 color: rgba($black-color, 0.6);
             }
-
-            // &:not(:last-child) {
-            //     margin-right: 188px;
-
-            //     @media (max-width: 1919px) {
-            //         margin-right: 0%;
-            //     }
-            // }
         }
-
-       
-
     }
 
     &__limiter {
