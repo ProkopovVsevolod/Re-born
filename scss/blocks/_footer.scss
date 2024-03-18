@@ -41,93 +41,6 @@
         };
     }
 
-    &__list-item {
-        position: relative;
-        margin-bottom: 18px;
-        
-        @media (max-width: 1179px) {
-            margin-bottom: 11px;
-        }
-
-        @media (max-width: 767px) {
-            margin-bottom: 8px;
-        }
-
-        a {
-            display: flex;
-            color: $white-color;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 23px;
-            letter-spacing: 0.03em;
-
-            @media (max-width: 1919px) {
-                font-size: 18px;
-            }
-        
-            @media (max-width: 1179px) {
-                font-size: 14px;
-            }
-        
-            @media (max-width: 767px) {
-                font-size: 11px;
-            }
-
-            &::before {
-                display: block;
-                margin-top: -3px;
-                content: "";
-                margin-right: 13px;
-                width: 30px;
-                height: 30px;
-                background-color: $white-color;
-                border-radius: 50%;
-
-                @media (max-width: 1439px) {
-                    margin-top: 3px;
-                    width: 22px;
-                    height: 22px;
-                }
-            
-                @media (max-width: 1179px) {
-                    width: 18px;
-                    height: 18px;   
-                }
-            
-                @media (max-width: 767px) {
-                    width: 14px;
-                    height: 14px;
-                }
-            }
-
-            &:hover {
-                color: $brand-color;
-            }
-        }
-
-        img {
-            @media (max-width: 1919px) {
-                width: 20px;
-                height: 20px;
-            }
-        
-            @media (max-width: 1439px) {
-                width: 15px;
-                height: 15px;
-            }
-        
-            @media (max-width: 1179px) {
-                width: 12px;
-                height: 12px;
-            }
-        
-            @media (max-width: 767px) {
-                width: 10px;
-                height: 10px;
-            }
-        }
-    }
-
     &__subscribe {
         display: flex;
         flex-direction: column;
@@ -226,94 +139,12 @@
         }
     }
 
-    &__list {
-        position: relative;
-    }
-
-    &__telegram, &__phone, &__whatsapp, &__dog {
-        position: absolute;  
-    }
-
-    &__telegram {
-        left: 3px;
-        top: 3px;
-
-        @media (max-width: 1439px) {
-            left: 2px;
-            top: 6px;
-        }
-
-        @media (max-width: 767px) {
-            left: 1px;
-            top: 5px;
-        }
-    }
-
-    &__phone {
-        top: 1px;
-        left: 8px;
-
-        @media (max-width: 1919px) {
-            left: 5px;
-        }
-
-        @media (max-width: 1439px) {
-            left: 4px;
-            top: 6px;
-        }
-
-        @media (max-width: 1179px) {
-            left: 3px;
-        }
-
-        @media (max-width: 767px) {
-            top: 5px;
-            left: 2px;
-        }
-    }
-
-    &__whatsapp {
-        top: 1px;
-        left: 5px;
-
-        @media (max-width: 1439px) {
-            left: 4px;
-            top: 6px;
-        }
-
-        @media (max-width: 1179px) {
-            left: 3px;
-        }
-
-        @media (max-width: 767px) {
-            top: 4px;
-            left: 2px;
-        }
-    }
-
-    &__dog {
-        top: 1px;
-        left: 4px;
-
-        @media (max-width: 1919px) {
-            left: 5px;
-        }
-
-        @media (max-width: 1439px) {
-            left: 4px;
-            top: 6px;
-        }
-
-        @media (max-width: 1179px) {
-            top: 7px;
-            left: 3px;
-        }
-
-        @media (max-width: 767px) {
-            top: 5px;
-            left: 2px;
-        }
-    }
 }
+
+
+
+
+    
+
 
 
