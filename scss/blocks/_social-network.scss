@@ -104,6 +104,11 @@
         width: 23px;
         height: 23px;
 
+        @media (max-width: 767px) {
+            width: 20px;
+            height: 20px;
+        }
+
         &.social-network__telegram {
             top: 6px;
             left: 4px;
@@ -114,7 +119,7 @@
             }
     
             @media (max-width: 767px) {
-                left: 1px;
+                left: 4px;
                 top: 5px;
             }
         }
@@ -133,12 +138,12 @@
             }
     
             @media (max-width: 1179px) {
-                left: 3px;
+                left: 6px;
             }
     
             @media (max-width: 767px) {
                 top: 5px;
-                left: 2px;
+                left: 5px;
             }
         }
     
@@ -152,12 +157,12 @@
             }
     
             @media (max-width: 1179px) {
-                left: 3px;
+                left: 6px;
             }
     
             @media (max-width: 767px) {
-                top: 4px;
-                left: 2px;
+                top: 5px;
+                left: 6px;
             }
         }
     
@@ -176,12 +181,12 @@
     
             @media (max-width: 1179px) {
                 top: 7px;
-                left: 3px;
+                left: 6px;
             }
     
             @media (max-width: 767px) {
                 top: 5px;
-                left: 2px;
+                left: 6px;
             }
         }
     }
@@ -279,6 +284,11 @@
                 width: 35px;
                 height: 35px;
                 background-color: $black-color;
+
+                @media (max-width: 767px) {
+                    width: 30px;
+                    height: 30px;
+                }
             }
         }
     }

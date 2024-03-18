@@ -1000,10 +1000,6 @@
                     }
                 }
             }
-
-            h3 {
-                
-            }
         }
 
         span {
@@ -1035,7 +1031,6 @@
 
             &::after {
                 position: absolute;
-                display: block;
                 content: "";
                 width: 20px;
                 height: 20px;
