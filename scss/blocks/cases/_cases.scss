@@ -1,0 +1,113 @@
+.cases {
+    margin-bottom: 30px;
+
+    &__wrapper {
+        background: url("./../img/cases/bgImg.png") no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 1830px;
+        height: 738px;
+        margin-bottom: 40px;
+    }
+
+    &__title-wrapper {  
+        position: absolute;
+        width: 58%;
+        background-color: white;
+        padding: 30px 30px 30px 0;
+
+        h1 {
+            color: black;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+    }
+
+    &__filters {
+
+    }
+
+    &__filter-list {
+        display: flex;
+        column-gap: 88px;
+        margin-bottom: 40px;
+    }
+
+    &__filter-btn {
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            transform: rotate(135deg);
+
+            position: absolute;
+            right: -60px;
+            top: 5px;
+        }
+
+        &:hover {
+            color: $brand-color;
+
+            &::after {
+                border-top: 1px solid $brand-color;
+                border-right: 1px solid $brand-color;
+            }
+        }
+
+        &.active {
+            color: $brand-color;
+            &::after {
+                border-top: 1px solid $brand-color;
+                border-right: 1px solid $brand-color;
+                transform: rotate(-45deg);
+                top: 15px;
+            }
+        }
+    }
+
+    &__filter-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__filter-item {
+        padding: 6px 10px;
+        border: 1px solid black;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+            border: 1px solid $brand-color;
+            color: $brand-color;
+
+            transition: all .3s;
+        }
+
+        &.active {
+            background-color: $brand-color;
+            border: 1px solid $brand-color;
+            color: white;
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+    }
+
+    &__counter {
+        display: block;
+        background-color: $brand-color;
+        // padding: 0px 5px;
+        color: white;
+        margin-left: 5px;
+    }
+}

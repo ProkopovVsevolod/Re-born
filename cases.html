@@ -182,6 +182,75 @@
 
     <main>
         <div class="container">
+            <section class="cases">
+                <div class="cases__wrapper">
+                    <div class="cases__title-wrapper">
+                        <h1>Кейсы</h1>
+                        <p class="cases__text">
+                            В этом разделе мы рассказываем о сложных проектах В 
+                            этом разделе мы рассказываем о сложных проектах В 
+                            этом разделе мы рассказываем о сложных проектах. В 
+                            этом разделе мы рассказываем В этом разделе мы рассказываем 
+                             разделе мы рассказываем
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="cases__filters">
+                    <div class="cases__filter-list">
+                        <div class="cases__btn-wrapper">
+                            <button type="button" class="cases__filter-btn" data-filterId="1">Услуги</button>
+                            <span class="cases__counter" id="servicesCounter"></span>
+                        </div>
+
+                        <div class="cases__btn-wrapper">
+                            <button type="button" class="cases__filter-btn" data-filterId="2">Сферы</button>
+                            <span class="cases__counter" id="sphereCounter"></span>
+                        </div>
+
+                        <div class="cases__btn-wrapper">
+                            <button type="button" class="cases__filter-btn" data-filterId="3">Типы сайтов</button>
+                            <span class="cases__counter" id="siteTypesCounter"></span>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div class="cases__filter-wrapper hidden" data-content="1">
+                        <span class="cases__filter-item" data-filter="services" id="seo">SEO-продвижение</span>
+                        <span class="cases__filter-item" data-filter="services" id="serm">SERM</span>
+                        <span class="cases__filter-item" data-filter="services" id="smm">SMM</span>
+                        <span class="cases__filter-item" data-filter="services" id="ppc">РРС-реклама</span>
+                        <span class="cases__filter-item" data-filter="services" id="pm">Performance Marketing</span>
+                        <span class="cases__filter-item" data-filter="services" id="bm">Brand Marketing</span>
+                        <span class="cases__filter-item" data-filter="services" id="webDesign">Web-дизайн</span>
+                        <span class="cases__filter-item" data-filter="services" id="graphicDesign">Графический дизайн</span>
+                        <span class="cases__filter-item" data-filter="services" id="smmDesign">SMM-дизайн</span>
+                        <span class="cases__filter-item" data-filter="services" id="contentMarketing">Контент-маркетинг</span>
+                        <span class="cases__filter-item" data-filter="services" id="promoution">Promoution</span>
+                        <span class="cases__filter-item" data-filter="services" id="analitics">Аналитика</span>
+                        <span class="cases__filter-item" data-filter="services" id="autoBisness">Автоматизация бизнеса</span>
+                        <span class="cases__filter-item" data-filter="services" id="consalting">Консалтинг</span>
+                    </div>
+
+                    <div class="cases__filter-wrapper hidden" data-content="2">
+                        <span class="cases__filter-item" data-filter="sphere" id="a">Фармацевтика</span>
+                        <span class="cases__filter-item" data-filter="sphere" id="d">Медицина</span>
+                        <span class="cases__filter-item" data-filter="sphere" id="f">Строительство и архитектура</span>
+                        <span class="cases__filter-item" data-filter="sphere" id="v">Розничные магазины</span>
+                        <span class="cases__filter-item" data-filter="sphere" id="s">Ремонт</span>
+                    </div>
+
+                    <div class="cases__filter-wrapper hidden" data-content="3">
+                        <p>ТУТ ТОЖЕ БУДЕТ ФИЛЬТР</p>
+                    </div>
+
+                </div>
+            </section>
+
+            
+
             <div class="projects__row">
                 <div class="projects__card projects__card--small">
                     <p class="projects__title">Строительные и отделочные работы</p>
@@ -414,6 +483,7 @@
     </footer>
 
     <script src="./js/burger.js"></script>
+    <script src="./js/casesFilter.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
