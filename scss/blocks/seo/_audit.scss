@@ -1,23 +1,17 @@
 .audit {   
     margin-bottom: 85px;
+    display: flex;
+    
+    @media (max-width: 1919px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media (max-width: 767px) {
         margin-bottom: 40px;
+        flex-direction: column;
     }
 
-    &__wrapper {
-        display: flex;
-
-        @media (max-width: 1919px) {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        @media (max-width: 767px) {
-            flex-direction: column;
-        }
-    }
-    
     img {
         position: relative;
         z-index: -1;
@@ -29,7 +23,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 867px;
+        width: 868px;
         
         @media (max-width: 1919px) {
             width: 45%;

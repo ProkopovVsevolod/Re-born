@@ -1,21 +1,26 @@
 .about-you {
     position: relative;
-    background-image: url("./../img/seo/about-you-back.png");
-    background-repeat: no-repeat;
+    background: url("./../img/seo/about-you-back.png") no-repeat;
     background-size: cover;
-    width: 1860px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 65px 0;
+    width: 1830px;
+    padding: 65px 94px;
     margin-bottom: 80px;
     
-
     @media (max-width: 1919px) {
-        width: 95%;
+        width: 100%;
+        padding: 50px 55px;
+    }
+
+    @media (max-width: 1439px) {
+        padding: 40px 45px;
+    }
+
+    @media (max-width: 1179px) {
+        padding: 35px 50px;
     }
 
     @media (max-width: 767px) {
-        padding: 30px 0;
+        padding: 30px 11px;
     }
 
     &::before {
@@ -62,7 +67,7 @@
         }
     }
 
-    &__wrapper {
+    &__content {
         position: relative;
         z-index: 3;
         padding: 45px 30px;

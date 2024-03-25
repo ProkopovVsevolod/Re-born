@@ -1,27 +1,21 @@
 .seo-reasons {
     margin-bottom: 85px;
+    padding: 20px 100px 45px 124px;
+    background-color: $seo-background-color;
+    display: flex;
+
+    @media (max-width: 1919px) {
+        padding: 20px 97px 45px;
+    }
+
+    @media (max-width: 1179px) {
+        flex-direction: column;
+        padding: 30px 66px;
+    }
 
     @media (max-width: 767px) {
         margin-bottom: 40px;
-    }
-    
-    & > * {
-        padding: 20px 100px 45px 124px;
-        background-color: $seo-background-color;
-        display: flex;
-
-        @media (max-width: 1919px) {
-            padding: 20px 97px 45px;
-        }
-
-        @media (max-width: 1179px) {
-            flex-direction: column;
-            padding: 30px 66px;
-        }
-
-        @media (max-width: 767px) {
-            padding: 25px 20px;
-        }
+        padding: 25px 20px;
     }
 
     &__title {

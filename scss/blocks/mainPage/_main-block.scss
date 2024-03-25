@@ -1,4 +1,6 @@
 .main-block {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 85px;
 
     @media (max-width: 1919px) {
@@ -9,13 +11,9 @@
         margin-bottom: 50px;
     }
 
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-
-        @media (max-width: 767px) {
-            flex-direction: column;
-        }
+    
+    @media (max-width: 767px) {
+        flex-direction: column;
     }
 
     &__text {
