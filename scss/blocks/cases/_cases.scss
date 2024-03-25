@@ -2,23 +2,60 @@
     margin-bottom: 30px;
 
     &__wrapper {
+        position: relative;
         background: url("./../img/cases/bgImg.png") no-repeat;
         background-size: cover;
-        position: relative;
-        width: 1830px;
+        background-position: center center;
         height: 738px;
         margin-bottom: 40px;
+
+        @media (max-width: 1919px) {
+            height: 690px;
+        }
+            
+        @media (max-width: 1439px) {
+            height: 500px;
+        }
+            
+        @media (max-width: 1179px) {
+            height: 530px;
+        }   
+            
+        @media (max-width: 767px) {   
+            margin-bottom: 30px;
+        }
     }
 
     &__title-wrapper {  
         position: absolute;
         width: 58%;
         background-color: white;
-        padding: 30px 30px 30px 0;
+        padding: 30px 30px 40px 0;
+
+        @media (max-width: 1439px) {
+            padding: 30px 30px 30px 0;
+        }
+
+        @media (max-width: 767px) {
+            padding: 20px 30px 20px 0;
+            width: 100%;     
+        }
 
         h1 {
             color: black;
             margin-bottom: 25px;
+
+            @media (max-width: 1919px) {
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 1179px) {
+                margin-bottom: 15px;
+            }
+                
+            @media (max-width: 767px) {   
+                margin-bottom: 10px;
+            }
         }
     }
 
@@ -26,14 +63,19 @@
         font-weight: 300;
     }
 
-    &__filters {
-
-    }
-
     &__filter-list {
         display: flex;
         column-gap: 88px;
         margin-bottom: 40px;
+
+        @media (max-width: 1179px) {
+            margin-bottom: 30px;
+        }  
+
+        @media (max-width: 767px) {
+            column-gap: 50px;
+            margin-bottom: 20px;       
+        }
     }
 
     &__filter-btn {
@@ -51,6 +93,23 @@
             position: absolute;
             right: -60px;
             top: 5px;
+
+            @media (max-width: 1919px) {
+                top: 5px;
+                width: 13px;
+                height: 13px;
+            }
+
+            @media (max-width: 1439px) {
+                width: 10px;
+                height: 10px;
+                right: -55px;
+            }
+
+            @media (max-width: 1179px) {
+                top: 2px;
+                right: -50px;
+            }
         }
 
         &:hover {
@@ -69,6 +128,20 @@
                 border-right: 1px solid $brand-color;
                 transform: rotate(-45deg);
                 top: 15px;
+
+                
+                @media (max-width: 1919px) {
+                    top: 14px;
+                }
+
+                @media (max-width: 1439px) {
+                    top: 11px;
+                }
+
+                @media (max-width: 1179px) {
+                    top: 8px;
+                }
+
             }
         }
     }
@@ -104,10 +177,18 @@
     }
 
     &__counter {
-        display: block;
-        background-color: $brand-color;
-        // padding: 0px 5px;
+        display: inline-block;
+        background-color: $black-color;
         color: white;
-        margin-left: 5px;
+        margin-left: 8px;
+
+
+        @media (max-width: 1439px) {
+            line-height: normal;
+        }
+
+        &.active {
+            background-color: $brand-color;
+        }
     }
 }

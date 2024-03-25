@@ -25,8 +25,12 @@ filterItem.forEach(item => {
 
             
             if (servicesFilters.length != 0) {
-                servicesCounter.innerHTML = `${servicesFilters.length}`; 
-            } else servicesCounter.innerHTML = '';
+                servicesCounter.innerHTML = `${servicesFilters.length}`;
+                servicesCounter.style.padding = "0px 5px" 
+            } else {
+                servicesCounter.innerHTML = '';
+                servicesCounter.style.padding = "0px"
+            }
         }
 
         if(item.dataset.filter === "sphere") {
@@ -38,7 +42,11 @@ filterItem.forEach(item => {
 
             if (sphereFilters.length != 0) {
                 sphereCounter.innerHTML = `${sphereFilters.length}`; 
-            } else sphereCounter.innerHTML = '';
+                sphereCounter.style.padding = "0px 5px"
+            } else {
+                sphereCounter.innerHTML = '';
+                sphereCounter.style.padding = "0px"
+            }
         }
     })
 })
@@ -48,8 +56,11 @@ filterBtn.forEach(btn => {
     btn.addEventListener('click', (e) => {
         filterBtn.forEach(button => {
             button.classList.remove('active');
+            button.nextSibling.nextSibling.classList.remove("active")
         });
-        e.target.classList.add("active")
+        e.target.classList.add("active");
+        e.target.nextSibling.nextSibling.classList.add("active")
+        
 
 
         const clickedBtnId = e.target.dataset.filterid;
