@@ -206,7 +206,7 @@
 
         @media (max-width: 767px) {
             left: 1px;
-            top: 5px;
+            top: 8px;
         }
     }
 
@@ -228,7 +228,7 @@
         }
 
         @media (max-width: 767px) {
-            top: 5px;
+            top: 8px;
             left: 2px;
         }
     }
@@ -247,7 +247,7 @@
         }
 
         @media (max-width: 767px) {
-            top: 4px;
+            top: 8px;
             left: 2px;
         }
     }
@@ -271,12 +271,13 @@
         }
 
         @media (max-width: 767px) {
-            top: 5px;
+            top: 8px;
             left: 2px;
         }
     }
 
     &__item--black {
+        margin-bottom: 0;
         a {
             &::before {
                 margin-right: 10px;

@@ -129,7 +129,7 @@
         line-height: 50px;
         letter-spacing: 0.05em;
         float: right;
-        padding-left: 48%;
+        padding-left: 45%;
 
         
         @media (max-width: 1919px) {
@@ -142,7 +142,6 @@
             flex-direction: column-reverse;
             margin-bottom: 15px;
             height: 100%;
-            justify-content: space-between;
         }
             
         @media (max-width: 1179px) {
@@ -153,72 +152,11 @@
         @media (max-width: 767px) {
             font-size: 20px;
             line-height: 30px;
-            padding-left: 60%;
+            padding-left: 40%;
             margin-bottom: 10px;
         }
 
-        a {
-            font-size: 25px;
-            display: flex;
-            color: $brand-color;
-            position: absolute;
-            top: 25px;
-            left: 0;
-
-            @media (max-width: 1919px) {
-                top: 20px;
-                font-size: 20px;
-                line-height: 30px;
-            }
-
-            @media (max-width: 1439px) {
-                position: static;
-                margin-left: -93%;
-                font-size: 19px;
-            }
-
-            @media (max-width: 1179px) {
-                font-size: 16px;
-                line-height: 24px;
-            }
-
-            @media (max-width: 767px) {
-                font-size: 14px;
-                line-height: 22px;
-                margin-left: -150%;
-            }
-
-            &:hover {
-                text-decoration: underline;
-            }
-
-            &::after {
-                content: "";
-                background-image: url("./../img/main/our-projects/arrow-projects.svg");
-                background-repeat: no-repeat;
-                display: block;
-                height: 20px;
-                width: 22px;
-                margin-left: 15px;
-                margin-top: 19px;
-
-                @media (max-width: 1919px) {
-                    margin-top: 8px;
-                }
-            
-                @media (max-width: 1179px) {
-                    background-image: url("./../img/main/our-projects/arrow-small.svg");
-                    margin-top: 6px;
-                    margin-left: 10px;
-                }
-
-                @media (max-width: 767px) {
-                    margin-top: 5px;
-                }
-            
-            }
-        }
-        
+    
         // p {
         //     text-align: end;
         //     width: 469px;
@@ -258,6 +196,113 @@
                 
         //     }
         // }
+    }
+
+    &__title-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1439px) {
+            flex-direction: column-reverse;
+            margin-bottom: 15px;
+            height: 100%;
+            justify-content: space-between;
+        }
+
+        p {
+            text-align: end;
+            font-size: 42px;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            margin-bottom: 50px;
+            width: 60%;
+            
+            @media (max-width: 1919px) {
+                font-size: 35px;
+                line-height: 47px;
+                margin-bottom: 35px;
+            }
+
+            @media (max-width: 1439px) {
+                margin-bottom: 15px;
+                height: 100%;
+                width: 100%;
+                padding-left: 30%;
+            }
+                
+            @media (max-width: 1179px) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+                
+            @media (max-width: 767px) {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__title-link {
+        font-size: 25px;
+        display: flex;
+        color: $brand-color;
+        // position: absolute;
+        // top: 25px;
+        // left: 0;
+
+        @media (max-width: 1919px) {
+            // top: 20px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @media (max-width: 1439px) {
+            // position: static;
+            font-size: 19px;
+        }
+
+        @media (max-width: 1179px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 22px;
+            // margin-left: -150%;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &::after {
+            content: "";
+            background-image: url("./../img/main/our-projects/arrow-projects.svg");
+            background-repeat: no-repeat;
+            display: block;
+            height: 20px;
+            width: 22px;
+            margin-left: 15px;
+            margin-top: 19px;
+
+            @media (max-width: 1919px) {
+                margin-top: 8px;
+            }
+        
+            @media (max-width: 1179px) {
+                background-image: url("./../img/main/our-projects/arrow-small.svg");
+                margin-top: 6px;
+                margin-left: 10px;
+            }
+
+            @media (max-width: 767px) {
+                margin-top: 5px;
+            }
+        
+        }
     }
 
     &__hero {
@@ -520,21 +565,38 @@
         }
     }
 
-    &__nda {
+    &__nda-wrapper {
         display: flex;
-        align-items: center;
         position: absolute;
         top: 20px;
         left: 20px;
+
+        &:hover {
+            .projects__nda-description {
+                display: block !important;
+                opacity: 1 ;
+            }
+        }
+    }
+
+    &__nda {
+        display: flex;
+        align-items: center;
         font-size: 21px;
         line-height: 30px;
         background-color: white;
         padding: 8px 20px;
         color: $brand-color;
         z-index: 3;
+        height: fit-content;
+        width: fit-content;
+
+        transition: 0.3s;
 
         &:hover {
-
+            color: $white-color;
+            background-color: $brand-color;
+            transition: 0.3s;
         }
 
         @media (max-width: 1919px) {
@@ -558,6 +620,18 @@
             display: none;
         }
     }
+
+    &__nda-description {
+        display: none;
+        opacity: 0;
+        padding: 20px 15px;
+        width: 60%;
+        background-color: $white-color;
+
+        p {
+            margin-bottom: 20px;
+        }
+    } 
 
     &__nda-img {
         width: 30px;

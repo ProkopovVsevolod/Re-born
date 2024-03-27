@@ -192,7 +192,7 @@
         }
     
         @media (max-width: 767px) {
-            width: 94px;
+            width: 109px;
             margin-right: 10px;
         }
     }
@@ -286,6 +286,28 @@
                 padding: 6px 20px;
                 white-space: pre-line;
                 margin-right: 20px;
+                line-height: 15px;
+            }
+
+            &:active {
+                font-weight: 500;
+                padding: 37px 38px;
+        
+                @media (max-width: 1919px) {
+                    padding: 15px 27px 15px 26px;
+                }
+        
+                @media (max-width: 1439px) {
+                    padding: 15px 14px; 
+                }
+        
+                @media (max-width: 1179px) {
+                    padding: 12px 18px 12px 17px;
+                }
+        
+                @media (max-width: 767px) {
+                    padding: 6px 19px;
+                }
             }
         }
     }
@@ -501,10 +523,6 @@
             padding: 0 4% 0 0;
         }
     
-        @media (max-width: 1439px) {
-            
-        }
-    
         @media (max-width: 1179px) {
             justify-content: left;
         }
@@ -529,6 +547,15 @@
 
     }
 
+    &__nav-item--mb0 {
+        margin-bottom: 0px !important;
+
+            
+        @media (max-width: 1439px) {
+            margin-bottom: 15px !important;    
+        }
+    }
+
     &__burger-link {
         color: $black-color;
         font-size: 35px;
@@ -551,8 +578,8 @@
         
         @media (max-width: 767px) {
             font-weight: 400;
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 22px;
+            line-height: 26px;
         }
 
         &:hover {
@@ -624,8 +651,7 @@
             display: flex;
         }
     }
-
-    
+ 
     &__network-wrapper--tablet {
         display: none;
 
@@ -635,21 +661,23 @@
     }
 
     &__nav-item--big {
-        &:not(:last-child) {
-            margin-bottom: 50px;
+        margin-bottom: 50px;
 
-            @media (max-width: 1919px) {
-                margin-bottom: 40px;
-            }
-
-            @media (max-width: 1439px) {
-                margin-bottom: 28px;
-            }
-
-            @media (max-width: 767px) {
-                margin-bottom: 15px;
-            }
+        &:last-child {
+            margin-bottom: 0;
         }
+
+        @media (max-width: 1919px) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 1439px) {
+            margin-bottom: 28px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }   
     }
 
     &__burger-link--big {

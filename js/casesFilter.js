@@ -45,6 +45,20 @@ filterItem.forEach(item => {
                 sphereCounter.style.padding = "0px"
             }
         }
+
+        if(item.dataset.filter === "siteTypes") {
+            let isHaveData = siteTypesFilters.indexOf(item.id);
+            if (~isHaveData) siteTypesFilters.splice(isHaveData, 1);
+            else siteTypesFilters.push(item.id)
+
+            if (siteTypesFilters.length != 0) {
+                siteTypesCounter.innerHTML = `${siteTypesFilters.length}`; 
+                siteTypesCounter.style.padding = "0px 5px"
+            } else {
+                siteTypesCounter.innerHTML = '';
+                siteTypesCounter.style.padding = "0px"
+            }
+        }
     })
 })
 
