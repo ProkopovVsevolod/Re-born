@@ -2,7 +2,7 @@
     position: fixed;
     z-index: 10;
     width: 100%;
-    padding: 27px 0;
+    padding: 25px 0;
     background-color: $white-color;
     border-bottom: 1px solid $black-color;
 
@@ -178,8 +178,6 @@
         }
     }
 
-    
-
     &__logo {
         @media (max-width: 1919px) {
             width: 179px;
@@ -195,6 +193,7 @@
     
         @media (max-width: 767px) {
             width: 94px;
+            margin-right: 10px;
         }
     }
     
@@ -212,7 +211,7 @@
         }
 
         li:not(:last-child) {
-            margin-right: 45px;
+            margin-right: 40px;
         }
 
         &.active {
@@ -264,21 +263,29 @@
         display: flex;
         align-items: center;
 
-        &>*:not(:last-child) {
-            margin-right: 77px;
+        & .button {
+            padding: 37px 42px;
+            margin-right: 70px;
+
+            @media (max-width: 1919px) {
+                padding: 15px 28px;
+                margin-right: 80px;   
+            }
 
             @media (max-width: 1439px) {
-                margin-right: 25px;
+                padding: 15px 16px;
+                margin-right: 45px; 
             }
-
-            @media (max-width: 767px) {
+    
+            @media (max-width: 1179px) {
+                padding: 12px 19px;
                 margin-right: 33px;
             }
-        }
 
-        button {
             @media (max-width: 767px) {
+                padding: 6px 20px;
                 white-space: pre-line;
+                margin-right: 20px;
             }
         }
     }
@@ -289,20 +296,28 @@
         font-weight: 300;
         line-height: 30px;
         letter-spacing: 0.05em;
+        margin-right: 105px;
 
         @media (max-width: 1919px) {
             font-size: 18px;
             letter-spacing: 0.03em;
+            margin-right: 80px;
+        }
+
+        @media (max-width: 1439px) { 
+            margin-right: 45px; 
         }
     
         @media (max-width: 1179px) {
             font-size: 14px;
-            line-height: 28px;          
+            line-height: 28px;
+            margin-right: 33px;          
         }
     
         @media (max-width: 767px) {
             font-size: 11px;
-            letter-spacing: 0.01em; 
+            letter-spacing: 0.01em;
+            margin-right: 20px; 
         }
     }
 
@@ -381,6 +396,7 @@
         width: 31px;
         height: 23px;
         cursor: pointer;
+        margin-right: 0;
     }
 
     &__burger-column {
@@ -426,18 +442,33 @@
     }
 
     &__burger-nav-wrapper {
+        width: 100vw;
+        background-color: #fff;
+        
         position: absolute;
         top: 166px;
-        left: 0;
-        width: 100vw;
-        height: calc(100vh - 166px);
-        background-color: #fff;
-        opacity: 0;
-        transition: 0.2s ease-in;
+        left: -100000px;
 
         &.active {
-            opacity: 1;
-            transition: 0.2s ease-in;
+            top: 162px;
+            height: 100vh;
+            left: 0;
+
+            @media (max-width: 1919px) {
+                top: 100px;
+                height: calc(100vh - 100px);   
+            }
+    
+            @media (max-width: 1439px) {
+                top: 110px;
+                height: calc(100vh - 110px);   
+            }
+    
+            @media (max-width: 1179px) {
+                top: 70px;
+                height: calc(100vh - 70px);
+                overflow: auto; 
+            }
         }
 
         @media (max-width: 1919px) {
@@ -452,7 +483,8 @@
 
         @media (max-width: 1179px) {
             top: 70px;
-            height: calc(100vh - 70px);  
+            height: calc(100vh - 70px);
+            overflow: auto; 
         }
     }
 
@@ -486,6 +518,15 @@
     &__network-wrapper {
         position: absolute;
         bottom: 0;
+
+        &.active {
+            @media (max-width: 767px) {
+                position: static;
+                margin-top: 100px;
+                padding-bottom: 20px;
+            }
+        }
+
     }
 
     &__burger-link {
@@ -533,6 +574,16 @@
             font-size: 30px;
             line-height: 40px;
             font-weight: 500;
+            cursor: pointer;
+
+            &:hover {
+                color: $brand-color;
+
+                &::after {
+                    border-bottom: 1px solid $brand-color;
+                    border-right: 1px solid $brand-color;
+                }
+            }
 
             &::after {
                 content: "";
@@ -638,4 +689,5 @@
             }
         }
     }
+
 }

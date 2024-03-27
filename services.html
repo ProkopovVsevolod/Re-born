@@ -144,7 +144,6 @@
                                             <ul>
                                                 <li><a href="#">Внедрение ERP</a></li>
                                                 <li><a href="#">Внедрение CRM</a></li>
-                                                <li><a href="#">Внедрение Битрикс24</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -160,11 +159,11 @@
                 </nav>
 
                 <div class="header__other-nav">
-                    <button class="button">Обсудить
-                        проект</button>
+                    <a class="button" href="#about-you">Обсудить
+                        проект</a>
+
                     <span class="header__lang">RU</span>
 
-                    
                     <div class="header__burger-wrapper">
                         <div class="header__burger"></div>
                     </div>
@@ -572,6 +571,83 @@
                 <div class="services__number services__number--right">14</div>
             </section>        
         </div>
+
+        <div class="container">
+            <div class="audit audit--services">
+                <section class="audit__order">
+                    <h2>Бесплатный аудит</h2>
+                    <button class="button">Заказать</button>
+                </section>
+
+                <div class="audit__form-wrapper">
+                    <p class="audit__text">
+                        Самые актуальные, трендовые и свежие новости
+                        в сфере digital - маркетинга 
+                    </p>
+                    <form class="audit__form">
+                        <input type="email" class="input" placeholder="Введите свой email">
+                        <button>Подписаться</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="about-you " id="about-you">
+                <div class="about-you__content">
+                    <p class="about-you__title">Расскажите
+                        о вашем проекте
+                    </p>
+                    
+                    <form class="form">
+                        <p class="form__subtitle">Контактная информация</p>
+    
+                        <div class="form__data-wrapper">
+                            <div class="form__data">
+                                <div class="form__input-wrapper">
+                                    <input class="input" id="name" type="text" placeholder="Ваше имя *" required>
+                                    <input class="input required-input-email" id="email" type="email" placeholder="Email *" required>
+    
+                                </div>
+                                
+                                <div class="form__input-wrapper">
+                                    <input class="input required-input-phone" id="phone" type="tel" placeholder="Номер телефона *" required>
+                                    <input class="input " id="company"  placeholder="Компания" type="text">
+                                </div>
+                            </div>
+                            
+                            <div class="form__tags-row">
+                                <span class="form__tag">Promoution</span>
+                                <span class="form__tag">PPC-реклама</span>
+                                <span class="form__tag">Дизайн</span>
+                                <span class="form__tag">Аналитика</span>
+                                <span class="form__tag form__tag--active">Автоматизация бизнеса</span>
+                                <span class="form__tag">SMM</span>
+                                <span class="form__tag">Brand Marketing</span>
+                                <span class="form__tag form__tag--active" >SERM</span>
+                                <span class="form__tag">SEO-продвижение</span>
+                                <span class="form__tag">Консалтинг</span>
+                                <span class="form__tag">Performance Marketing</span>
+                                <span class="form__tag form__tag--active">Другое</span> 
+                            </div>
+                        </div>
+                        
+                        <div class="form__textarea-wrapper">
+                            <p class="form__subtitle">Опишите вашу задачу</p>
+        
+                            <textarea class="form__textarea" cols="30" rows="5" placeholder="несколько слов о вашей задаче"></textarea>
+                            <button class="button button--middle">Отправить</button>
+    
+                            <p class="form__politics">
+                                Нажимая на кнопку, вы даете согласие на обработку 
+                                <a href="#">персональных данных</a> и соглашаетесь
+                                с <a href="#">политикой конфиденциальности.</a>
+                            </p>
+                        </div>
+                        
+                    </form> 
+                </div>
+            </div>
+        </div>
+        
     </main>
 
     <footer class="footer">
@@ -617,7 +693,6 @@
         </div>
     </footer>
 
-    <!-- <script src="./js/servicesHover.js"></script> -->
     <script src="./js/burger.js"></script>
 </body>
 </html>

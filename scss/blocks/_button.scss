@@ -11,7 +11,7 @@
         background: linear-gradient(0deg, 
         rgba(0, 0, 0, 0.05), 
         rgba(0, 0, 0, 0.05)),
-        linear-gradient(0deg, #71BEAB, #71BEAB);
+        linear-gradient(0deg, $brand-color, $brand-color);
     }
 
     &:active {
@@ -62,19 +62,16 @@
     @media (max-width: 1919px) {
         font-size: 18px;
         line-height: 30px;
-        padding: 15px 16px;
         letter-spacing: 0.03em;
     }
 
     @media (max-width: 1179px) {
         font-size: 14px;
         line-height: 28px;
-        padding: 12px 9px;
     }
 
     @media (max-width: 767px) {
         font-size: 10px;
-        padding: 6px 21px;;
         line-height: 15px;
         letter-spacing: 0.01em;
     }

@@ -14,7 +14,6 @@ const siteTypesFilters = [];
 filterItem.forEach(item => {
     item.addEventListener('click', () => {
         item.classList.toggle('active');
-        console.log(item.id)
 
         if(item.dataset.filter === "services") {
             let isHaveData = servicesFilters.indexOf(item.id);
@@ -37,8 +36,6 @@ filterItem.forEach(item => {
             let isHaveData = sphereFilters.indexOf(item.id);
             if (~isHaveData) sphereFilters.splice(isHaveData, 1);
             else sphereFilters.push(item.id)
-            
-            console.log(sphereFilters);
 
             if (sphereFilters.length != 0) {
                 sphereCounter.innerHTML = `${sphereFilters.length}`; 
@@ -51,7 +48,7 @@ filterItem.forEach(item => {
     })
 })
 
-
+//Обработчик нажатия на кнопку вида фильтров
 filterBtn.forEach(btn => {
     btn.addEventListener('click', (e) => {
         filterBtn.forEach(button => {
@@ -61,8 +58,6 @@ filterBtn.forEach(btn => {
         e.target.classList.add("active");
         e.target.nextSibling.nextSibling.classList.add("active")
         
-
-
         const clickedBtnId = e.target.dataset.filterid;
         const activeContent = document.querySelector(`.cases__filter-wrapper[data-content="${clickedBtnId}"]`);
         const notActiveContnent = document.querySelector('.cases__filter-wrapper:not(.hidden)');

@@ -2,11 +2,11 @@
 .button {
     background-color: $brand-color;
     color: #FEFEFE;
-    padding: 37px 42px;
     font-weight: 300;
     font-size: 30px;
     line-height: 38px;
     letter-spacing: 0.05em;
+    text-align: center;
 
     &:hover {
         background: linear-gradient(0deg, 
@@ -20,15 +20,19 @@
         padding: 37px 38px;
 
         @media (max-width: 1919px) {
-            padding: 15px 14px;
+            padding: 15px 27px 15px 26px;
+        }
+
+        @media (max-width: 1439px) {
+            padding: 15px 14px; 
         }
 
         @media (max-width: 1179px) {
-            padding: 12px 7px 12px 8px;
+            padding: 12px 18px 12px 17px;
         }
 
         @media (max-width: 767px) {
-            padding: 6px 20px 6px 21px;
+            padding: 6px 19px;
         }
     }
 

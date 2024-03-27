@@ -1,4 +1,5 @@
-.audit {   
+.audit {  
+    border-top: 1px solid #1C1C1B; 
     margin-bottom: 85px;
     display: flex;
     
@@ -18,7 +19,6 @@
     }
 
     &__order {
-        border-top: 1px solid $black-color;
         padding: 25px 30px 0 0;
         display: flex;
         flex-direction: column;
@@ -78,7 +78,6 @@
 
     &__form-wrapper {
         width: 962px;
-        border-top: 1px solid $black-color;
         padding-top: 25px;
 
         @media (max-width: 1919px) {
@@ -204,4 +203,10 @@
             }
         }
     }
+
+    &--services {
+        margin-top: 20px;
+        border-top: none;
+    }
+    
 }

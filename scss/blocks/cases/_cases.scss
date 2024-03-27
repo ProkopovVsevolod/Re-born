@@ -1,5 +1,18 @@
 .cases {
+    margin-top: 40px;
     margin-bottom: 30px;
+
+    @media (max-width: 1919px) {
+        margin-top: 30px;
+    }
+        
+    @media (max-width: 1179px) {
+        margin-top: 25px;
+    }   
+        
+    @media (max-width: 767px) {   
+        margin-top: 20px;
+    }   
 
     &__wrapper {
         position: relative;
@@ -73,7 +86,7 @@
         }  
 
         @media (max-width: 767px) {
-            column-gap: 65px;
+            column-gap: 45px;
             margin-bottom: 20px;       
         }
     }
@@ -109,6 +122,10 @@
             @media (max-width: 1179px) {
                 top: 2px;
                 right: -50px;
+            }
+
+            @media (max-width: 767px) {
+                right: -43px;       
             }
         }
 
@@ -150,6 +167,15 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+
+        @media (max-width: 1919px) {
+            gap: 15px;
+        }
+
+        @media (max-width: 1439px) {
+            gap: 10px;
+        }
+
     }
 
     &__filter-item {
@@ -205,6 +231,10 @@
 
         @media (max-width: 1439px) {
             line-height: normal;
+        }
+
+        @media (max-width: 767px) {
+            margin-left: 5px;       
         }
 
         &.active {

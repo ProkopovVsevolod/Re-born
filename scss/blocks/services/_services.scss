@@ -4,12 +4,6 @@
     border-left: 1px solid black;  
     border-right: 1px solid black; 
 
-    &:nth-child(1) {
-        @media (max-width: 767px) {
-            margin-top: 19px;
-        }
-    }
-
     &:nth-child(1):hover {
         .services__number {
             right: 10%;

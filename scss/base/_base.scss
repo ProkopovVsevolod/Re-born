@@ -65,10 +65,10 @@ body > * {
 }
 
 main {
-    margin-top: 165px;
+    margin-top: 163px;
 
     @media (max-width: 1919px) {
-        margin-top: 98px;
+        margin-top: 100px;
     }
 
     @media (max-width: 1439px) {
@@ -80,7 +80,7 @@ main {
     }
 
     @media (max-width: 767px) {
-        margin-top: 94px;
+        margin-top: 90px;
     }
 }
 
@@ -88,4 +88,9 @@ main {
     display: none !important; 
     opacity: 0;
     z-index: -1;
+}
+
+.burger-open {
+    overflow: hidden;
+    transition: .2s ease-in;
 }

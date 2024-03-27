@@ -21,7 +21,7 @@
     <meta property="og:image" content="./img/OpenGraph/OpenGraph.jpg">
 
 </head>
-<body>
+<body id="body">
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -149,7 +149,6 @@
                                             <ul>
                                                 <li><a href="#">Внедрение ERP</a></li>
                                                 <li><a href="#">Внедрение CRM</a></li>
-                                                <li><a href="#">Внедрение Битрикс24</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -165,26 +164,147 @@
                 </nav>
 
                 <div class="header__other-nav">
-                    <button class="button">Обсудить
-                        проект</button>
+                    <a class="button" href="#about-you">Обсудить
+                         проект</a>
+
                     <span class="header__lang">RU</span>
 
-                    
                     <div class="header__burger-wrapper">
                         <div class="header__burger"></div>
                     </div>
 
-                </div>
-                
+                    <div class="header__burger-nav-wrapper">
+                        <nav class="header__burger-nav">
+                            <ul class="header__burger-column">
+                                <li class="header__nav-item header__nav-item--big " >
+                                    <a class="header__burger-link header__burger-link--big header__burger-link--mobile" href="#">Услуги</a>
+                                    <p class="header__accordion">Услуги</p>
+                                    <div class="header__mobile-menu">
+                                        <ul>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="/services.html">Услуги</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">SEO-продвижение</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">SERM</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">SMM</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">PPC-реклама</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Performance Marketing</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Brand Marketing</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Web-дизайн</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Графический дизайн</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">SMM-дизайн</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Контент-маркетинг</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Promoution</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Аналитика</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Автоматизация бизнеса</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Консалтинг</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__nav-item" ><a class="header__burger-link header__burger-link--big" href="#">О нас</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link header__burger-link--big" href="#">Кейсы</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link header__burger-link--big" href="#">Блог</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link header__burger-link--big" href="#">Контакты</a></li>
+
+                                <div class="header__network-wrapper header__network-wrapper--tablet" data-accordeonContent>
+                                    <div class="social-network"> 
+                                        <p class="social-network__title">Связаться с нами</p>
+                                        <ul class="social-network__list">
+                                            <li class="social-network__item social-network__item--black">
+                                                <a href="#">
+                                                    <img class="social-network__img-big social-network__telegram" src="./img/social-network/white/telegram.svg" alt="Телеграмм">
+                                                </a>
+                                            </li>
+            
+                                            <li class="social-network__item social-network__item--black">
+                                                <a href="#">
+                                                    <img class="social-network__img-big social-network__whatsapp" src="./img/social-network/white/whatsapp.svg" alt="whatsapp">
+                                                </a>
+                                            </li>
+            
+                                            <li class="social-network__item social-network__item--black">
+                                                <a href="#">
+                                                    <img class="social-network__img-big social-network__dog" src="./img/social-network/white/dog.svg" alt="Почта">
+                                                </a> 
+                                            </li>
+            
+                                            <li class="social-network__item social-network__item--black"> 
+                                                <a href="#">
+                                                    <img class="social-network__img-big social-network__phone" src="./img/social-network/white/phone.svg" alt="Телефон">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </ul>
+    
+                            <ul class="header__burger-column header__burger-column--mobile">
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">SEO-продвижение</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">SERM</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">SMM</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">PPC-реклама</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Performance Marketing</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Brand Marketing</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Web-дизайн</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Графический дизайн</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">SMM-дизайн</a></li>
+
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Контент-маркетинг</a></li>
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Promoution</a></li>
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Аналитика</a></li>
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Автоматизация бизнеса</a></li>
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Консалтинг</a></li>
+                            </ul>
+    
+                            <ul class="header__burger-column">
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Контент-маркетинг</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Promoution</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Аналитика</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Автоматизация бизнеса</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Консалтинг</a></li>
+                            
+                                <div class="header__network-wrapper">
+                                    <div class="social-network"> 
+                                        <p class="social-network__title">Связаться с нами</p>
+                                        <ul class="social-network__list">
+                                            <li class="social-network__item social-network__item--black">
+                                                <a href="#">
+                                                    <img class="social-network__img-big social-network__telegram" src="./img/social-network/white/telegram.svg" alt="Телеграмм">
+                                                </a>
+                                            </li>
+            
+                                            <li class="social-network__item social-network__item--black">
+                                                <a href="#">
+                                                    <img class="social-network__img-big social-network__whatsapp" src="./img/social-network/white/whatsapp.svg" alt="whatsapp">
+                                                </a>
+                                            </li>
+            
+                                            <li class="social-network__item social-network__item--black">
+                                                <a href="#">
+                                                    <img class="social-network__img-big social-network__dog" src="./img/social-network/white/dog.svg" alt="Почта">
+                                                </a> 
+                                            </li>
+            
+                                            <li class="social-network__item social-network__item--black"> 
+                                                <a href="#">
+                                                    <img class="social-network__img-big social-network__phone" src="./img/social-network/white/phone.svg" alt="Телефон">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>               
             </div>
         </div>
     </header>
 
     <main>
         <div class="container">
-            <section class="cases">
+            <div class="cases">
                 <div class="cases__wrapper">
-                    <div class="cases__title-wrapper">
+                    <section class="cases__title-wrapper">
                         <h1>Кейсы</h1>
                         <p class="cases__text">
                             В этом разделе мы рассказываем о сложных проектах В 
@@ -193,7 +313,7 @@
                             этом разделе мы рассказываем В этом разделе мы рассказываем 
                              разделе мы рассказываем
                         </p>
-                    </div>
+                    </section>
                 </div>
 
                 <div class="cases__filter-list">
@@ -248,7 +368,7 @@
                     <span class="cases__filter-item" data-filter="sphere" id="v">Сервис</span>
                     <span class="cases__filter-item" data-filter="sphere" id="s">СМИ</span>
                 </div>
-            </section>
+            </div>
 
             <div class="projects">
                 <div class="projects__row">
@@ -266,15 +386,30 @@
     
                             <div class="projects__description">
                                 <div class="projects__description-column">
-                                    <p class="projects__description-title">Cфера: <span>Ремонт квартир и домов</span></p>
-                                    <p class="projects__description-title">Услуга: <span>SEO</span></p>
+                                    <ul>
+                                        <li>
+                                            <span>Cфера:</span>
+                                            <span>Ремонт квартир и домов</span>
+                                        </li>
+
+                                        <li>
+                                            <span>Услуга:</span>
+                                            <span>SEO</span>
+                                        </li>
+                                    </ul>
                                 </div>
     
                                 <div class="projects__description-column">
-                                    <p class="projects__description-title">Цель: <span>Создание и укрепление положительной репутации</span></p>
+                                    <ul>
+                                        <li>
+                                            <span>Цель:</span>
+                                            <span>Создание и укрепление положительной репутации</span>
+                                        </li>
+                                    </ul>
                                 </div>
                                 
                             </div>
+
                             <button class="button">Смотреть кейс</button>
                         </div>
                     </div>
@@ -291,18 +426,31 @@
                                 </div>
                             </div>
                             
-    
                             <div class="projects__description">
                                 <div class="projects__description-column">
-                                    <p class="projects__description-title">Cфера: <span>Розничная торговля</span></p>
-                                    <p class="projects__description-title">Услуга: <span>SERM</span></p>
+                                    <ul>
+                                        <li>
+                                            <span>Cфера:</span>
+                                            <span>Розничная торговля</span>
+                                        </li>
+
+                                        <li>
+                                            <span>Услуга:</span>
+                                            <span>SERM</span>
+                                        </li>
+                                    </ul>
                                 </div>
         
                                 <div class="projects__description-column">
-                                    <p class="projects__description-title">Цель: <span>Повышение оценок на ключевых платформах отзывов</span></p>
+                                    <ul>
+                                        <li>
+                                            <span>Цель:</span>
+                                            <span>Повышение оценок на ключевых платформах отзывов</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                
                             </div>
+
                             <button class="button">Смотреть кейс</button>
                         </div>   
                     </div>
@@ -321,18 +469,31 @@
                                 </div>
                             </div>
                             
-                            
                             <div class="projects__description">
                                 <div class="projects__description-column">
-                                    <p class="projects__description-title">Cфера: <span>Розничная торговля</span></p>
-                                    <p class="projects__description-title">Услуга: <span>SERM</span></p>
+                                    <ul>
+                                        <li>
+                                            <span>Cфера:</span>
+                                            <span>Розничная торговля</span>
+                                        </li>
+
+                                        <li>
+                                            <span>Услуга:</span>
+                                            <span>SERM</span>
+                                        </li>
+                                    </ul>
                                 </div>
         
                                 <div class="projects__description-column">
-                                    <p class="projects__description-title">Цель: <span>Повышение оценок на ключевых платформах отзывов</span></p>
-                                </div>
-                                
+                                    <ul>
+                                        <li>
+                                            <span>Цель:</span>
+                                            <span>Повышение оценок на ключевых платформах отзывов</span>
+                                        </li>
+                                    </ul>
+                                </div>   
                             </div>
+
                             <button class="button">Смотреть кейс</button>
                         </div>
                     </div>
@@ -351,18 +512,31 @@
                                 </div>
                             </div>
                             
-    
                             <div class="projects__description">
                                 <div class="projects__description-column">
-                                    <p class="projects__description-title">Cфера: <span>Розничная торговля</span></p>
-                                    <p class="projects__description-title">Услуга: <span>SERM</span></p>
+                                    <ul>
+                                        <li>
+                                            <span>Cфера:</span>
+                                            <span>Розничная торговля</span>
+                                        </li>
+
+                                        <li>
+                                            <span>Услуга:</span>
+                                            <span>SERM</span>
+                                        </li>
+                                    </ul>
                                 </div>
         
                                 <div class="projects__description-column">
-                                    <p class="projects__description-title">Цель: <span>Повышение оценок на ключевых платформах отзывов</span></p>
-                                </div>
-                                
+                                    <ul>
+                                        <li>
+                                            <span>Цель:</span>
+                                            <span>Повышение оценок на ключевых платформах отзывов</span>
+                                        </li>
+                                    </ul>
+                                </div>                                
                             </div>
+
                             <button class="button">Смотреть кейс</button>
                         </div>
                     </div>
@@ -389,7 +563,7 @@
                 </div>
             </div>
     
-            <div class="about-you">
+            <div class="about-you" id="about-you">
                 <div class="about-you__content">
                     <p class="about-you__title">Расскажите
                         о вашем проекте
