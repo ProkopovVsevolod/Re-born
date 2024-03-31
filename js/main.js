@@ -2,6 +2,7 @@ const accordionPrincipes = document.querySelectorAll("[data-accordion]");
 const anchors = document.querySelectorAll("[data-id='anchorButton']");
 const dropbtn = document.querySelectorAll(".header__dropbtn");
 const dropdownContent = document.querySelector(".header__dropdown-content");
+const ndaColletion = document.querySelectorAll("[data-nda]");
 
 
 accordionPrincipes.forEach(accordionTitle => {
@@ -22,6 +23,21 @@ anchors.forEach(anchor => {
         anchor.classList.add('active');
     })
 })
+
+
+
+ndaColletion.forEach(nda => {
+    nda.addEventListener("mouseover", () => {
+        nda.classList.add("active");
+    })
+
+    nda.addEventListener("mouseout", () => {
+        nda.classList.remove("active");
+    })
+})
+
+
+
 
 
 

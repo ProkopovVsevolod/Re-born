@@ -585,12 +585,6 @@
         &:hover {
             color: $brand-color;
         } 
-
-        &--mobile {
-            @media (max-width: 767px) {
-                display: none;
-            }
-        }
     }
 
     &__accordion {

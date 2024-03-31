@@ -120,6 +120,19 @@
 
     }
 
+    &__card--big {
+        width: 962px;
+
+        @media (max-width: 1919px) {
+            width: 50%;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+    }
+
     &__title {
         display: flex;
         justify-content: flex-end;
@@ -129,7 +142,8 @@
         line-height: 50px;
         letter-spacing: 0.05em;
         float: right;
-        padding-left: 45%;
+        padding-left: 40%;
+        color: black;
 
         
         @media (max-width: 1919px) {
@@ -449,14 +463,15 @@
         border-left: 1px solid #D0CACA;
         border-right: 1px solid #D0CACA;
 
+        @media (max-width: 1919px) {
+            padding: 15px 15px 10px 15px;
+        }
+
         @media (max-width: 1179px) {
             flex-direction: column;
+            padding: 10px 10px 5px 10px;
         }
     }
-
-    // &__description-title-wrapper {
-    //     display: flex;
-    // }
 
     &__description-wrapper {
         display: flex;
@@ -526,6 +541,7 @@
 
                 &:not(:last-child) {
                     margin-bottom: 10px;
+
         
                     @media (max-width: 1179px) {
                         margin-bottom: 5px;
@@ -562,19 +578,40 @@
                     }
                 }
             }
+        }     
+    }
+
+    &__description-link {
+        color: $brand-color;
+        font-weight: 400;
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 
     &__nda-wrapper {
         display: flex;
         position: absolute;
+        width: fit-content !important;
         top: 20px;
         left: 20px;
 
-        &:hover {
+        &.active {
             .projects__nda-description {
                 display: block !important;
-                opacity: 1 ;
+            }
+
+            .projects__nda {
+                background-color: $brand-color;
+                color: white;
+            }
+
+            .projects__nda-img {            
+                &::before {
+                    background: url('./../img/main/our-projects/lock-white.svg') no-repeat center center;
+                    background-size: contain;
+                }
             }
         }
     }
@@ -593,11 +630,11 @@
 
         transition: 0.3s;
 
-        &:hover {
-            color: $white-color;
-            background-color: $brand-color;
-            transition: 0.3s;
-        }
+        // &:hover {
+        //     color: $white-color;
+        //     background-color: $brand-color;
+        //     transition: 0.3s;
+        // }
 
         @media (max-width: 1919px) {
             padding: 6px 16px;
@@ -615,48 +652,75 @@
             font-size: 13px;
             line-height: 18px;
         }
-            
-        @media (max-width: 767px) {
-            display: none;
-        }
     }
 
     &__nda-description {
         display: none;
-        opacity: 0;
         padding: 20px 15px;
+        font-size: 21px;
+        line-height: 25px;
         width: 60%;
         background-color: $white-color;
 
         p {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 1919px) {
+            font-size: 17px;
+            line-height: 22px;
+            padding: 15px;    
+        }
+
+        @media (max-width: 1439px) {
+            font-size: 15px;
+            line-height: 20px;
+            padding: 10px;
+        }
+            
+        @media (max-width: 1179px) {
+            font-size: 13px;
+            line-height: 18px;
+        }
+            
+        @media (max-width: 767px) {
+            
+        }
+
+        a {
+            width: fit-content;
         }
     } 
 
     &__nda-img {
-        width: 30px;
-        height: 38px;
-        margin-right: 15px;
+        display: flex;
+        align-items: center;
 
-        @media (max-width: 1919px) {
-            width: 25px;
-            height: 30px;
-            margin-right: 12px;
-        }
+        &::before {
+            content: "";
+            display: block;
+            background: url('./../img/main/our-projects/lock-brand.svg') no-repeat center center;
+            background-size: contain;
+            width: 30px;
+            height: 38px;
+            margin-right: 15px;
 
-        @media (max-width: 1439px) {
-            width: 22px;
-            height: 28px;
-            margin-right: 10px;
-        }
-            
-        @media (max-width: 1179px) {
-            width: 16px;
-            height: 20px;
-        }
-            
-        @media (max-width: 767px) {
-            display: none;
+            @media (max-width: 1919px) {
+                margin-right: 12px;
+                width: 24px;
+                height: 30px;
+            }
+    
+            @media (max-width: 1439px) {
+                width: 22px;
+                height: 28px;
+                margin-right: 10px;
+            }
+                
+            @media (max-width: 1179px) {
+                width: 16px;
+                height: 20px;
+            }
         }
     }
 
