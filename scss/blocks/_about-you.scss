@@ -1,6 +1,6 @@
 .about-you {
     position: relative;
-    background: url("./../img/seo/about-you-back.png") no-repeat;
+    background: url("./../img/seo/about-you-back.webp") no-repeat;
     background-size: cover;
     width: 1830px;
     padding: 65px 94px;
@@ -227,30 +227,10 @@
             }
         }
 
-        // .required-input-email {
-        //     margin-left: -70px;
-        // }
-
-        // .required-input-phone {
-        //     margin-left: -180px;
-        // }
-
-        // .label-phone {
-        //     margin-right: 170px;
-        // }
-
-        // .input-company {
-        //     margin-right: 0;
-        // }
-
         input {
             position: relative;
             width: 300px;
-            // margin-right: 235px;
-            // margin-left: -110px;
-            // z-index: 1;
-            
-            
+               
             @media (max-width: 1919px) {
                 width: 47%;
             }
@@ -270,39 +250,8 @@
                 @media (max-width: 1919px) {
                     margin-right: 5%; 
                 }
-            }
-
-            // &:valid+label{
-            //     display: none;
-            // }
-            
-            // &:focus+label {
-            //     display: none;
-            // }
-            
-        }
-
-        
-
-        // label {
-        //     // position: relative;
-        //     margin-left: -525px;
-           
-        //     display: inline-block;
-        //     font-size: 20px;
-        //     font-weight: 300;
-        //     line-height: 23px;
-        //     letter-spacing: 0.03em;   
-        //     color: #CCCCCD;
-
-        //     &::after {
-        //         content: "*";
-        //         color: $brand-color;
-        //         margin-left: 5px;
-        //     }
-        // }
-
-        
+            }           
+        }       
     }
 
     &__textarea-wrapper {
@@ -342,7 +291,6 @@
         font-weight: 300;
         margin-bottom: 25px;
         border: 1px solid #CCCCCD;
-        // overflow: auto;
         width: 100%;
         
         @media (max-width: 1179px) {

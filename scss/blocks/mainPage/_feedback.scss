@@ -44,7 +44,6 @@
 
     &__form {
         width: 50%; 
-        // margin-left: 47%;
         
         @media (max-width: 767px) {
             width: 100%;
@@ -97,9 +96,7 @@
         @media (max-width: 767px) {
             margin-bottom: 0;
             margin-left: 5%;
-        }
-
-        
+        }    
     }
     
     &__border {

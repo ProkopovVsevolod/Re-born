@@ -16,7 +16,7 @@
 
     &__wrapper {
         position: relative;
-        background: url("./../img/cases/bgImg.png") no-repeat;
+        background: url("./../img/cases/bgImg.webp") no-repeat;
         background-size: cover;
         background-position: center center;
         height: 738px;
@@ -110,12 +110,6 @@
         @media (max-width: 767px) {   
             line-height: 17px;
         } 
-
-        // &::after {
-        //     content: attr(data-counter);
-        //     background-color: black;
-        //     // padding: 0px 5px;
-        // }
 
         &:hover {
             color: $brand-color;
@@ -224,10 +218,6 @@
             padding: 6px 12px;
         }
     
-        @media (max-width: 1179px) {
-            
-        }
-    
         @media (max-width: 767px) {
             flex-direction: column;
             margin-bottom: 0px;
@@ -255,11 +245,7 @@
 
         @media (max-width: 1919px) {
             width: 150px;
-        }
-
-        @media (max-width: 1179px) {
-            
-        }  
+        } 
 
         @media (max-width: 767px) {
             width: 110px;      
@@ -268,14 +254,7 @@
         @media (max-width: 403px) {
             width: 100px; 
         }
-    
-        @media (max-width: 380px) {
-            
-        }
-    
-        @media (max-width: 370px) {
-            
-        }
+
     }
 
     &__counter {

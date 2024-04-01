@@ -1348,7 +1348,7 @@ h3 {
 
 .about-you {
   position: relative;
-  background: url("./../img/seo/about-you-back.png") no-repeat;
+  background: url("./../img/seo/about-you-back.webp") no-repeat;
   background-size: cover;
   width: 1830px;
   padding: 65px 94px;
@@ -2102,7 +2102,7 @@ h3 {
   position: sticky;
   position: -webkit-sticky;
   z-index: 5;
-  top: 167px;
+  top: 162px;
   margin-bottom: 35px;
 }
 @media (max-width: 1919px) {
@@ -3565,12 +3565,6 @@ h3 {
   font-weight: 400;
   line-height: 57px;
 }
-@media (max-width: 1919px) {
-  .seo__stage-title {
-    font-size: 40px;
-    line-height: 50px;
-  }
-}
 @media (max-width: 1439px) {
   .seo__stage-title {
     font-size: 30px;
@@ -3598,29 +3592,9 @@ h3 {
   margin-right: 7px;
   z-index: 2;
 }
-@media (max-width: 1919px) {
-  .seo__stage-title p {
-    font-size: 40px;
-    line-height: 50px;
-  }
-}
-@media (max-width: 1439px) {
-  .seo__stage-title p {
-    font-size: 30px;
-    line-height: 42px;
-  }
-}
-@media (max-width: 1179px) {
-  .seo__stage-title p {
-    font-size: 24px;
-    line-height: 30px;
-  }
-}
 @media (max-width: 767px) {
   .seo__stage-title p {
     width: 38%;
-    font-size: 22px;
-    letter-spacing: 0.05em;
   }
 }
 .seo__stage-title p::after {
@@ -3665,8 +3639,26 @@ h3 {
 .seo__stage-title h3 {
   position: relative;
   white-space: pre-line;
-  font-size: 42px !important;
+  font-size: 42px;
   line-height: 57px;
+}
+@media (max-width: 1439px) {
+  .seo__stage-title h3 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 1179px) {
+  .seo__stage-title h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .seo__stage-title h3 {
+    font-size: 22px;
+    letter-spacing: 0.05em;
+  }
 }
 .seo__stage-title h3::before {
   position: absolute;
@@ -4594,25 +4586,6 @@ h3 {
     align-items: normal;
   }
 }
-@keyframes resizeImage {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    background: url("./../img/main/logo-animation.svg") no-repeat;
-    background-position: left 0 bottom 0;
-  }
-}
-.hero .w50 {
-  width: 50%;
-}
-.hero .animate {
-  animation: resizeImage 1s ease-in-out;
-  animation-fill-mode: forwards;
-  position: fixed;
-  top: 120px;
-  left: 10%;
-}
 .hero__img {
   width: 50%;
 }
@@ -5020,13 +4993,13 @@ h3 {
 }
 .projects__title-link::after {
   content: "";
-  background-image: url("./../img/main/our-projects/arrow-projects.svg");
+  background-image: url("./../img/main/cases/arrow-projects.svg");
   background-repeat: no-repeat;
   display: block;
   height: 20px;
   width: 22px;
   margin-left: 15px;
-  margin-top: 19px;
+  margin-top: 14px;
 }
 @media (max-width: 1919px) {
   .projects__title-link::after {
@@ -5035,7 +5008,7 @@ h3 {
 }
 @media (max-width: 1179px) {
   .projects__title-link::after {
-    background-image: url("./../img/main/our-projects/arrow-small.svg");
+    background-image: url("./../img/main/cases/arrow-small.svg");
     margin-top: 6px;
     margin-left: 10px;
   }
@@ -5301,7 +5274,7 @@ h3 {
   color: white;
 }
 .projects__nda-wrapper.active .projects__nda-img::before {
-  background: url("./../img/main/our-projects/lock-white.svg") no-repeat center center;
+  background: url("./../img/main/cases/lock-white.svg") no-repeat center center;
   background-size: contain;
 }
 .projects__nda {
@@ -5411,7 +5384,7 @@ h3 {
 .projects__nda-img::before {
   content: "";
   display: block;
-  background: url("./../img/main/our-projects/lock-brand.svg") no-repeat center center;
+  background: url("./../img/main/cases/lock-brand.svg") no-repeat center center;
   background-size: contain;
   width: 30px;
   height: 38px;
@@ -6040,7 +6013,7 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("./../img/services/bg-1.png") no-repeat;
+  background: url("./../img/services/bg-1.webp") no-repeat;
   background-position: 100% 100%;
   background-size: cover;
   opacity: 0;
@@ -6246,7 +6219,7 @@ h3 {
 }
 .cases__wrapper {
   position: relative;
-  background: url("./../img/cases/bgImg.png") no-repeat;
+  background: url("./../img/cases/bgImg.webp") no-repeat;
   background-size: cover;
   background-position: center center;
   height: 738px;
