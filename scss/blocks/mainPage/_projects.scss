@@ -209,12 +209,12 @@
         position: relative;
         display: flex;
         justify-content: space-between;
+        
 
         @media (max-width: 1439px) {
             flex-direction: column-reverse;
             margin-bottom: 15px;
-            // height: 100%;
-            justify-content: space-between;
+            // justify-content: flex-end;
         }
 
         p {
@@ -233,7 +233,6 @@
 
             @media (max-width: 1439px) {
                 margin-bottom: 15px;
-                // height: 100%;
                 width: 100%;
                 padding-left: 30%;
             }
@@ -247,6 +246,21 @@
                 font-size: 20px;
                 line-height: 30px;
                 margin-bottom: 10px;
+            }
+        }
+
+        &--big-card {
+
+            @media (max-width: 1439px) {
+                height: calc(100% - 245px);
+            }
+
+            @media (max-width: 1179px) {
+                height: calc(100% - 195px);
+            }
+
+            @media (max-width: 767px) {
+                height: auto;
             }
         }
     }

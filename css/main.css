@@ -4935,7 +4935,6 @@ h3 {
   .projects__title-wrapper {
     flex-direction: column-reverse;
     margin-bottom: 15px;
-    justify-content: space-between;
   }
 }
 .projects__title-wrapper p {
@@ -4971,6 +4970,21 @@ h3 {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 1439px) {
+  .projects__title-wrapper--big-card {
+    height: calc(100% - 245px);
+  }
+}
+@media (max-width: 1179px) {
+  .projects__title-wrapper--big-card {
+    height: calc(100% - 195px);
+  }
+}
+@media (max-width: 767px) {
+  .projects__title-wrapper--big-card {
+    height: auto;
   }
 }
 .projects__title-link {
