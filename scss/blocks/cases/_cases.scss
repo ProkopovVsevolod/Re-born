@@ -78,8 +78,8 @@
 
     &__filter-list {
         display: flex;
-        column-gap: 88px;
         margin-bottom: 40px;
+        width: fit-content;
 
         @media (max-width: 1179px) {
             margin-bottom: 30px;
@@ -88,33 +88,46 @@
         @media (max-width: 767px) {
             margin-bottom: 20px;       
         }
-
-        @media (max-width: 480px) {
-            column-gap: 50px;
-        }
-
-        @media (max-width: 450px) {
-            column-gap: 45px;
-        }
-
-        @media (max-width: 400px) {
-            column-gap: 40px;
-        }
-
-        @media (max-width: 380px) {
-            column-gap: 35px;
-        }
-
-        @media (max-width: 370px) {
-            column-gap: 30px;
-        }
     }
 
     &__filter-btn {
         position: relative;
         cursor: pointer;
+        line-height: 40px;
+
+        @media (max-width: 1919px) {
+            line-height: 30px;
+        }
+
+        @media (max-width: 1439px) {
+            line-height: 23px;
+        }
+            
+        @media (max-width: 1179px) {
+            line-height: 19px;
+        }   
+            
+        @media (max-width: 767px) {   
+            line-height: 17px;
+        } 
+
+        // &::after {
+        //     content: attr(data-counter);
+        //     background-color: black;
+        //     // padding: 0px 5px;
+        // }
+
+        &:hover {
+            color: $brand-color;
+
+            &::after {
+                border-top: 1px solid $brand-color;
+                border-right: 1px solid $brand-color;
+            }
+        }
 
         &::after {
+            display: block;
             content: "";
             width: 16px;
             height: 16px;
@@ -122,6 +135,7 @@
             border-right: 1px solid black;
             transform: rotate(135deg);
 
+            
             position: absolute;
             right: -60px;
             top: 5px;
@@ -147,17 +161,12 @@
                 right: -43px;       
             }
 
+            @media (max-width: 403px) {
+                right: -40px;
+            }
+
             @media (max-width: 380px) {
                 right: -38px;
-            }
-        }
-
-        &:hover {
-            color: $brand-color;
-
-            &::after {
-                border-top: 1px solid $brand-color;
-                border-right: 1px solid $brand-color;
             }
         }
 
@@ -242,10 +251,36 @@
 
     &__btn-wrapper {
         display: flex;
+        width: 200px;
+
+        @media (max-width: 1919px) {
+            width: 150px;
+        }
+
+        @media (max-width: 1179px) {
+            
+        }  
+
+        @media (max-width: 767px) {
+            width: 110px;      
+        }
+
+        @media (max-width: 403px) {
+            width: 100px; 
+        }
+    
+        @media (max-width: 380px) {
+            
+        }
+    
+        @media (max-width: 370px) {
+            
+        }
     }
 
     &__counter {
-        display: inline-block;
+        position: relative;
+        display: flex;
         background-color: $black-color;
         color: white;
         margin-left: 8px;
