@@ -264,50 +264,23 @@
         align-items: center;
 
         & .button {
-            padding: 37px 42px;
             margin-right: 70px;
 
             @media (max-width: 1919px) {
-                padding: 15px 28px;
                 margin-right: 80px;   
             }
 
             @media (max-width: 1439px) {
-                padding: 15px 16px;
                 margin-right: 45px; 
             }
     
             @media (max-width: 1179px) {
-                padding: 12px 19px;
                 margin-right: 33px;
             }
 
             @media (max-width: 767px) {
-                padding: 6px 20px;
                 white-space: pre-line;
                 margin-right: 20px;
-                line-height: 15px;
-            }
-
-            &:active {
-                font-weight: 500;
-                padding: 37px 38px;
-        
-                @media (max-width: 1919px) {
-                    padding: 15px 27px 15px 26px;
-                }
-        
-                @media (max-width: 1439px) {
-                    padding: 15px 14px; 
-                }
-        
-                @media (max-width: 1179px) {
-                    padding: 12px 18px 12px 17px;
-                }
-        
-                @media (max-width: 767px) {
-                    padding: 6px 19px;
-                }
             }
         }
     }
@@ -621,6 +594,8 @@
             &.active {
                 color: $brand-color;
                 &::after {
+                    top: 20px;
+                    transform: rotate(-135deg);
                     border-bottom: 1px solid $brand-color;
                     border-right: 1px solid $brand-color;
                 }

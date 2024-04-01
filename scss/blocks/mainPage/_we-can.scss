@@ -64,29 +64,12 @@
     }
 
     a {
-        display: block;
         width: 37%;
-        padding: 10px 0;
-        background-color: $white-color;
-        color: $brand-color;
         margin-left: 50%;
-        font-weight: 300;
-
-        &:hover {
-            background-color: rgb(245, 245, 245);
-        }
 
         @media (max-width: 1919px) {
             width: 48%;
             margin-left: 51%;
-        }
-
-        @media (max-width: 1439px) {
-            
-        }
-    
-        @media (max-width: 1179px) {
-            
         }
 
         @media (max-width: 767px) {
