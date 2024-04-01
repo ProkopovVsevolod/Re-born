@@ -325,7 +325,7 @@ main {
 }
 .header__dropdown-content {
   position: absolute;
-  margin-top: 62px;
+  margin-top: 60px;
   background-color: #71BEAB;
   min-width: 160px;
   z-index: 3;
@@ -1032,8 +1032,10 @@ main {
   text-align: center;
   padding: 37px 42px;
 }
-.button:hover {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(0deg, #71BEAB, #71BEAB);
+@media (hover: hover) {
+  .button:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(0deg, #71BEAB, #71BEAB);
+  }
 }
 .button:active {
   background: #4A9B86;
@@ -1134,8 +1136,10 @@ main {
   background: #FEFEFE;
   color: #71BEAB;
 }
-.button--white:hover {
-  background: rgb(245, 245, 245);
+@media (hover: hover) {
+  .button--white:hover {
+    background: rgb(245, 245, 245);
+  }
 }
 .button--white:active {
   background: rgb(245, 245, 245);
@@ -5452,15 +5456,18 @@ h3 {
     padding: 9px 35px;
   }
 }
-.projects__button:hover {
-  color: #71BEAB;
-  border: 1px solid #71BEAB;
-  transition: 0.2s;
+@media (hover: hover) {
+  .projects__button:hover {
+    color: #71BEAB;
+    border: 1px solid #71BEAB;
+    transition: 0.2s;
+  }
 }
 .projects__button:active {
   color: white;
   background-color: #71BEAB;
   transition: 0.2s;
+  border: 1px solid #71BEAB;
 }
 .projects__description-goal {
   width: 55px !important;

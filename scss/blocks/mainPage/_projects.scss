@@ -738,16 +738,20 @@
             padding: 9px 35px;
         }
 
-        &:hover{
-            color: $brand-color;
-            border: 1px solid $brand-color;
-            transition: .2s;
+        @media (hover: hover ) {
+            &:hover{
+                color: $brand-color;
+                border: 1px solid $brand-color;
+                transition: .2s;
+            }
         }
+        
 
         &:active {
             color: white;
             background-color: $brand-color;
             transition: .2s;
+            border: 1px solid $brand-color;
         }
     }
 

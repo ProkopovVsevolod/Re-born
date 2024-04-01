@@ -10,12 +10,15 @@
     text-align: center;
     padding: 37px 42px;
 
-    &:hover {
-        background: linear-gradient(0deg, 
-        rgba(0, 0, 0, 0.05), 
-        rgba(0, 0, 0, 0.05)),
-        linear-gradient(0deg, $brand-color, $brand-color);
+    @media (hover: hover) {
+        &:hover {
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.05), 
+            rgba(0, 0, 0, 0.05)),
+            linear-gradient(0deg, $brand-color, $brand-color);
+        }
     }
+    
 
     &:active {
         background: #4A9B86;
@@ -107,10 +110,12 @@
         background: #FEFEFE;
         color: $brand-color;
 
-        &:hover {
-            background: rgb(245, 245, 245);
+        @media (hover: hover) {
+            &:hover {
+                background: rgb(245, 245, 245);
+            }
         }
-
+    
         &:active {
             background: rgb(245, 245, 245);
         }
