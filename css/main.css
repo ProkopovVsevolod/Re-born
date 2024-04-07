@@ -6440,11 +6440,13 @@ h3 {
     padding: 3px 8px;
   }
 }
-.cases__filter-item:hover {
-  background-color: white;
-  border: 1px solid #71BEAB;
-  color: #71BEAB;
-  transition: all 0.3s;
+@media (hover: hover) {
+  .cases__filter-item:hover {
+    background-color: white;
+    border: 1px solid #71BEAB;
+    color: #71BEAB;
+    transition: all 0.3s;
+  }
 }
 .cases__filter-item.active {
   background-color: #71BEAB;
@@ -6467,7 +6469,12 @@ h3 {
 }
 @media (max-width: 403px) {
   .cases__btn-wrapper {
-    width: 100px;
+    width: 115px;
+  }
+}
+@media (max-width: 374px) {
+  .cases__btn-wrapper {
+    width: 105px;
   }
 }
 .cases__counter {

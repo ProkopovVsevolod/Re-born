@@ -224,12 +224,14 @@
             padding: 3px 8px;
         }
 
-        &:hover {
-            background-color: white;
-            border: 1px solid $brand-color;
-            color: $brand-color;
-
-            transition: all .3s;
+        @media (hover: hover) {
+            &:hover {
+                background-color: white;
+                border: 1px solid $brand-color;
+                color: $brand-color;
+    
+                transition: all .3s;
+            }
         }
 
         &.active {
@@ -252,7 +254,11 @@
         }
 
         @media (max-width: 403px) {
-            width: 100px; 
+            width: 115px; 
+        }
+
+        @media (max-width: 374px) {
+            width: 105px; 
         }
 
     }
