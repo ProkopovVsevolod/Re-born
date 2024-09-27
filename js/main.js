@@ -4,7 +4,6 @@ const dropbtn = document.querySelectorAll(".header__dropbtn");
 const dropdownContent = document.querySelector(".header__dropdown-content");
 const ndaColletion = document.querySelectorAll("[data-nda]");
 
-
 accordionPrincipes.forEach(accordionTitle => {
     accordionTitle.addEventListener("click", () => {
         accordionTitle.classList.toggle('active');
@@ -12,7 +11,7 @@ accordionPrincipes.forEach(accordionTitle => {
         accordionTitle.children[1].classList.toggle("active");
         accordionTitle.lastElementChild.classList.toggle("hidden");
     })
-})
+});
 
 
 anchors.forEach(anchor => {
@@ -22,7 +21,7 @@ anchors.forEach(anchor => {
         })
         anchor.classList.add('active');
     })
-})
+});
 
 
 
@@ -34,7 +33,18 @@ ndaColletion.forEach(nda => {
     nda.addEventListener("mouseout", () => {
         nda.classList.remove("active");
     })
-})
+});
+
+function toggleButton() {
+    const sendEmailBtn = document.querySelector("#submitButton");
+
+    if (sendEmailBtn.hasAttribute('disabled')) {
+        sendEmailBtn.removeAttribute('disabled');
+    } else {
+        sendEmailBtn.setAttribute('disabled', 'disabled');
+    }
+}
+
 
 
 

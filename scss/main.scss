@@ -12,13 +12,13 @@
 @import "./blocks/about-you";
 @import "./blocks/elements/square";
 @import "./blocks/social-network";
+@import "./blocks/audit";
 
-// SEO Page
-@import "./blocks/seo/seo-nav";
-@import "./blocks/seo/seo-optimization";
-@import "./blocks/seo/seo";
-@import "./blocks/seo/audit";
-@import "./blocks/seo/seo-reasons";
+// Services Page
+@import "./blocks/services/services-nav";
+@import "./blocks/services/services-optimization";
+@import "./blocks/services/services";
+@import "./blocks/services/services-reasons";
 
 // Main Page
 @import "./blocks/mainPage/main-block";
@@ -29,10 +29,10 @@
 @import "./blocks/mainPage/we-can";
 @import "./blocks/mainPage/feedback";
 
-// Services
-@import "./blocks/services/services";
+// Services Main Page
+@import "./blocks/servicesPage/services-main";
 
-// Services
+// Cases Page
 @import "./blocks/cases/cases";
 
 

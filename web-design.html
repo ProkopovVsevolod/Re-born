@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Born Agency</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/fav-icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/fav-icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/fav-icons/favicon-16x16.png">
+    <link rel="manifest" href="./img/fav-icons/site.webmanifest">
+    <link rel="mask-icon" href="./img/fav-icons/safari-pinned-tab.svg" color="#71beab">
+    <link rel="shortcut icon" href="./img/fav-icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./img/fav-icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="header__logo" href="./index.html">
+                    <img src="./img/header/logo.svg" alt="Логотип">
+                </a>
+
+                <nav>
+                    <ul class="header__list">
+                        <li class="header__list-item"><a class="header__links" href="./index.html">Главная</a></li>
+                        <li class="header__list-item"><a class="header__links" href="#">О нас</a></li>
+                        <li class="header__list-item header__dropbtn"><a class="header__links" href="./services-main.html">Услуги</a>
+                            <div class="header__dropdown-content">
+                                <ul>
+                                    <li class="header__dropbtn-submenu"><a href="./seo.html">SEO-продвижение</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Комплексный аудит сайта</a></li>
+                                                <li><a href="#">Сбор семантического ядра</a></li>
+                                                <li><a href="#">Продвижение в поиске Яндекс</a></li>
+                                                <li><a href="#">Внутренняя оптимизация</a></li>
+                                                <li><a href="#">Продвижение в поиске Google</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__dropbtn-submenu"><a href="#">SERM</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Улучшение репутации компании</a></li>
+                                                <li><a href="#">Удаление негатива в сети</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__dropbtn-submenu"><a href="#">SMM</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">VK</a></li>
+                                                <li><a href="#">Facebook</a></li>
+                                                <li><a href="#">Instagram</a></li>
+                                                <li><a href="#">Одноклассники</a></li>
+                                                <li><a href="#">Реклама у блоггеров</a></li>
+                                                <li><a href="#">Telegram</a></li>
+                                                <li><a href="#">TikTok</a></li>
+                                                <li><a href="#">Дзен</a></li>
+                                                <li><a href="#">Таргетированная реклама</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__dropbtn-submenu"><a href="#">PPC-реклама</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Реклама Google Adwords</a></li>
+                                                <li><a href="#">Реклама Яндекс Директ</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__dropbtn-submenu"><a href="#">Perfomance-маркетинг</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Комплексный маркетинг</a></li>
+                                                <li><a href="#">Маркетинг под KPI бизнеса</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Brand-маркетинг</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Продвижение брендов в интернете</a></li>
+                                                <li><a href="#">Разработка позиционирования</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="./web-design.html">Web-дизайн</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Дизайн сайта</a></li>
+                                                <li><a href="#">Дизайн Landing Page</a></li>
+                                                <li><a href="#">UX/UI дизайн</a></li>
+                                                <li><a href="#">Прототипирование сайта</a></li>
+                                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Графический дизайн</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Разработка фирменного стиля</a></li>
+                                                <li><a href="#">Дизайн полиграфии</a></li>
+                                                <li><a href="#">Разработка Brandbook</a></li>
+                                                <li><a href="#">Разработка Guideline</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">SMM-дизайн</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Оформление социальных сетей</a></li>
+                                                <li><a href="#">Рекламные креативы</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Контент-маркетинг</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">E-mail-маркетинг</a></li>
+                                                <li><a href="#">Ведение блога</a></li>
+                                                <li><a href="#">Тексты для сайта</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Promoution</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Разработка стратегии продаж</a></li>
+                                                <li><a href="#">Оптимизация каналов продаж</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Аналитика</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Настройка сквозной аналитики</a></li>
+                                                <li><a href="#">Настройка Business intelligence</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Автоматизация бизнеса</a>
+                                        <div class="header__dropdown-submenu">
+                                            <ul>
+                                                <li><a href="#">Внедрение ERP</a></li>
+                                                <li><a href="#">Внедрение CRM</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__dropbtn-submenu"><a href="#">Консалтинг</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="header__list-item"><a class="header__links" href="./cases.html">Кейсы</a></li>
+                        <li class="header__list-item"><a class="header__links" href="#">Блог</a></li>
+                        <li class="header__list-item"><a class="header__links" href="#">Контакты</a></li>
+                    </ul>             
+                </nav>
+
+                <div class="header__other-nav">
+                    <a class="button" href="#about-you">Обсудить
+                        проект</a>
+
+                    <span class="header__lang">RU</span>
+
+                    <div class="header__burger-wrapper">
+                        <div class="header__burger"></div>
+                    </div>
+
+                    <div class="header__burger-nav-wrapper">
+                        <nav class="header__burger-nav">
+                            <ul class="header__burger-column">
+                                <li class="header__nav-item--big " >
+                                    <a class="header__burger-link header__burger-link--big header__burger-link--mobile" href="/services.html">Услуги</a>
+                                    <div class="header__accordion"></div>
+                                    <div class="header__mobile-menu">
+                                        <ul>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="/seo.html">SEO-продвижение</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">SERM</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">SMM</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">PPC-реклама</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Performance Marketing</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Brand Marketing</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Web-дизайн</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Графический дизайн</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">SMM-дизайн</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Контент-маркетинг</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Promoution</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Аналитика</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Автоматизация бизнеса</a></li>
+                                            <li class="header__nav-item" ><a class="header__burger-link" href="#">Консалтинг</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__nav-item--big" ><a class="header__burger-link header__burger-link--big" href="#">О нас</a></li>
+                                <li class="header__nav-item--big" ><a class="header__burger-link header__burger-link--big" href="/cases.html">Кейсы</a></li>
+                                <li class="header__nav-item--big" ><a class="header__burger-link header__burger-link--big" href="#">Блог</a></li>
+                                <li class="header__nav-item--big header__nav-item--mb0" ><a class="header__burger-link header__burger-link--big" href="#">Контакты</a></li>
+
+                                <li>
+                                    <div class="header__network-wrapper header__network-wrapper--tablet" data-accordeonContent>
+                                        <div class="social-network"> 
+                                            <p class="social-network__title">Связаться с нами</p>
+                                            <ul class="social-network__list">
+                                                <li class="social-network__item social-network__item--black">
+                                                    <a href="https://t.me/+79037957552">
+                                                        <img class="social-network__img-big social-network__telegram" src="./img/social-network/white/telegram.svg" alt="Телеграмм">
+                                                    </a>
+                                                </li>
+                
+                                                <li class="social-network__item social-network__item--black">
+                                                    <a href="https://wa.me/79037957552">
+                                                        <img class="social-network__img-big social-network__whatsapp" src="./img/social-network/white/whatsapp.svg" alt="whatsapp">
+                                                    </a>
+                                                </li>
+                
+                                                <li class="social-network__item social-network__item--black">
+                                                    <a href="mailto:hello@re-born.agency">
+                                                        <img class="social-network__img-big social-network__dog" src="./img/social-network/white/dog.svg" alt="Почта">
+                                                    </a> 
+                                                </li>
+                
+                                                <li class="social-network__item social-network__item--black"> 
+                                                    <a href="tel:+74957957552">
+                                                        <img class="social-network__img-big social-network__phone" src="./img/social-network/white/phone.svg" alt="Телефон">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+    
+                            <ul class="header__burger-column header__burger-column--mobile">
+                                <li class="header__nav-item" ><a class="header__burger-link" href="/seo.html">SEO-продвижение</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">SERM</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">SMM</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">PPC-реклама</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Performance Marketing</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Brand Marketing</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Web-дизайн</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Графический дизайн</a></li>
+                                <li class="header__nav-item header__nav-item--mb0" ><a class="header__burger-link" href="#">SMM-дизайн</a></li>
+
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Контент-маркетинг</a></li>
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Promoution</a></li>
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Аналитика</a></li>
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Автоматизация бизнеса</a></li>
+                                <li class="header__nav-item header__nav-item--tablet"><a class="header__burger-link" href="#">Консалтинг</a></li>
+                            </ul>
+    
+                            <ul class="header__burger-column">
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Контент-маркетинг</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Promoution</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Аналитика</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Автоматизация бизнеса</a></li>
+                                <li class="header__nav-item" ><a class="header__burger-link" href="#">Консалтинг</a></li>
+                                
+                                <li>
+                                    <div class="header__network-wrapper">
+                                        <div class="social-network"> 
+                                            <p class="social-network__title">Связаться с нами</p>
+                                            <ul class="social-network__list">
+                                                <li class="social-network__item social-network__item--black">
+                                                    <a href="https://t.me/+79037957552">
+                                                        <img class="social-network__img-big social-network__telegram" src="./img/social-network/white/telegram.svg" alt="Телеграмм">
+                                                    </a>
+                                                </li>
+                
+                                                <li class="social-network__item social-network__item--black">
+                                                    <a href="https://wa.me/79037957552">
+                                                        <img class="social-network__img-big social-network__whatsapp" src="./img/social-network/white/whatsapp.svg" alt="whatsapp">
+                                                    </a>
+                                                </li>
+                
+                                                <li class="social-network__item social-network__item--black">
+                                                    <a href="mailto:hello@re-born.agency">
+                                                        <img class="social-network__img-big social-network__dog" src="./img/social-network/white/dog.svg" alt="Почта">
+                                                    </a> 
+                                                </li>
+                
+                                                <li class="social-network__item social-network__item--black"> 
+                                                    <a href="tel:+74957957552">
+                                                        <img class="social-network__img-big social-network__phone" src="./img/social-network/white/phone.svg" alt="Телефон">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>               
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- SEO Оптимизация -->
+            <div class="services-optimization">
+                <section class="services-optimization__header">
+                    <h1>WEB-<span>дизайн</span></h1>
+                    <img src="./img/web-design/web-design-bg.webp" alt="Задний фон web-design">
+                </section>
+    
+                <div class="services-optimization__body-wrapper">
+                    <div class="services-optimization__body">
+                        <ul class="services-optimization__list">
+                            <li>Низкая посещаемость сайта?</li>
+                            <li>Хотите привлечь новых посетителей?</li>
+                            <li>Повысить конверсию и побудить клиента к действию?</li>
+                        </ul>
+                        <p>
+                            Создадим удобный, интуитивно-понятный и современный дизайн сайта, который будет приносить заявки и приведет к росту ваш бизнес.
+                        </p>
+                    </div>
+                    
+    
+                    <div class="services-optimization__nav-wrapper">
+                        <p>Мы умеем</p>
+                        <nav class="services-optimization__navigation">
+                            <ul>
+                                <li><a href="#">Дизайн сайта</a></li>
+                                <li><a href="#">Дизайн Landing Page</a></li>
+                                <li><a href="#">UX/UI дизайн</a></li>
+                                <li><a href="#">Прототипирование сайта</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Навигация по 3м блоками -->
+            <div class="services-nav">
+                <div class="services-nav__wrapper">
+                    <div class="services-nav__limiter">
+                        <ul class="services-nav__list">
+                            <li>
+                                <a href="#section1" data-id="anchorButton" class="active">Что такое web-дизайн?</a>
+                            </li>
+        
+                            <li>
+                                <a href="#section2" data-id="anchorButton" >Кому нужен дизайн сайта?</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#section3" data-id="anchorButton" >Какие работы проводятся?</a>
+                            </li>                       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services" id="section1">
+                <div class="services__header">
+                    <div class="services__title">
+                        <h2>Web-дизайн</h2>
+                        <div class="square-big"></div>
+                        <div class="square-middle"></div>
+                        <div class="square-small"></div>
+                    </div>
+
+                    <div class="services__text">
+                        <p>
+                            Это процесс создания визуальных элементов, которые делают интернет-страницы 
+                            функциональными и удобными для пользователей. В этот термин включаются следующие этапы: 
+                        </p>
+                        <p>
+                            Наши специалисты по web-дизайну следят за современными тенденциями и 
+                            используют в работе актуальные технологии, включая искусственный интеллект. 
+                        </p>
+                        <p>
+                            Такой подход приводит к улучшению работы веб-проектов за счет создания функциональных
+                             веб-страниц, отвечающих современным требованиям и ожиданиям пользователей.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="services__body">
+                    <p class="services__body-title">Работа web-специалистов оценивается по двум критериям:</p>
+
+                    <section class="services__services">
+                        <h3>UX- Дизайн</h3>
+
+                        <div class="services__services-text">
+                            <p>
+                                Аббревиатура UX расшифровывается как «пользовательский опыт».
+                            </p>
+                            <p>
+                                Вы платите за проектирование внутренних рабочих интерфейсов.
+                                Визуальная часть здесь на втором плане ― главное, насколько удобно будут размещены данные.
+                            </p>
+                        </div>
+                        
+                    </section>
+
+                    <section class="services__services services__services--inner-background">
+                        <h3>UI- Дизайн </h3>
+
+                        <div class="services__services-text">
+                            <p>
+                                Аббревиатура UI расшифровывается как «пользовательский интерфейс». 
+                            </p>
+                            <p>
+                                Показатель эффективности ― привлекательные и понятные для аудитории, одновременно 
+                                с тем полезные и повышающие прибыль компании элементы сайта: меню, поиск, фильтрация на сайте.
+                            </p>
+                        </div>
+                        
+                    </section>
+
+                </div>
+
+                <div class="services__footer">
+                    <p class="services__footer-title">
+                        <span>Web-дизайн влияет на укрепление статуса бренда и конверсию ресурса.</span>  
+                        Закажите у нас эту услугу и мы:
+                    </p>
+
+                    <div class="services__results">
+                        <ul>
+                            <li>Продумаем функциональность сайта</li>
+                            <li>Проведем анализ целевой аудитории и конкурентов</li>
+                            <li>Построим структуру сайта</li>
+                        </ul>
+
+                        <ul>                            
+                            <li>Разработаем дизайн страниц (UI)</li>
+                            <li>Продумаем удобство взаимодействия с сайтом (UX)</li>
+                        </ul>
+                    </div>
+                    
+                </div> 
+            </div>
+            
+            <!-- Блок Кому подойдёт SEO -->
+            <div class="services" id="section2">
+                <div class="services__header">
+                    <div class="services__title">
+                        <h2>Кому нужен 
+                            дизайн сайта?</h2>
+                    </div>
+
+                    <div class="services__text">
+                        <p>
+                            Web-дизайн подходит как тем, кто предлагает товары или услуги, 
+                            и у него уже есть свой сайт, но он хочет получать больше клиентов, 
+                            так и начинающим компаниям, которые хотят занять свое место на рынке: 
+                        </p>
+                        <p>
+                            Эффект от работы web-дизайнера особенно заметен на многостраничных сайтах, 
+                            когда пользователь может удобно и логично перемещаться по сайту для получения 
+                            более полной информации о товаре или услуге.
+                        </p>
+                    </div>
+
+                    
+                </div>
+
+                <div class="services__footer">
+                    <p class="services__body-title">Какой результат от услуги web-дизайнa вы получите?</p>
+                    <div class="services__row">
+                        <div class="services__column">
+                            <span class="services__number">1.</span>
+                            <p>Развитие онлайн-продаж 
+                                и присутствие вашего бизнеса в Интернете</p>
+                        </div>
+                        <div class="services__column">
+                            <span class="services__number">2.</span>
+                            <p>Повышение конверсии
+                                с сайта и рост прибыли
+                        </div>
+                        <div class="services__column">
+                            <span class="services__number">3.</span>
+                            <p>Привлечение
+                                новых клиентов</p>
+                        </div>
+                    </div>
+
+                    <div class="services__text-wrapper">
+                        <p class="services__accent-text">
+                            Важно понимать, что работа над сайтом должна быть одинаково 
+                            качественной как для одностраничного лендинга, так и для 
+                            многостраничного сайта и онлайн-магазина.
+                        </p>
+                    </div>
+                    
+                    <div class="services__description">
+                        <p>
+                            Кроме того, тенденции и технические возможности постоянно изменяются,
+                            поэтому без обновления дизайна сайт рано или поздно потеряет позиции
+                            в выдаче и приведет к снижению количества заявок.
+                        </p>
+                    </div>
+                    
+                </div>   
+            </div> 
+
+            <!-- Блок Какие работы проводятся -->
+            <div class="services" id="section3">
+                <div class="services__header">
+                    <div class="services__title">
+                        <h2>Какие работы 
+                            проводятся?</h2>
+                    </div>
+
+                    <div class="services__text services__text--inner" >
+                        <p>
+                            Мы уверены, что вы не только хотите ощутить 
+                            эффект продвижения, но и вникнуть «как», «что» 
+                            и «зачем» выполняется с нашей стороны, чтобы лучше 
+                            понимать нашу работу и влияние этих действий на 
+                            достижение результатов.
+                        </p>
+                    </div>                 
+                </div>
+
+                <div class="services__content">
+                    <div class="services__accent-text-wrapper">
+                        <p class="services__accent-text">
+                            Охотно поделимся с вами основными
+                            этапами нашей работы и логикой создания дизайна.
+                        </p>
+                    </div>
+
+                    <div class="services__stages">
+                        <div class="services__stage">
+                            <span class="services__number services__number--big">1</span>
+                            <p>Бриф и составление технического задания</p>
+                        </div>
+
+                        <div class="services__stage">
+                            <span class="services__number services__number--big">2</span>
+                            <p>Анализ целевой аудитории</p>
+                        </div>
+
+                        <div class="services__stage">
+                            <span class="services__number services__number--big">3</span>
+                            <p>Анализ конкурентов и их УТП</p>
+                        </div>
+
+                        <div class="services__stage">
+                            <span class="services__number services__number--big">4</span>
+                            <p>Разработка карты сайта</p>
+                        </div>
+
+                        <div class="services__stage">
+                            <span class="services__number services__number--big">5</span>
+                            <p>Прототипирование</p>
+                        </div>
+
+                        <div class="services__stage">
+                            <span class="services__number services__number--big">6</span>
+                            <p>Дизайн</p>
+                        </div>
+
+                        <div class="services__stage">
+                            <span class="services__number services__number--big">7</span>
+                            <p>Согласование готовых макетов</p>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="services__stage-wrapper">
+                    <div class="services__stage-row">
+                        <div class="services__stage-desc">
+                            <div class="services__stage-title">
+                                <p>1</p>
+                                <h3>Бриф и составление технического задания</h3>
+                            </div>
+                            
+                            <span>
+                                Собираем информацию о проекте и составляем техническое задание.  
+                            </span>
+
+                            <p>
+                                Бриф поможет нам лучше понять ваше видение проекта и обеспечит ожидаемый результат сотрудничества.
+                                В свою очередь, техническое задание опишет конкретные задачи, сроки и стадии реализации проекта.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="services__stage-row">
+                        <div class="services__stage-desc">
+                            <div class="services__stage-title">
+                                <p>2</p>
+                                <h3>Анализ целевой аудитории</h3>
+                            </div>
+                            
+                            <span>
+                                Получаем ответ на главный вопрос: Для кого мы все это делаем?
+                            </span>
+                            <p>  
+                                Важно определить, для кого создается проект, чтобы точно понимать потребности, 
+                                ожидания и ценности посетителей сайта. На этом этапе мы выясняем, что важно вашим клиентам, 
+                                чтобы создать эффективное и целенаправленное взаимодействие. 
+                            </p>
+                        </div>       
+                    </div>
+
+                    <div class="services__stage-row">
+                        <div class="services__stage-desc">
+                            <div class="services__stage-title">
+                                <p>3</p>
+                                <h3>Анализ конкурентов и их УТП</h3>
+                            </div>
+                            
+                            <span>
+                                Отстраиваемся от коллег в нише.
+                            </span>
+                            <p>  
+                                Мы ищем слабые места в предложениях конкурентов и превращаем их в ваши сильные стороны, 
+                                чтобы ваш бизнес был привлекательным и конкурентоспособным.
+                                Это помогает выделиться в нише и запомниться у потенциальных клиентов. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services__stage-row">
+                        <div class="services__stage-desc">
+                            <div class="services__stage-title">
+                                <p>4</p>
+                                <h3>Разработка
+                                    карты сайта</h3>
+                            </div>
+                            
+                            <span>
+                                Собираем структуру сайта воедино.
+                            </span>
+                            <p>  
+                                Выстраиваем логическую цепочку перехода клиента по страницам сайта и 
+                                продумываем его возможные шаги и действия. Карта сайта является своеобразным
+                                "скелетом" вашего веб-пространства, который обеспечивает ясное понимание его 
+                                структуры и функционала. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services__stage-row">
+                        <div class="services__stage-desc">
+                            <div class="services__stage-title">
+                                <p>5</p>
+                                <h3>Прототипирование</h3>
+                            </div>
+                            
+                            <span>
+                                Создаем прототип интерфейса, чтобы проверить удобство и понятность использования будущего сайта.
+                            </span>
+                            <p>  
+                                Этот этап позволяет нам представить, как будут взаимодействовать пользователи 
+                                с продуктом, и оптимизировать функционал. Мы строим прототип, который является 
+                                основой для разработки и тестирования конечного продукта. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services__stage-row">
+                        <div class="services__stage-desc">
+                            <div class="services__stage-title">
+                                <p>6</p>
+                                <h3>Дизайн</h3>
+                            </div>
+                            
+                            <span>
+                                Творчество начинается здесь.
+                            </span>
+
+                            <p>  
+                                Начинаем преобразовывать прототип в яркий и заметный продукт, который запомнится пользователям. 
+                            </p>
+
+                            <p>
+                                Наши дизайнеры используют свои знания,  опыт и видение, 
+                                чтобы разработать привлекательный и функциональный дизайн, 
+                                способный заметно выделиться на рынке и принести результат в виде конверсий и продаж.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services__stage-row">
+                        <div class="services__stage-desc">
+                            <div class="services__stage-title">
+                                <p>7</p>
+                                <h3>Согласование готовых макетов</h3>
+                            </div>
+                            
+                            <span>
+                                Добиваемся соответствия ожиданиям.
+                            </span>
+                            <p>  
+                                На этом этапе мы предоставляем дизайн-макеты, разработанные на основе брифа и предыдущих этапов. 
+                                Ваша задача - внимательно ознакомиться с предложенными вариантами и предоставить обратную связь, 
+                                чтобы перейти к завершению проекта. 
+                            </p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <!-- Блок бесплатный аудит -->
+            <div class="audit">
+                <section class="audit__order">
+                    <h2>Бесплатный аудит</h2>
+                    <button class="button">Заказать</button>
+                </section>
+
+                <div class="audit__form-wrapper">
+                    <p class="audit__text">
+                        Самые актуальные, трендовые и свежие новости
+                        в сфере digital - маркетинга 
+                    </p>
+                    <form class="audit__form">
+                        <input type="email" class="input" placeholder="Введите свой email">
+                        <button>Подписаться</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Блок обратной связи -->
+            <div class="about-you" id="about-you">
+                <div class="about-you__content">
+                    <p class="about-you__title">Расскажите
+                        о вашем проекте
+                    </p>
+                    
+                    <form class="form">
+                        <p class="form__subtitle">Контактная информация</p>
+    
+                        <div class="form__data-wrapper">
+                            <div class="form__data">
+                                <div class="form__input-wrapper">
+                                    <input class="input" id="name" type="text" placeholder="Ваше имя *" required>
+                                    <input class="input required-input-email" id="email" type="email" placeholder="Email *" required>
+    
+                                </div>
+                                
+                                <div class="form__input-wrapper">
+                                    <input class="input required-input-phone" id="phone" type="tel" placeholder="Номер телефона *" required>
+                                    <input class="input " id="company"  placeholder="Компания" type="text">
+                                </div>
+                            </div>
+                            
+                            <div class="form__tags-row">
+                                <span class="form__tag">Promoution</span>
+                                <span class="form__tag">PPC-реклама</span>
+                                <span class="form__tag">Дизайн</span>
+                                <span class="form__tag">Аналитика</span>
+                                <span class="form__tag form__tag--active">Автоматизация бизнеса</span>
+                                <span class="form__tag">SMM</span>
+                                <span class="form__tag">Brand Marketing</span>
+                                <span class="form__tag form__tag--active" >SERM</span>
+                                <span class="form__tag">SEO-продвижение</span>
+                                <span class="form__tag">Консалтинг</span>
+                                <span class="form__tag">Performance Marketing</span>
+                                <span class="form__tag form__tag--active">Другое</span> 
+                            </div>
+                        </div>
+                        
+                        <div class="form__textarea-wrapper">
+                            <p class="form__subtitle">Опишите вашу задачу</p>
+        
+                            <textarea class="form__textarea" cols="30" rows="5" placeholder="несколько слов о вашей задаче"></textarea>
+                            <button class="button button--middle">Отправить</button>
+    
+                            <p class="form__politics">
+                                Нажимая на кнопку, вы даете согласие на обработку 
+                                <a href="#">персональных данных</a> и соглашаетесь
+                                с <a href="#">политикой конфиденциальности.</a>
+                            </p>
+                        </div>
+                        
+                    </form> 
+                </div>
+            </div>
+        </div> 
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__contacts">
+                    <p>Связаться с нами</p>
+                    <ul class="social-network">
+                        <li class="social-network__item">
+                            <img class="social-network__img social-network__telegram" src="./img/social-network/black/telegram.svg" alt="Телеграмм">
+                            <a href="https://t.me/agency_reborn">@agency_reborn</a>
+                        </li>
+        
+                        <li class="social-network__item">
+                            <img class="social-network__img social-network__whatsapp" src="./img/social-network/black/whatsapp.svg" alt="whatsapp">
+                            <a href="https://wa.me/79037957552">+7 (903) 795-75-52</a>
+                        </li>
+        
+                        <li class="social-network__item"> 
+                            <img class="social-network__img social-network__dog" src="./img/social-network/black/dog.svg" alt="Почта">
+                            <a href="mailto:hello@re-born.agency">hello@re-born.agency</a>
+                        </li>
+        
+                        <li class="social-network__item"> 
+                            <img class="social-network__img social-network__phone" src="./img/social-network/black/phone.svg" alt="Телефон">
+                            <a href="tel:+74957957552">+7 (495) 795-75-52</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="footer__subscribe">
+                    <p>Подпишитесь</p>
+                    <p class="footer__text">Самые актуальные, трендовые и свежие новости в сфере digital-маркетинга</p>
+                    <form>
+                        <div class="footer__email">
+                            <input  class="input" type="email" placeholder="Введите свой email"> 
+                            <button class="button button--small" id="submitButton">Отправить</button>
+                        </div>
+                       
+        
+                        <input class="checkbox" type="checkbox" id="flag">
+                        <label for="flag" class="footer__label" onclick="toggleButton()">Устанавливая этот флажок, вы соглашаетесь получать новостные рассылки, информацию о проводимых акциях</label>
+                            
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="./js/burger.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

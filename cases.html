@@ -33,7 +33,7 @@
                     <ul class="header__list">
                         <li class="header__list-item"><a class="header__links" href="index.html">Главная</a></li>
                         <li class="header__list-item"><a class="header__links" href="about.html">О нас</a></li>
-                        <li class="header__list-item header__dropbtn"><a class="header__links" href="services.html">Услуги</a>
+                        <li class="header__list-item header__dropbtn"><a class="header__links" href="./services-main.html">Услуги</a>
                             <div class="header__dropdown-content">
                                 <ul>
                                     <li class="header__dropbtn-submenu"><a href="./seo.html">SEO-продвижение</a>
@@ -98,7 +98,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="header__dropbtn-submenu"><a href="#">Web-дизайн</a>
+                                    <li class="header__dropbtn-submenu"><a href="./web-design.html">Web-дизайн</a>
                                         <div class="header__dropdown-submenu">
                                             <ul>
                                                 <li><a href="#">Дизайн сайта</a></li>
@@ -671,46 +671,51 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__contacts">
-            <p>Связаться с нами</p>
-            <ul class="social-network">
-                <li class="social-network__item">
-                    <img class="social-network__img social-network__telegram" src="./img/social-network/black/telegram.svg" alt="Телеграмм">
-                    <a href="https://t.me/+79037957552">@agency_reborn</a>
-                </li>
-
-                <li class="social-network__item">
-                    <img class="social-network__img social-network__whatsapp" src="./img/social-network/black/whatsapp.svg" alt="whatsapp">
-                    <a href="https://wa.me/79037957552">+7 (903) 795-75-52</a>
-                </li>
-
-                <li class="social-network__item"> 
-                    <img class="social-network__img social-network__dog" src="./img/social-network/black/dog.svg" alt="Почта">
-                    <a href="mailto:hello@re-born.agency">hello@re-born.agency</a>
-                </li>
-
-                <li class="social-network__item"> 
-                    <img class="social-network__img social-network__phone" src="./img/social-network/black/phone.svg" alt="Телефон">
-                    <a href="tel:+74957957552">+7 (495) 795-75-52</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer__subscribe">
-            <p>Подпишитесь</p>
-            <p class="footer__text">Самые актуальные, трендовые и свежие новости в сфере digital-маркетинга</p>
-            <form>
-                <div class="footer__email">
-                    <input  class="input" type="email" placeholder="Введите свой email"> 
-                    <button class="button button--small" id="submitButton">Отправить</button>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__contacts">
+                    <p>Связаться с нами</p>
+                    <ul class="social-network">
+                        <li class="social-network__item">
+                            <img class="social-network__img social-network__telegram" src="./img/social-network/black/telegram.svg" alt="Телеграмм">
+                            <a href="https://t.me/agency_reborn">@agency_reborn</a>
+                        </li>
+        
+                        <li class="social-network__item">
+                            <img class="social-network__img social-network__whatsapp" src="./img/social-network/black/whatsapp.svg" alt="whatsapp">
+                            <a href="https://wa.me/79037957552">+7 (903) 795-75-52</a>
+                        </li>
+        
+                        <li class="social-network__item"> 
+                            <img class="social-network__img social-network__dog" src="./img/social-network/black/dog.svg" alt="Почта">
+                            <a href="mailto:hello@re-born.agency">hello@re-born.agency</a>
+                        </li>
+        
+                        <li class="social-network__item"> 
+                            <img class="social-network__img social-network__phone" src="./img/social-network/black/phone.svg" alt="Телефон">
+                            <a href="tel:+74957957552">+7 (495) 795-75-52</a>
+                        </li>
+                    </ul>
                 </div>
-               
-
-                <input class="checkbox" type="checkbox" id="flag">
-                <label for="flag" class="footer__label">Устанавливая этот флажок, вы соглашаетесь получать новостные рассылки, информацию о проводимых акциях</label>
-                    
-            </form>
+        
+                <div class="footer__subscribe">
+                    <p>Подпишитесь</p>
+                    <p class="footer__text">Самые актуальные, трендовые и свежие новости в сфере digital-маркетинга</p>
+                    <form>
+                        <div class="footer__email">
+                            <input  class="input" type="email" placeholder="Введите свой email"> 
+                            <button class="button button--small" id="submitButton">Отправить</button>
+                        </div>
+                       
+        
+                        <input class="checkbox" type="checkbox" id="flag">
+                        <label for="flag" class="footer__label" onclick="toggleButton()">Устанавливая этот флажок, вы соглашаетесь получать новостные рассылки, информацию о проводимых акциях</label>
+                            
+                    </form>
+                </div>
+            </div>
         </div>
+        
     </footer>
 
     <script src="./js/burger.js"></script>
