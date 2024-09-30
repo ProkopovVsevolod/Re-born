@@ -177,66 +177,66 @@
           margin-bottom: 40px;
         }
 
-        &::before {
-          position: absolute;
-          top: -20px;
-          left: -50px;
-          display: block;
-          width: 39px;
-          height: 36px;
-          content: "";
-          background-image: url("./../img/services/quotation-left.svg");
-          background-size: contain;
-          background-repeat: no-repeat;
+        // &::before {
+        //   position: absolute;
+        //   top: -20px;
+        //   left: -50px;
+        //   display: block;
+        //   width: 39px;
+        //   height: 36px;
+        //   content: "";
+        //   background-image: url("./../img/services/quotation-left.svg");
+        //   background-size: contain;
+        //   background-repeat: no-repeat;
 
-          @media (max-width: 1919px) {
-            left: -25px;
-            width: 23px;
-            height: 23px;
-          }
+        //   @media (max-width: 1919px) {
+        //     left: -25px;
+        //     width: 23px;
+        //     height: 23px;
+        //   }
 
-          @media (max-width: 1179px) {
-            top: -7px;
-            left: -35px;
-          }
+        //   @media (max-width: 1179px) {
+        //     top: -7px;
+        //     left: -35px;
+        //   }
 
-          @media (max-width: 767px) {
-            width: 15px;
-            height: 15px;
-            left: 0px;
-            top: -15px;
-          }
-        }
+        //   @media (max-width: 767px) {
+        //     width: 15px;
+        //     height: 15px;
+        //     left: 0px;
+        //     top: -15px;
+        //   }
+        // }
 
-        &::after {
-          position: absolute;
-          bottom: -5px;
-          right: 0;
-          display: block;
-          width: 39px;
-          height: 36px;
-          content: "";
-          background-image: url("./../img/services/quotation-right.svg");
-          background-size: contain;
-          background-repeat: no-repeat;
+        // &::after {
+        //   position: absolute;
+        //   bottom: -5px;
+        //   right: 0;
+        //   display: block;
+        //   width: 39px;
+        //   height: 36px;
+        //   content: "";
+        //   background-image: url("./../img/services/quotation-right.svg");
+        //   background-size: contain;
+        //   background-repeat: no-repeat;
 
-          @media (max-width: 1919px) {
-            bottom: -20px;
-            width: 23px;
-            height: 23px;
-          }
+        //   @media (max-width: 1919px) {
+        //     bottom: -20px;
+        //     width: 23px;
+        //     height: 23px;
+        //   }
 
-          @media (max-width: 1179px) {
-            bottom: -15px;
-            right: -15px;
-          }
+        //   @media (max-width: 1179px) {
+        //     bottom: -15px;
+        //     right: -15px;
+        //   }
 
-          @media (max-width: 767px) {
-            width: 15px;
-            height: 15px;
-            bottom: 0px;
-          }
-        }
+        //   @media (max-width: 767px) {
+        //     width: 15px;
+        //     height: 15px;
+        //     bottom: 0px;
+        //   }
+        // }
       }
     }
 
@@ -278,7 +278,6 @@
   }
 
   &__body-title {
-    margin-left: 124px;
     margin-bottom: 33px;
     width: 810px;
     font-size: 35px;
@@ -288,25 +287,44 @@
 
     @media (max-width: 1919px) {
       width: 535px;
-      margin-left: 97px;
       margin-bottom: 30px;
       font-size: 26px;
       line-height: 36px;
     }
 
     @media (max-width: 1179px) {
-      margin-left: 66px;
       margin-bottom: 20px;
       font-size: 20px;
       line-height: 30px;
       letter-spacing: 0.03em;
+      margin-left: 66px;
     }
 
     @media (max-width: 767px) {
-      width: 270px;
       margin-left: 20px;
+      width: 270px;
       font-size: 18px;
       line-height: 26px;
+    }
+
+    &--inner {
+      margin-left: 120px;
+
+      @media (max-width: 1919px) {
+        margin-left: 100px;
+      }
+
+      @media (max-width: 1439px) {
+        margin-left: 80px;
+      }
+
+      @media (max-width: 1179px) {
+        margin-left: 66px;
+      }
+
+      @media (max-width: 767px) {
+        margin-left: 20px;
+      }
     }
   }
 
@@ -383,6 +401,10 @@
     }
   }
 
+  &__services-vertical {
+    display: flex;
+  }
+
   &__services-text {
     width: 798px;
     margin-left: 77px;
@@ -424,6 +446,111 @@
           margin-bottom: 0;
         }
       }
+    }
+  }
+
+  &__vertical-blocks {
+    display: flex;
+
+    @media (max-width: 1179px) {
+      flex-direction: column;
+    }
+  }
+
+  &__services-section {
+    background-color: #f2f2f2;
+    padding: 25px 106px 30px 120px;
+
+    @media (max-width: 1919px) {
+      padding: 20px 76px 20px 100px;
+    }
+
+    @media (max-width: 1439px) {
+      padding: 20px 75px 20px 80px;
+    }
+
+    @media (max-width: 1179px) {
+      padding: 20px 80px 20px 66px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+
+    h3 {
+      z-index: 4;
+      position: relative;
+      margin-bottom: 30px;
+
+      @media (max-width: 1919px) {
+        margin-bottom: 25px;
+      }
+
+      @media (max-width: 1439px) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 1179px) {
+        margin-bottom: 25px;
+      }
+
+      &::before {
+        position: absolute;
+        display: block;
+        bottom: 3px;
+        z-index: -1;
+        content: "";
+        width: 30px;
+        height: 15px;
+        background-color: $brand-color;
+
+        @media (max-width: 1439px) {          
+          width: 25px;
+          height: 12px;
+        }
+
+        @media (max-width: 1179px) {
+          width: 20px;
+          height: 10px;
+          left: 2px;
+        }
+      }
+    }
+
+    &--inner-bg {
+      padding: 25px 212px 30px 33px;
+      background-color: #f8f8f8;
+
+      @media (max-width: 1919px) {
+        padding: 20px 100px 20px 30px;
+      }
+
+      @media (max-width: 1439px) {
+        padding: 20px 100px 20px 20px;
+      }
+
+      @media (max-width: 1179px) {
+        padding: 20px 80px 20px 66px;
+      }
+
+      @media (max-width: 767px) {
+        padding: 20px;
+      }
+    }
+  }
+
+  &__vertical-blocks-text {
+    @media (max-width: 1179px) {
+      margin-left: 19%;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: 0;
+    }
+
+    & > p:first-child {
+      font-weight: 300;
+      margin-bottom: 15px;
     }
   }
 
@@ -564,7 +691,7 @@
     @media (max-width: 1179px) {
       margin-bottom: 0px;
       flex-direction: column;
-      padding: 20px 0px 10px 15px;
+      padding: 20px 0px 10px 0px;
     }
 
     @media (max-width: 767px) {
@@ -752,7 +879,6 @@
 
   &__accent-text {
     display: inline;
-    // white-space: pre-line;
     font-size: 42px;
     line-height: 57px;
     font-weight: 500;
@@ -768,6 +894,11 @@
     @media (max-width: 1439px) {
       font-size: 30px;
       line-height: 42px;
+    }
+
+    @media (max-width: 1179px) {
+      font-size: 25px;
+      line-height: 35px;
     }
 
     @media (max-width: 767px) {
@@ -869,6 +1000,10 @@
     display: flex;
     margin-top: -30px;
 
+    &:first-child {
+      margin-top: 0;
+    }
+
     @media (max-width: 1179px) {
       margin-top: 0;
     }
@@ -965,6 +1100,32 @@
     @media (max-width: 1919px) {
       width: 70%;
     }
+
+    @media (max-width: 767px) {
+      width: 95%;
+    }
+
+    &--inner {
+      padding-left: 120px;
+      margin-bottom: 52px;
+
+      @media (max-width: 1919px) {
+        padding-left: 100px;
+      }
+
+      @media (max-width: 1439px) {
+        padding-left: 84px;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 1179px) {
+        padding-left: 66px;
+      }
+
+      @media (max-width: 767px) {
+        padding-left: 20px;
+      }
+    }
   }
 
   &__text-wrapper {
@@ -972,17 +1133,22 @@
     margin-bottom: 48px;
 
     @media (max-width: 1919px) {
-        width: 70%;
-        margin-bottom: 38px;
-      }
-  
-      @media (max-width: 1439px) {
-        margin-bottom: 30px;
-      }
-  
-      @media (max-width: 1179px) {
-        margin-bottom: 25px;
-      }
+      width: 70%;
+      margin-bottom: 38px;
+    }
+
+    @media (max-width: 1439px) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 1179px) {
+      margin-bottom: 25px;
+      margin-left: 66px;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: 20px;
+    }
   }
 
   &__stage-desc {
@@ -1098,6 +1264,8 @@
 
     @media (max-width: 1919px) {
       margin-bottom: 20px;
+      font-size: 33px;
+      line-height: 48px;
     }
 
     @media (max-width: 1439px) {
@@ -1135,6 +1303,8 @@
 
         @media (max-width: 1919px) {
           top: 29px;
+          width: 25px;
+          height: 12px;
         }
 
         @media (max-width: 1439px) {
@@ -1161,6 +1331,11 @@
       font-size: 42px;
       line-height: 57px;
       font-weight: 400;
+
+      @media (max-width: 1919px) {
+        font-size: 33px;
+        line-height: 48px;
+      }
 
       @media (max-width: 1439px) {
         font-size: 30px;
@@ -1199,6 +1374,114 @@
           width: 70px;
         }
       }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    margin-bottom: 62px;
+
+    @media (max-width: 1919px) {
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 1439px) {
+      margin-bottom: 36px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 28px;
+    }
+
+    & > p {
+      font-weight: 400;
+      margin-bottom: 15px;
+
+      @media (max-width: 1919px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: -20px;
+      left: -50px;
+      display: block;
+      width: 39px;
+      height: 36px;
+      content: "";
+      background-image: url("../img/seo/quotation-left.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (max-width: 1919px) {
+        left: -25px;
+        width: 23px;
+        height: 23px;
+      }
+
+      @media (max-width: 1179px) {
+        top: -7px;
+        left: -35px;
+      }
+
+      @media (max-width: 767px) {
+        width: 15px;
+        height: 15px;
+        left: 0px;
+        top: -15px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      display: block;
+      width: 39px;
+      height: 36px;
+      content: "";
+      background-image: url("./../img/seo/quotation-right.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (max-width: 1919px) {
+        bottom: -20px;
+        width: 23px;
+        height: 23px;
+      }
+
+      @media (max-width: 1179px) {
+        bottom: -15px;
+        right: -15px;
+      }
+
+      @media (max-width: 767px) {
+        width: 15px;
+        height: 15px;
+        bottom: 0px;
+      }
+    }
+  }
+
+  &__list {
+    font-weight: 300;
+    margin-left: 25px;
+
+    @media (max-width: 1919px) {
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 1439px) {
+      margin-bottom: 36px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 28px;
+    }
+
+    & li {
+      list-style: disc;
     }
   }
 }
